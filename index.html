@@ -1,0 +1,2702 @@
+<meta charset="utf-8">
+<!--
+  ASSET MANIFEST — production image files
+  =========================================
+  This build replaces the previous inline base64 images with external files
+  in an "/" folder next to this HTML file (57 files, ~12MB total).
+  These ARE your real Miracle Eventz photos (case studies, award photos,
+  founder portrait, archive highlights, and the 6 event-type card photos) —
+  nothing here was swapped for stock/placeholder images. Ship this HTML file
+  together with the / folder; do not deploy the HTML alone.
+
+  Full list of files this page expects to find in .//:
+     - /archive-emd-dj-night-7.jpg  (Archive highlight — EMD DJ night)
+     - /archive-prozone-mall-5.jpg  (Archive highlight — Prozone Mall, Aashiqui 2 cast promotion)
+     - /archive-rk-associates-2.jpg  (Archive highlight — RK Associates Annual Meet)
+     - /archive-rk-associates-3.jpg  (Archive highlight — RK Associates Annual Meet)
+     - /archive-ticketed-live-event-6.jpg  (Archive highlight — ticketed live comedy evening (Bharti Singh))
+     - /archive-vespa-4.jpg  (Archive highlight — Vespa mall display activation)
+     - /archive-wizcraft-internation-1.jpg  (Archive highlight — Wizcraft International / Bajaj RE launch, Nigeria)
+     - /award-photo-1.jpg  (Company award / recognition photo)
+     - /award-photo-2.jpg  (Company award / recognition photo)
+     - /award-photo-3.jpg  (Company award / recognition photo)
+     - /case-bajaj-pulsar-stunt-show-1.jpg  (Bajaj Pulsar stunt show case study photo)
+     - /case-haldi-kumkum-1.jpg  (Haldi Kumkum event case study photo)
+     - /case-haldi-kumkum-2.jpg  (Haldi Kumkum event case study photo)
+     - /case-haldi-kumkum-3.jpg  (Haldi Kumkum event case study photo)
+     - /case-haldi-kumkum-4.jpg  (Haldi Kumkum event case study photo)
+     - /case-haldi-kumkum-5.jpg  (Haldi Kumkum event case study photo)
+     - /case-haldi-kumkum-6.jpg  (Haldi Kumkum event case study photo)
+     - /case-haldi-kumkum-7.jpg  (Haldi Kumkum event case study photo)
+     - /case-haldi-kumkum-8.jpg  (Haldi Kumkum event case study photo)
+     - /case-hindustan-pencils-1.jpg  (Hindustan Pencils school activity case study photo)
+     - /case-hindustan-pencils-2.jpg  (Hindustan Pencils school activity case study photo)
+     - /case-indian-idol-roadshow-1.jpg  (Indian Idol 5 roadshow case study photo)
+     - /case-indian-idol-roadshow-2.jpg  (Indian Idol 5 roadshow case study photo)
+     - /case-indian-idol-roadshow-3.jpg  (Indian Idol 5 roadshow case study photo)
+     - /case-lg-branding-shoppe-launch-1.jpg  (LG branding & shoppe launch case study photo)
+     - /case-lg-branding-shoppe-launch-2.jpg  (LG branding & shoppe launch case study photo)
+     - /case-lg-branding-shoppe-launch-3.jpg  (LG branding & shoppe launch case study photo)
+     - /case-lg-branding-shoppe-launch-4.jpg  (LG branding & shoppe launch case study photo)
+     - /case-lg-branding-shoppe-launch-5.jpg  (LG branding & shoppe launch case study photo)
+     - /case-lg-branding-shoppe-launch-6.jpg  (LG branding & shoppe launch case study photo)
+     - /case-masti-ki-pathshala-1.jpg  (Masti Ki Pathshala school activity case study photo)
+     - /case-masti-ki-pathshala-2.jpg  (Masti Ki Pathshala school activity case study photo)
+     - /case-masti-ki-pathshala-3.jpg  (Masti Ki Pathshala school activity case study photo)
+     - /case-masti-ki-pathshala-4.jpg  (Masti Ki Pathshala school activity case study photo)
+     - /case-masti-ki-pathshala-5.jpg  (Masti Ki Pathshala school activity case study photo)
+     - /case-masti-ki-pathshala-6.jpg  (Masti Ki Pathshala school activity case study photo)
+     - /case-masti-ki-pathshala-7.jpg  (Masti Ki Pathshala school activity case study photo)
+     - /case-masti-ki-pathshala-8.jpg  (Masti Ki Pathshala school activity case study photo)
+     - /case-prozone-phase-2-launch-1.jpg  (Prozone Phase 2 launch case study photo)
+     - /case-prozone-phase-2-launch-2.jpg  (Prozone Phase 2 launch case study photo)
+     - /case-retailer-dealer-meet-1.jpg  (Retailer/dealer meet case study photo)
+     - /case-retailer-dealer-meet-2.jpg  (Retailer/dealer meet case study photo)
+     - /case-retailer-dealer-meet-3.jpg  (Retailer/dealer meet case study photo)
+     - /case-retailer-dealer-meet-4.jpg  (Retailer/dealer meet case study photo)
+     - /case-retailer-dealer-meet-5.jpg  (Retailer/dealer meet case study photo)
+     - /case-retailer-dealer-meet-6.jpg  (Retailer/dealer meet case study photo)
+     - /case-retailer-dealer-meet-7.jpg  (Retailer/dealer meet case study photo)
+     - /case-retailer-dealer-meet-8.jpg  (Retailer/dealer meet case study photo)
+     - /founder-deepak-sonavane.jpg  (Founder Deepak Sonavane's portrait)
+     - /hero-poster-sports-festival.jpg  (Video poster frame — state sports festival film)
+     - /hero-poster-wedding-film.jpg  (Video poster frame — wedding highlight film)
+     - /hero-poster-welcome-procession.jpg  (Video poster frame — welcome procession film)
+     - /planning-corporate.jpg  ("What Are You Planning" card background — Corporate)
+     - /planning-entertainment.jpg  ("What Are You Planning" card background — Entertainment)
+     - /planning-public.jpg  ("What Are You Planning" card background — Public & Large-Scale)
+     - /planning-social.jpg  ("What Are You Planning" card background — Social Celebrations)
+     - /planning-weddings.jpg  ("What Are You Planning" card background — Weddings)
+
+  If any image is ever swapped out, keep the same filename (or update the
+  reference in the corresponding JS const near the top of the <script>
+  block: CASE_*_IMAGES, AWARD_PHOTOS, FOUNDER_PHOTO, POSTER_*,
+  ARCHIVE_HIGHLIGHTS, EVENT_IMAGES) so nothing breaks.
+-->
+<!-- Miracle Eventz — full site -->
+<title>Miracle Eventz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Archivo:wght@500;600;700;800;900&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<!-- ============ GOOGLE ANALYTICS 4 ============
+     Replace G-XXXXXXXXXX below with your real GA4 Measurement ID before going live. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  // send_page_view:false because this is a single-page app — we fire our own
+  // page_view events on every route change instead (see goTo()/render() in the
+  // main script below), otherwise every internal route would look like the
+  // same one pageview to GA4.
+  gtag('config', 'G-XXXXXXXXXX', { send_page_view: false });
+</script>
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --red:#E31C23;
+  --red-deep:#B8121A;
+  --cream:#FFF8F0;
+  --ink:#1A1512;
+  --gold:#D4A017;
+  --blush:#F5DDD9;
+  --mauve:#8C6B68;
+
+  --bg:var(--cream);
+  --bg-raised:#FFFFFF;
+  --bg-sunken:var(--blush);
+  --text:var(--ink);
+  --text-muted:var(--mauve);
+  --accent:var(--red);
+  --accent-deep:var(--red-deep);
+  --accent-ink:#FFFFFF;
+  --gold-accent:var(--gold);
+  --border:rgba(26,21,18,0.12);
+  --border-strong:rgba(26,21,18,0.22);
+  --shadow:0 12px 32px rgba(26,21,18,0.10);
+  --ribbon-a:var(--red);
+  --ribbon-b:var(--red-deep);
+}
+
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1B1210;
+    --bg-raised:#241815;
+    --bg-sunken:#2C1D19;
+    --text:#F6ECE6;
+    --text-muted:#C9A9A0;
+    --accent:#FF4B4F;
+    --accent-deep:#E31C23;
+    --accent-ink:#1B1210;
+    --gold-accent:#E8B84B;
+    --border:rgba(246,236,230,0.14);
+    --border-strong:rgba(246,236,230,0.24);
+    --shadow:0 16px 40px rgba(0,0,0,0.45);
+    --ribbon-a:#FF4B4F;
+    --ribbon-b:#B8121A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1B1210;
+  --bg-raised:#241815;
+  --bg-sunken:#2C1D19;
+  --text:#F6ECE6;
+  --text-muted:#C9A9A0;
+  --accent:#FF4B4F;
+  --accent-deep:#E31C23;
+  --accent-ink:#1B1210;
+  --gold-accent:#E8B84B;
+  --border:rgba(246,236,230,0.14);
+  --border-strong:rgba(246,236,230,0.24);
+  --shadow:0 16px 40px rgba(0,0,0,0.45);
+  --ribbon-a:#FF4B4F;
+  --ribbon-b:#B8121A;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important;}
+}
+
+h1,h2,h3,h4{
+  font-family:"Archivo",sans-serif;
+  font-weight:800;
+  margin:0;
+  text-wrap:balance;
+  letter-spacing:-0.01em;
+}
+p{margin:0;}
+a{color:inherit;}
+.script{
+  font-family:"Pacifico",cursive;
+  font-weight:400;
+  line-height:1;
+}
+.mono{
+  font-family:"IBM Plex Mono",monospace;
+  letter-spacing:0.02em;
+}
+.eyebrow{
+  font-family:"IBM Plex Mono",monospace;
+  font-size:0.72rem;
+  font-weight:600;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+
+button{font-family:inherit;cursor:pointer;}
+:focus-visible{outline:3px solid var(--gold-accent); outline-offset:2px;}
+
+/* ============ LAYOUT SHELL ============ */
+.page-wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+@media (max-width:640px){.page-wrap{padding:0 18px;}}
+
+/* Ribbon divider — Coca-Cola-esque dynamic wave, purely CSS/SVG, no external assets */
+.ribbon{
+  width:100%;
+  height:64px;
+  display:block;
+  margin-top:-1px;
+}
+.ribbon path{fill:var(--ribbon-a);}
+.ribbon.flip{transform:scaleY(-1);}
+
+/* ============ HEADER / NAV ============ */
+header.site{
+  position:sticky; top:0; z-index:50;
+  background:var(--bg);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner{
+  max-width:1180px;margin:0 auto;padding:14px 28px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand{
+  display:flex;align-items:baseline;gap:8px;
+  background:none;border:none;padding:0;
+}
+.brand .script{font-size:1.85rem;color:var(--accent);}
+.brand .tag{font-size:0.62rem;font-family:"IBM Plex Mono",monospace;letter-spacing:0.16em;text-transform:uppercase;color:var(--text-muted);}
+nav.links{display:flex;gap:4px;align-items:center;}
+nav.links button{
+  background:none;border:none;color:var(--text);
+  font-size:0.92rem;font-weight:600;padding:9px 14px;border-radius:100px;
+  transition:background .15s, color .15s;
+}
+nav.links button:hover{background:var(--bg-sunken);}
+nav.links button.active{background:var(--accent);color:var(--accent-ink);}
+.cta-pill{
+  background:var(--accent);color:var(--accent-ink);
+  border:none;border-radius:100px;padding:10px 20px;
+  font-weight:700;font-size:0.9rem;white-space:nowrap;
+  box-shadow:var(--shadow);
+  transition:transform .15s, background .15s;
+}
+.cta-pill:hover{background:var(--accent-deep); transform:translateY(-1px);}
+.nav-toggle{display:none;background:none;border:1px solid var(--border-strong);border-radius:10px;padding:8px 10px;}
+@media (max-width:860px){
+  nav.links{display:none;}
+  .nav-toggle{display:inline-flex;}
+  .nav-inner{flex-wrap:wrap;}
+}
+nav.links.mobile-open{
+  display:flex;flex-direction:column;width:100%;align-items:stretch;
+}
+nav.links.mobile-open button{text-align:left;}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;
+  background:linear-gradient(160deg,var(--accent) 0%, var(--accent-deep) 62%);
+  color:#fff;
+  padding:88px 0 0;
+  overflow:hidden;
+}
+.hero-inner{
+  max-width:1180px;margin:0 auto;padding:0 28px 76px;
+  display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;
+}
+@media (max-width:900px){.hero-inner{grid-template-columns:1fr;}}
+.hero h1{
+  font-size:clamp(2.6rem,5.4vw,4.4rem);
+  color:#fff;
+  line-height:1.03;
+}
+.hero h1 .script{
+  display:block;color:var(--gold-accent);
+  font-size:clamp(2.8rem,6vw,4.8rem);
+  margin-top:6px;
+}
+.hero .lede{
+  margin-top:22px;font-size:1.15rem;max-width:46ch;color:rgba(255,255,255,0.92);
+}
+.hero .hero-ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+.btn-gold{
+  background:var(--gold-accent);color:#2B1B06;border:none;border-radius:100px;
+  padding:15px 26px;font-weight:800;font-size:1rem;
+  box-shadow:0 10px 24px rgba(0,0,0,0.25);
+  transition:transform .15s;
+}
+.btn-gold:hover{transform:translateY(-2px);}
+.btn-ghost{
+  background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.55);
+  border-radius:100px;padding:13px 24px;font-weight:700;font-size:1rem;
+  transition:border-color .15s, background .15s;
+}
+.btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,0.08);}
+
+/* hero medallion — CSS-drawn celebratory motif, no external image */
+.medallion{
+  position:relative;width:100%;aspect-ratio:1/1;max-width:360px;margin:0 auto;overflow:hidden;
+}
+.star-field{position:absolute;inset:0;}
+.falling-star{position:absolute;top:-8%;color:#fff;line-height:1;animation-name:starFall;animation-timing-function:linear;animation-iteration-count:infinite;}
+@keyframes starFall{
+  0%{top:-8%;opacity:0;}
+  8%{opacity:1;}
+  92%{opacity:1;}
+  100%{top:108%;opacity:0;}
+}
+@media (prefers-reduced-motion: reduce){
+  .falling-star{animation:none;opacity:0.7;}
+}
+.hero-stats{
+  display:flex;gap:28px;margin-top:38px;flex-wrap:wrap;
+}
+.hero-stats div{min-width:110px;}
+.hero-stats .num{font-family:"Archivo";font-weight:900;font-size:1.9rem;color:var(--gold-accent);}
+.hero-stats .lbl{font-size:0.78rem;color:rgba(255,255,255,0.8);text-transform:uppercase;letter-spacing:0.08em;}
+
+/* ============ SECTIONS ============ */
+section{padding:76px 0;}
+.section-head{max-width:640px;margin-bottom:44px;}
+.section-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-top:10px;}
+.section-head p{margin-top:14px;color:var(--text-muted);font-size:1.05rem;}
+
+/* Services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media (max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:620px){.svc-grid{grid-template-columns:1fr;}}
+.svc-card{
+  background:var(--bg-raised);border:1px solid var(--border);border-radius:18px;
+  padding:28px 24px;transition:transform .18s, box-shadow .18s, border-color .18s;
+}
+.svc-card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--border-strong);}
+.svc-icon{width:46px;height:46px;margin-bottom:16px;}
+.svc-card h3{font-size:1.18rem;margin-bottom:8px;}
+.svc-card p{color:var(--text-muted);font-size:0.95rem;}
+.svc-price{margin-top:14px;font-family:"IBM Plex Mono";font-size:0.85rem;color:var(--accent);font-weight:600;}
+
+/* Portfolio */
+.folio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+@media (max-width:900px){.folio-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:620px){.folio-grid{grid-template-columns:1fr;}}
+.case-gallery{
+  display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:140px;gap:14px;
+}
+.case-gallery img{
+  width:100%;height:100%;object-fit:cover;border-radius:14px;
+  box-shadow:0 8px 20px rgba(26,21,18,0.16);
+  transition:transform .25s ease, box-shadow .25s ease;
+  display:block;
+}
+.case-gallery a{display:block;border-radius:14px;overflow:hidden;}
+.case-gallery a:hover img{transform:scale(1.04);box-shadow:0 14px 30px rgba(26,21,18,0.26);}
+.case-gallery .g-big{grid-column:span 2;grid-row:span 2;}
+.case-gallery .g-tall{grid-row:span 2;}
+.case-gallery .g-wide{grid-column:span 2;}
+@media (max-width:820px){
+  .case-gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px;}
+  .case-gallery .g-big{grid-column:span 2;grid-row:span 2;}
+}
+@media (max-width:480px){
+  .case-gallery{grid-template-columns:1fr;grid-auto-rows:200px;}
+  .case-gallery .g-big, .case-gallery .g-wide, .case-gallery .g-tall{grid-column:span 1;grid-row:span 1;}
+}
+.case-detail-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+@media (max-width:700px){.case-detail-grid{grid-template-columns:1fr;}}
+.archive-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+@media (max-width:900px){.archive-strip{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:520px){.archive-strip{grid-template-columns:1fr;}}
+.folio-card{
+  position:relative;border-radius:16px;overflow:hidden;aspect-ratio:4/5;
+  display:flex;align-items:flex-end;padding:20px;color:#fff;
+  isolation:isolate;
+}
+.folio-card::before{
+  content:"";position:absolute;inset:0;z-index:-1;
+}
+.folio-card::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 40%, rgba(0,0,0,0.72) 100%);
+}
+.folio-card h4{font-size:1.1rem;}
+.folio-card span{font-size:0.78rem;opacity:0.85;font-family:"IBM Plex Mono";}
+.folio-1::before{background:linear-gradient(150deg,#E31C23,#7A0E12);}
+.folio-2::before{background:linear-gradient(150deg,#D4A017,#8C5E0A);}
+.folio-3::before{background:linear-gradient(150deg,#8C6B68,#3D2A27);}
+.folio-4::before{background:linear-gradient(150deg,#B8121A,#E31C23);}
+.folio-5::before{background:linear-gradient(150deg,#3D2A27,#1A1512);}
+.folio-6::before{background:linear-gradient(150deg,#E8B84B,#D4A017);}
+
+/* Testimonials */
+.testi-row{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media (max-width:900px){.testi-row{grid-template-columns:1fr;}}
+.testi-card{
+  background:var(--bg-sunken);border-radius:18px;padding:28px;
+  display:flex;flex-direction:column;gap:16px;
+}
+.testi-quote{font-size:1.02rem;line-height:1.55;}
+.testi-quote::before{content:"\201C";color:var(--accent);font-family:"Archivo";font-weight:900;font-size:1.4rem;}
+.testi-who{display:flex;align-items:center;gap:12px;}
+.testi-avatar{
+  width:40px;height:40px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;font-family:"Archivo";font-weight:800;font-size:0.95rem;
+  background:var(--accent);
+}
+.testi-name{font-weight:700;font-size:0.92rem;}
+.testi-event{font-size:0.8rem;color:var(--text-muted);}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+@media (max-width:800px){.contact-grid{grid-template-columns:1fr;}}
+.contact-info .row{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start;}
+.contact-info .row svg{flex-shrink:0;margin-top:2px;}
+.contact-info h4{font-size:0.95rem;margin-bottom:2px;}
+.contact-info p{color:var(--text-muted);font-size:0.92rem;}
+.field{margin-bottom:16px;}
+.field label{display:block;font-size:0.82rem;font-weight:700;margin-bottom:6px;}
+.field input, .field textarea{
+  width:100%;padding:12px 14px;border-radius:10px;border:1.5px solid var(--border-strong);
+  background:var(--bg-raised);color:var(--text);font-family:inherit;font-size:0.95rem;
+}
+.field textarea{resize:vertical;min-height:100px;}
+.field input:focus, .field textarea:focus{border-color:var(--accent);outline:none;}
+
+/* Footer */
+footer{
+  background:var(--ink);color:#F6ECE6;padding:48px 0 28px;
+}
+footer .foot-inner{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;align-items:center;}
+footer .script{color:var(--gold-accent);font-size:1.4rem;}
+footer .fine{font-size:0.82rem;color:#C9A9A0;margin-top:6px;}
+footer .foot-links{display:flex;gap:20px;font-size:0.85rem;flex-wrap:wrap;}
+
+/* ============ 7-STEP QUOTE FLOW ============ */
+.quote-shell{
+  max-width:760px;margin:0 auto;padding:48px 0 90px;
+}
+.progress-track{
+  display:flex;align-items:center;gap:4px;margin-bottom:38px;
+}
+.progress-seg{flex:1;height:6px;border-radius:6px;background:var(--border);overflow:hidden;}
+.progress-seg .fill{height:100%;width:0%;background:var(--accent);transition:width .35s ease;}
+.progress-label{
+  display:flex;justify-content:space-between;margin-bottom:10px;
+  font-family:"IBM Plex Mono";font-size:0.78rem;color:var(--text-muted);
+}
+.step-card{
+  background:var(--bg-raised);border:1px solid var(--border);border-radius:22px;
+  padding:40px;box-shadow:var(--shadow);
+}
+.step-num{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;
+  font-family:"Archivo";font-weight:800;font-size:0.95rem;margin-bottom:16px;
+}
+.step-card h3{font-size:1.5rem;margin-bottom:8px;}
+.step-sub{color:var(--text-muted);font-size:0.95rem;margin-bottom:28px;}
+.opt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+@media (max-width:520px){.opt-grid{grid-template-columns:1fr;}}
+.opt-card{
+  border:2px solid var(--border);border-radius:14px;padding:16px;text-align:left;
+  background:var(--bg);transition:border-color .15s, background .15s;
+  display:flex;align-items:center;gap:12px;
+}
+.opt-card:hover{border-color:var(--border-strong);}
+.opt-card.selected{border-color:var(--accent);background:var(--bg-sunken);}
+.opt-card .ico{font-size:1.4rem;}
+.opt-card .lbl{font-weight:700;font-size:0.95rem;}
+.step-actions{
+  display:flex;justify-content:space-between;margin-top:32px;gap:12px;
+}
+.btn-primary{
+  background:var(--accent);color:#fff;border:none;border-radius:100px;
+  padding:13px 28px;font-weight:700;font-size:0.95rem;
+  transition:background .15s;
+}
+.btn-primary:hover{background:var(--accent-deep);}
+.btn-primary:disabled{opacity:0.45;cursor:not-allowed;}
+.btn-secondary{
+  background:none;border:1.5px solid var(--border-strong);border-radius:100px;
+  padding:12px 26px;font-weight:700;font-size:0.95rem;color:var(--text);
+}
+.btn-secondary:hover{background:var(--bg-sunken);}
+.range-wrap{margin-top:8px;}
+.range-val{font-family:"Archivo";font-weight:800;font-size:1.6rem;color:var(--accent);margin-bottom:6px;}
+input[type=range]{width:100%;accent-color:var(--accent);}
+.chip-row{display:flex;flex-wrap:wrap;gap:10px;}
+.chip{
+  border:2px solid var(--border);border-radius:100px;padding:10px 18px;font-size:0.9rem;font-weight:600;
+  background:var(--bg);
+}
+.chip.selected{border-color:var(--accent);background:var(--accent);color:#fff;}
+.review-list{display:flex;flex-direction:column;gap:12px;margin-bottom:24px;}
+.review-row{
+  display:flex;justify-content:space-between;padding:12px 16px;background:var(--bg-sunken);
+  border-radius:12px;font-size:0.92rem;
+}
+.review-row .k{color:var(--text-muted);}
+.review-row .v{font-weight:700;}
+.success-card{text-align:center;padding:60px 40px;}
+.success-card .big-check{
+  width:76px;height:76px;border-radius:50%;background:var(--accent);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 24px;
+}
+.hidden{display:none !important;}
+.field-error{color:var(--accent);font-size:0.8rem;margin-top:4px;display:none;}
+.field.has-error input, .field.has-error textarea{border-color:var(--accent);}
+.field.has-error .field-error{display:block;}
+
+.theme-toggle{
+  background:none;border:1px solid var(--border-strong);border-radius:100px;
+  width:36px;height:36px;display:flex;align-items:center;justify-content:center;
+}
+
+/* ============ V3 ADDITIONS ============ */
+
+/* Primary CTA — brand red, high contrast on every background, never black */
+.btn-primary{
+  background:var(--red);color:#fff;border:none;border-radius:100px;
+  padding:15px 28px;font-weight:800;font-size:0.98rem;letter-spacing:0.01em;
+  box-shadow:0 10px 26px rgba(227,28,35,0.35);
+  transition:transform .15s, background .15s, box-shadow .15s;
+}
+.btn-primary:hover{background:var(--red-deep);transform:translateY(-2px);box-shadow:0 14px 32px rgba(227,28,35,0.45);}
+.btn-primary:disabled{opacity:0.45;cursor:not-allowed;transform:none;}
+.cta-pill, .float-cta{background:var(--red);color:#fff;}
+.cta-pill:hover{background:var(--red-deep);}
+
+/* Persistent floating CTA */
+.float-cta{
+  position:fixed; right:22px; bottom:22px; z-index:70;
+  border:none; border-radius:100px;
+  padding:14px 22px; font-weight:800; font-size:0.88rem;
+  box-shadow:0 12px 28px rgba(0,0,0,0.35);
+  display:flex; align-items:center; gap:8px;
+  opacity:0; transform:translateY(16px); pointer-events:none;
+  transition:opacity .3s ease, transform .3s ease, background .15s;
+}
+.float-cta.show{opacity:1; transform:none; pointer-events:auto;}
+.float-cta:hover{background:var(--red-deep);}
+@media (max-width:640px){.float-cta{right:14px;bottom:14px;padding:12px 18px;font-size:0.82rem;}}
+
+/* Scroll reveal (restrained motion, respects reduced-motion) */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);}
+.reveal.in{opacity:1;transform:none;}
+@media (prefers-reduced-motion: reduce){.reveal{opacity:1 !important;transform:none !important;transition:none !important;}}
+
+/* WHY MIRACLE EVENTZ */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+@media (max-width:900px){.why-grid{grid-template-columns:1fr;}}
+.why-card{padding:8px 4px;}
+.why-card .n{font-family:"Archivo";font-weight:900;font-size:1.6rem;color:var(--accent);}
+.why-card h3{margin-top:10px;font-size:1.15rem;}
+.why-card p{margin-top:8px;color:var(--text-muted);font-size:0.95rem;}
+
+/* EXPERIENCE / CREDIBILITY stat strip */
+.stat-strip{
+  background:var(--ink);color:#F6ECE6;border-radius:28px;padding:52px 40px;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:28px;text-align:center;
+}
+@media (max-width:900px){.stat-strip{grid-template-columns:repeat(2,1fr);}}
+.stat-strip .n{font-family:"Archivo";font-weight:900;font-size:clamp(1.8rem,3.4vw,2.6rem);color:var(--gold-accent);line-height:1;}
+.stat-strip .l{margin-top:8px;font-size:0.78rem;letter-spacing:0.06em;text-transform:uppercase;font-family:"IBM Plex Mono",monospace;color:#D8C4BC;}
+.stat-strip .e{font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;font-family:"IBM Plex Mono",monospace;color:var(--gold-accent);opacity:0.85;margin-bottom:6px;}
+.stat-strip .n.n-compact{font-size:clamp(1.05rem,1.6vw,1.35rem);line-height:1.25;}
+
+/* FEATURED CASE STUDIES — "What We've Made Happen" */
+.case-feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+@media (max-width:860px){.case-feature-grid{grid-template-columns:1fr;}}
+.case-feature{
+  position:relative;border-radius:20px;overflow:hidden;isolation:isolate;
+  min-height:420px;display:flex;flex-direction:column;justify-content:flex-end;
+  color:#fff;text-align:left;border:none;cursor:pointer;padding:0;box-shadow:var(--shadow);
+}
+.case-feature img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .4s ease;}
+.case-feature:hover img{transform:scale(1.05);}
+.case-feature::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(12,8,7,0.05) 30%, rgba(12,8,7,0.92) 100%);
+}
+.case-feature .cf-body{padding:26px 26px 28px;}
+.case-feature .cf-tag{font-family:"IBM Plex Mono",monospace;font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-accent);}
+.case-feature h3{margin-top:8px;font-size:1.4rem;line-height:1.15;}
+.case-feature .cf-line{margin-top:10px;font-size:0.92rem;color:rgba(255,255,255,0.88);max-width:46ch;}
+.case-feature .cf-arrow{margin-top:14px;font-weight:700;font-size:0.88rem;color:#fff;}
+
+/* HOW WE THINK / METHOD */
+.method-row{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:step;}
+@media (max-width:900px){.method-row{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.method-row{grid-template-columns:1fr;}}
+.method-step{position:relative;padding:26px 22px;border:1px solid var(--border);border-radius:18px;background:var(--bg-raised);}
+.method-step .m-n{font-family:"IBM Plex Mono",monospace;font-size:0.78rem;color:var(--accent);font-weight:700;}
+.method-step h3{margin-top:10px;font-size:1.1rem;}
+.method-step p{margin-top:8px;color:var(--text-muted);font-size:0.9rem;}
+
+/* INDUSTRIES */
+.industry-row{display:flex;flex-wrap:wrap;gap:14px;}
+.industry-card{
+  flex:1 1 260px;border:1px solid var(--border);border-radius:16px;padding:22px 22px;
+  background:var(--bg-raised);
+}
+.industry-card h3{font-size:1.02rem;}
+.industry-card p{margin-top:8px;color:var(--text-muted);font-size:0.86rem;}
+
+/* WEDDINGS — distinct warm tonal section */
+.wed-zone{background:var(--blush);border-radius:28px;padding:56px 40px;}
+.wed-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;}
+@media (max-width:860px){.wed-grid{grid-template-columns:1fr;}.wed-zone{padding:36px 22px;}}
+.wed-grid.wed-grid--text-only{grid-template-columns:1fr;max-width:760px;margin:0 auto;text-align:center;}
+.wed-grid--text-only .wed-fact-row{justify-content:center;}
+.wed-grid--text-only .hero-ctas{justify-content:center;}
+.wed-media{border-radius:18px;overflow:hidden;box-shadow:0 16px 40px rgba(26,21,18,0.18);}
+.wed-media img{width:100%;display:block;object-fit:cover;aspect-ratio:5/4;}
+.wed-fact-row{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap;}
+.wed-fact-row .chip{border:1.5px solid rgba(26,21,18,0.22);border-radius:100px;padding:8px 16px;font-size:0.82rem;font-family:"IBM Plex Mono",monospace;color:var(--mauve);}
+
+/* TRUST / PROOF strip on home */
+.proof-row-mini{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media (max-width:860px){.proof-row-mini{grid-template-columns:1fr;}}
+.proof-card-mini{background:var(--bg-raised);border:1px solid var(--border);border-radius:16px;overflow:hidden;}
+.proof-card-mini img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;filter:saturate(0.92);}
+.proof-card-mini .pc-body{padding:18px 18px;}
+.proof-card-mini .title{margin-top:6px;font-weight:700;font-size:0.95rem;}
+
+/* Final CTA section */
+.final-cta{
+  background:linear-gradient(150deg,var(--accent) 0%, var(--accent-deep) 100%);
+  border-radius:28px;padding:60px 40px;color:#fff;text-align:center;
+}
+@media (max-width:640px){.final-cta{padding:40px 22px;}}
+.final-cta h2{color:#fff;font-size:clamp(1.8rem,3.6vw,2.6rem);}
+.final-cta p{margin-top:14px;color:rgba(255,255,255,0.9);max-width:56ch;margin-left:auto;margin-right:auto;}
+.final-cta .btn-primary{background:#fff;color:var(--red-deep);box-shadow:0 10px 26px rgba(0,0,0,0.25);}
+.final-cta .btn-primary:hover{background:#FFF3E9;}
+.final-cta .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.6);border-radius:100px;padding:13px 26px;font-weight:700;}
+.final-cta .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,0.1);}
+.final-cta-ctas{display:flex;gap:14px;justify-content:center;margin-top:28px;flex-wrap:wrap;}
+
+/* ============ CASE STUDY PAGE V3 ============ */
+.case-hero{
+  position:relative;min-height:64svh;display:flex;align-items:flex-end;
+  border-radius:24px;overflow:hidden;isolation:isolate;color:#fff;margin-top:24px;
+}
+.case-hero img,.case-hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;background:#000;}
+.case-hero-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:2;width:76px;height:76px;border-radius:50%;background:rgba(20,14,12,0.55);border:2px solid rgba(255,255,255,0.85);color:#fff;font-size:1.4rem;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .15s,background .15s;backdrop-filter:blur(2px);}
+.case-hero-play:hover{transform:translate(-50%,-50%) scale(1.08);background:rgba(227,28,35,0.85);}
+.case-hero-play span{transform:translateX(2px);}
+.case-hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(12,8,7,0.1) 30%, rgba(12,8,7,0.88) 100%);
+}
+.case-hero-body{padding:40px;}
+@media (max-width:640px){.case-hero-body{padding:24px;}.case-hero{min-height:52svh;}}
+.case-hero .eyebrow{color:var(--gold-accent);}
+.case-hero h1{color:#fff;font-size:clamp(1.9rem,4.4vw,3.2rem);margin-top:10px;}
+.case-hero .meta-line{margin-top:10px;color:rgba(255,255,255,0.85);font-size:1rem;}
+.case-flow{display:flex;flex-direction:column;gap:0;margin-top:56px;}
+.case-flow-step{display:grid;grid-template-columns:120px 1fr;gap:28px;padding:32px 0;border-top:1px solid var(--border);}
+.case-flow-step:last-child{border-bottom:1px solid var(--border);}
+@media (max-width:640px){.case-flow-step{grid-template-columns:1fr;gap:10px;}}
+.case-flow-step .cf-label{font-family:"IBM Plex Mono",monospace;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);font-weight:700;}
+.case-flow-step .cf-text{font-size:1.08rem;color:var(--text);max-width:66ch;}
+.case-flow-step.result .cf-label{color:var(--gold);}
+.case-takeaway{
+  margin-top:52px;background:var(--bg-sunken);border-radius:20px;padding:36px 36px;
+  border-left:4px solid var(--accent);
+}
+.case-takeaway .eyebrow{color:var(--accent);}
+.case-takeaway p{margin-top:10px;font-size:1.15rem;font-weight:600;max-width:60ch;}
+.next-project{
+  margin-top:52px;border:1px solid var(--border);border-radius:20px;overflow:hidden;
+  display:grid;grid-template-columns:1fr 1.4fr;background:var(--bg-raised);cursor:pointer;border:none;text-align:left;width:100%;padding:0;
+}
+@media (max-width:640px){.next-project{grid-template-columns:1fr;}}
+.next-project img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:4/3;}
+.next-project .np-body{padding:28px 30px;display:flex;flex-direction:column;justify-content:center;}
+.next-project .eyebrow{color:var(--accent);}
+.next-project h3{margin-top:8px;font-size:1.3rem;}
+.next-project .np-arrow{margin-top:12px;font-weight:700;color:var(--accent);}
+
+/* ============ THINKING PAGE ============ */
+.thinking-page{max-width:760px;margin:0 auto;padding:56px 28px 40px;}
+@media (max-width:640px){.thinking-page{padding:40px 18px 32px;}}
+.think-hero{margin-bottom:8px;}
+.think-hero h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;margin-top:10px;}
+.think-hero .lede{margin-top:18px;font-size:1.15rem;line-height:1.65;color:var(--text-muted);}
+.think-open p{margin-top:16px;font-size:1.08rem;line-height:1.75;color:var(--text);}
+.think-section{margin-top:56px;padding-top:40px;border-top:1px solid var(--border);}
+.think-marker{display:flex;align-items:center;gap:14px;margin-bottom:14px;}
+.think-marker .mk{font-family:'IBM Plex Mono',monospace;font-size:0.8rem;font-weight:600;color:var(--accent);border:1px solid var(--border-strong);border-radius:999px;width:30px;height:30px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.think-section h2{font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.25;}
+.think-section p{margin-top:14px;font-size:1.02rem;line-height:1.75;color:var(--text);}
+.think-section p.muted{color:var(--text-muted);}
+.think-section ul{margin-top:14px;padding-left:22px;color:var(--text);font-size:1.02rem;line-height:1.7;}
+.think-section li{margin-top:6px;}
+.think-flow{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:0.82rem;color:var(--accent-deep);}
+.think-flow span.step{background:var(--bg-sunken);border-radius:8px;padding:6px 10px;white-space:nowrap;}
+.think-flow span.arrow{color:var(--text-muted);}
+.think-caselink{margin-top:20px;}
+.think-inline-link{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:3px;background:none;border:none;padding:0;cursor:pointer;font:inherit;}
+.think-doors{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--border);border-radius:16px;overflow:hidden;}
+@media (max-width:640px){.think-doors{grid-template-columns:1fr;}}
+.think-door{padding:26px 24px;background:var(--bg-raised);}
+.think-door + .think-door{border-left:1px solid var(--border);}
+@media (max-width:640px){.think-door + .think-door{border-left:none;border-top:1px solid var(--border);}}
+.think-door .eyebrow{color:var(--accent);}
+.think-door h3{margin-top:8px;font-size:1.2rem;}
+.think-door p{margin-top:10px;font-size:0.96rem;line-height:1.65;color:var(--text-muted);}
+.think-door button{margin-top:14px;}
+.think-close{margin-top:56px;padding-top:40px;border-top:1px solid var(--border);text-align:center;}
+.think-close h2{font-size:clamp(1.5rem,3.5vw,2rem);}
+.think-close p{margin-top:12px;color:var(--text-muted);font-size:1.02rem;max-width:520px;margin-left:auto;margin-right:auto;}
+.think-close-ctas{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+
+/* ============ STORIES FROM THE FIELD ============ */
+.stories-hero{margin-bottom:8px;}
+.stories-hero h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.15;margin-top:10px;}
+.stories-hero .lede{margin-top:18px;font-size:1.15rem;line-height:1.65;color:var(--text-muted);}
+.stories-intro{margin-top:16px;max-width:70ch;}
+.stories-intro p{margin-top:14px;font-size:1.02rem;line-height:1.75;color:var(--text);}
+.story-grid{margin-top:44px;display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+@media (max-width:760px){.story-grid{grid-template-columns:1fr;}}
+.story-card{position:relative;text-align:left;background:var(--bg-raised);border:1px solid var(--border);border-radius:16px;padding:26px 24px;cursor:pointer;transition:transform .15s, box-shadow .15s, border-color .15s;}
+.story-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:var(--border-strong);}
+.story-card .story-n{font-family:'IBM Plex Mono',monospace;font-size:0.78rem;font-weight:600;color:var(--accent);}
+.story-card h3{margin-top:10px;font-size:1.22rem;line-height:1.3;}
+.story-card .story-client{margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;}
+.story-card .story-readlink{margin-top:16px;font-weight:700;font-size:0.9rem;color:var(--accent);}
+.story-hero{margin-top:8px;}
+.story-hero .eyebrow{color:var(--accent);}
+.story-hero h1{margin-top:10px;font-size:clamp(1.9rem,4.4vw,3rem);line-height:1.15;}
+.story-narrative{margin-top:40px;max-width:70ch;}
+.story-narrative p{margin-top:20px;font-size:1.08rem;line-height:1.85;color:var(--text);}
+.story-pullquote{margin:40px 0;padding:2px 0 2px 24px;border-left:3px solid var(--accent);font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(1.2rem,2.6vw,1.5rem);line-height:1.4;color:var(--text);}
+.story-reflection{margin-top:36px;padding-top:28px;border-top:1px solid var(--border);font-style:italic;color:var(--text-muted);font-size:1.03rem;line-height:1.8;max-width:70ch;}
+.story-pending{margin-top:40px;padding:40px 32px;text-align:center;border:1px dashed var(--border-strong);border-radius:16px;color:var(--text-muted);}
+
+/* ============ SERVICES PAGE — CELEBRATION RIBBON SYSTEM ============ */
+.svc-hero{position:relative;background:linear-gradient(160deg,var(--accent) 0%, var(--accent-deep) 68%);color:#fff;padding:96px 0 0;overflow:hidden;}
+.svc-hero-inner{max-width:1180px;margin:0 auto;padding:0 28px 64px;}
+.svc-hero .eyebrow{color:#FFE8B0;}
+.svc-hero h1{font-size:clamp(2.4rem,5.4vw,4.2rem);color:#fff;line-height:1.06;max-width:16ch;}
+.svc-hero .lede{margin-top:20px;font-size:1.1rem;max-width:52ch;color:rgba(255,255,255,0.92);}
+.svc-hero .hero-ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+
+.journey-seq{display:flex;align-items:center;flex-wrap:wrap;gap:0;justify-content:center;margin-top:8px;}
+.journey-step{display:flex;flex-direction:column;align-items:center;gap:8px;padding:14px 18px;min-width:110px;}
+.journey-step .jn{font-family:"IBM Plex Mono";font-size:0.72rem;letter-spacing:0.1em;color:var(--accent);text-transform:uppercase;font-weight:700;}
+.journey-arrow{width:34px;height:2px;background:linear-gradient(90deg,var(--accent),var(--gold-accent));position:relative;flex:0 0 auto;}
+.journey-arrow::after{content:'';position:absolute;right:-1px;top:-3px;border:4px solid transparent;border-left-color:var(--gold-accent);}
+@media (max-width:820px){.journey-seq{flex-direction:column;}.journey-arrow{width:2px;height:22px;}.journey-arrow::after{right:-3px;top:auto;bottom:-1px;border-left-color:transparent;border-top-color:var(--gold-accent);}}
+
+.pillar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+@media (max-width:900px){.pillar-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:520px){.pillar-grid{grid-template-columns:1fr;}}
+.pillar-card{position:relative;border-radius:20px;padding:34px 26px 28px;background:var(--cream);border:1px solid var(--border);overflow:hidden;min-height:280px;display:flex;flex-direction:column;transition:transform .2s, box-shadow .2s;}
+.pillar-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);}
+.pillar-card::before{content:'';position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,var(--accent),var(--gold-accent));}
+.pillar-ribbon{position:absolute;top:-40px;right:-40px;width:130px;height:130px;border-radius:50%;background:radial-gradient(circle at 35% 35%, var(--gold-accent) 0%, rgba(212,160,23,0.18) 55%, transparent 75%);opacity:0.55;pointer-events:none;}
+.pillar-tag{font-family:"IBM Plex Mono";font-size:0.72rem;letter-spacing:0.14em;color:var(--accent);font-weight:800;position:relative;}
+.pillar-card h3{margin-top:8px;font-size:1.25rem;position:relative;}
+.pillar-list{margin-top:16px;list-style:none;padding:0;flex:1;position:relative;}
+.pillar-list li{font-size:0.88rem;color:var(--text-muted);padding:5px 0;border-top:1px solid var(--border);}
+.pillar-list li:first-child{border-top:none;}
+.pillar-card .btn-link{margin-top:16px;background:none;border:none;color:var(--accent);font-weight:700;padding:0;cursor:pointer;font-size:0.92rem;position:relative;}
+
+.evt-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media (max-width:900px){.evt-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:620px){.evt-grid{grid-template-columns:1fr;}}
+.evt-card{position:relative;border-radius:20px;overflow:hidden;min-height:260px;display:flex;flex-direction:column;justify-content:flex-end;padding:24px 22px;cursor:pointer;border:none;text-align:left;
+  background:linear-gradient(155deg,var(--red-deep) 0%, var(--accent) 48%, var(--gold-accent) 145%);color:#fff;transition:transform .2s,box-shadow .2s;box-shadow:0 6px 18px rgba(26,21,18,0.12);}
+.evt-card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(26,21,18,0.22);}
+.evt-card::before{content:'';position:absolute;left:-10%;right:-10%;bottom:-18%;height:60%;background:rgba(255,255,255,0.14);border-radius:50%;transform:rotate(-6deg);pointer-events:none;}
+.evt-card::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(15,11,9,0.72) 0%,rgba(15,11,9,0.15) 55%,transparent 78%);}
+.evt-card>*{position:relative;z-index:1;}
+.evt-card .evt-name{font-family:"Archivo";font-weight:900;font-size:1.35rem;}
+.evt-card .evt-desc{margin-top:8px;font-size:0.88rem;color:rgba(255,255,255,0.9);}
+.evt-card .evt-cta{margin-top:14px;font-weight:800;color:#FFE8B0;font-size:0.85rem;letter-spacing:0.04em;}
+.float-cta.drawer-hidden{opacity:0 !important;pointer-events:none !important;}
+
+.drawer-overlay{position:fixed;inset:0;background:rgba(26,21,18,0.55);z-index:200;opacity:0;pointer-events:none;transition:opacity .25s ease;}
+.drawer-overlay.open{opacity:1;pointer-events:auto;}
+.svc-drawer{position:fixed;top:0;right:0;bottom:0;width:52%;max-width:720px;background:var(--bg);z-index:201;box-shadow:-20px 0 60px rgba(0,0,0,0.35);transform:translateX(100%);transition:transform .32s cubic-bezier(.2,.7,.2,1);overflow-y:auto;padding:0 0 40px;}
+.svc-drawer.open{transform:translateX(0);}
+@media (max-width:820px){.svc-drawer{width:100%;max-width:none;}}
+.drawer-head{position:relative;background:linear-gradient(160deg,var(--accent) 0%, var(--accent-deep) 100%);color:#fff;padding:64px 32px 32px;}
+.drawer-close{position:absolute;top:18px;right:18px;width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,0.18);border:none;color:#fff;font-size:1.2rem;cursor:pointer;}
+.drawer-close:hover{background:rgba(255,255,255,0.3);}
+.drawer-body{padding:32px;}
+.drawer-body h4{font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;margin-top:32px;}
+.drawer-body h4:first-child{margin-top:0;}
+.handle-chip-row{display:flex;flex-wrap:wrap;gap:8px;}
+.handle-chip{background:var(--bg-sunken);border-radius:100px;padding:7px 14px;font-size:0.85rem;color:var(--text);}
+.drawer-journey{display:flex;flex-direction:column;gap:2px;}
+.drawer-journey .dj-step{display:flex;gap:12px;align-items:baseline;padding:8px 0;border-top:1px solid var(--border);}
+.drawer-journey .dj-step:first-child{border-top:none;}
+.drawer-journey .dj-n{font-family:"IBM Plex Mono";font-size:0.78rem;color:var(--accent);font-weight:700;}
+.drawer-cases{display:flex;flex-direction:column;gap:10px;}
+.drawer-case{display:flex;gap:12px;align-items:center;border:1px solid var(--border);border-radius:14px;padding:10px;text-align:left;background:var(--bg-raised);cursor:pointer;}
+.drawer-case img{width:64px;height:64px;object-fit:cover;border-radius:10px;flex:0 0 auto;}
+.drawer-sticky-cta{position:sticky;bottom:0;background:var(--bg);padding:18px 32px;border-top:1px solid var(--border);display:flex;gap:12px;flex-wrap:wrap;}
+@media (max-width:820px){.drawer-sticky-cta{position:sticky;}}
+
+.handle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+@media (max-width:820px){.handle-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:520px){.handle-grid{grid-template-columns:1fr;}}
+.handle-item{padding:20px;border-radius:16px;background:var(--bg-raised);border:1px solid var(--border);}
+.handle-item .hn{font-weight:800;font-size:1.02rem;}
+.handle-item p{margin-top:8px;color:var(--text-muted);font-size:0.88rem;}
+
+.process-ribbon-wrap{position:relative;padding:12px 0;}
+.process-list{display:flex;flex-wrap:wrap;gap:14px;}
+.process-step{flex:1 1 200px;background:var(--bg-raised);border:1px solid var(--border);border-radius:16px;padding:20px;position:relative;}
+.process-step .ps-n{font-family:"Archivo";font-weight:900;font-size:1.6rem;color:var(--accent);opacity:0.35;}
+.process-step .ps-name{font-weight:800;margin-top:4px;}
+.process-step p{margin-top:6px;color:var(--text-muted);font-size:0.85rem;}
+
+.scale-selector{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;}
+.scale-btn{padding:12px 22px;border-radius:100px;border:2px solid var(--border-strong);background:var(--bg-raised);font-weight:700;cursor:pointer;color:var(--text);}
+.scale-btn.active{background:var(--accent);border-color:var(--accent);color:#fff;}
+.scale-panel{background:var(--bg-raised);border:1px solid var(--border);border-radius:20px;padding:28px;}
+.scale-panel .handle-chip-row{margin-top:10px;}
+
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+@media (max-width:820px){.why-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:520px){.why-grid{grid-template-columns:1fr;}}
+.why-item{padding:22px;border-radius:16px;background:var(--bg-sunken);}
+.why-item .wn{font-weight:800;font-size:1.02rem;color:var(--accent-deep);}
+.why-item p{margin-top:8px;color:var(--text-muted);font-size:0.88rem;}
+
+.svc-faq{max-width:760px;}
+.faq-item{border-top:1px solid var(--border);}
+.faq-item:last-child{border-bottom:1px solid var(--border);}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:18px 4px;font-weight:700;font-size:0.98rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--text);}
+.faq-q .fx{transition:transform .2s;color:var(--accent);font-weight:900;}
+.faq-item.open .fx{transform:rotate(45deg);}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease;color:var(--text-muted);font-size:0.92rem;}
+.faq-item.open .faq-a{max-height:240px;}
+.faq-a-inner{padding:0 4px 18px;}
+
+.svc-final-cta{background:linear-gradient(160deg,var(--accent) 0%, var(--accent-deep) 100%);color:#fff;padding:80px 0;text-align:center;position:relative;overflow:hidden;}
+.svc-final-cta h2{color:#fff;font-size:clamp(2rem,4.4vw,3.2rem);}
+.svc-final-cta p{margin-top:16px;color:rgba(255,255,255,0.9);max-width:48ch;margin-left:auto;margin-right:auto;font-size:1.05rem;}
+
+@media (prefers-reduced-motion: reduce){
+  .pillar-card, .evt-card, .svc-drawer, .drawer-overlay, .faq-a{transition:none !important;}
+}
+</style>
+
+<!-- ============ MARKUP ============ -->
+<header class="site">
+  <div class="nav-inner">
+    <button type="button" class="brand" onclick="goTo('home')" aria-label="Miracle Eventz home">
+      <span class="script">Miracle Eventz</span>
+    </button>
+    <nav class="links" id="navLinks">
+      <button type="button" data-route="home" onclick="goTo('home')">Home</button>
+      <button type="button" data-route="thinking" onclick="goTo('thinking')">Thinking</button>
+      <button type="button" data-route="stories" onclick="goTo('stories')">Stories</button>
+      <button type="button" data-route="services" onclick="goTo('services')">Services</button>
+      <button type="button" data-route="portfolio" onclick="goTo('portfolio')">Portfolio</button>
+      <button type="button" data-route="testimonials" onclick="goTo('testimonials')">Testimonials</button>
+      <button type="button" data-route="contact" onclick="goTo('contact')">Contact</button>
+      <button type="button" class="cta-pill" onclick="goTo('quote')">Plan Your Event</button>
+    </nav>
+    <button type="button" class="nav-toggle" onclick="toggleMobileNav()" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<main id="app"></main>
+<button type="button" class="float-cta" id="floatCta" onclick="goTo('quote')">Plan Your Event &rarr;</button>
+
+<footer>
+  <div class="page-wrap foot-inner">
+    <div>
+      <div class="script">Miracle Eventz</div>
+      <div class="fine">Crafting unforgettable occasions since 1998.</div>
+    </div>
+    <div class="foot-links">
+      <a href="#" onclick="goTo('services');return false;">Services</a>
+      <a href="#" onclick="goTo('portfolio');return false;">Portfolio</a>
+      <a href="#" onclick="goTo('contact');return false;">Contact</a>
+      <a href="#" onclick="goTo('quote');return false;">Plan Your Event</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============ DATA ============ */
+const SERVICES = [
+  {icon:'🎉', name:'Weddings', desc:'Full-service wedding design and coordination, from proposal to send-off.'},
+  {icon:'🏢', name:'Corporate Events', desc:'Conferences, product launches, and offsites that run without a hitch.'},
+  {icon:'🎂', name:'Milestone Celebrations', desc:'Birthdays, anniversaries, and reunions worth remembering.'},
+  {icon:'🎓', name:'Graduations', desc:'Ceremony logistics and celebration parties for the whole family.'},
+  {icon:'🎊', name:'Festivals & Socials', desc:'Community festivals, galas, and large-scale public celebrations.'},
+  {icon:'💍', name:'Engagements', desc:'Intimate proposal setups and engagement party design.'},
+  {icon:'🏆', name:'Sports Events', desc:'Tournaments, sports days, and franchise league matchdays — from logistics to fan experience.'},
+  {icon:'🎬', name:'Brand Activations', desc:'Pop-ups, roadshows, and experiential campaigns that put a brand in front of a live crowd.'},
+  {icon:'🎼', name:'Concerts & Cultural Shows', desc:'Live music, dance, and cultural evenings staged end to end, from artist logistics to sound.'},
+];
+
+/* ============ SERVICES PAGE DATA (Celebration Ribbon System) ============ */
+const CAPABILITIES = [
+  {key:'think', tag:'THINK', name:'Strategy &amp; Concept', items:['Event concept','Theme development','Creative direction','Experience design','Guest journey','Event storytelling','Brand integration']},
+  {key:'design', tag:'DESIGN', name:'Creative &amp; Spatial Design', items:['Stage design','Décor','Floral','Venue styling','Branding','Invitations','Experience zones','Fabrication']},
+  {key:'produce', tag:'PRODUCE', name:'Production &amp; Technology', items:['Stage production','LED','AV','Sound','Lighting','Special effects','Technical production','Show control']},
+  {key:'execute', tag:'EXECUTE', name:'Event Management', items:['Venue management','Vendor coordination','Artist management','Hospitality','Guest management','Logistics','On-ground operations','Show calling']},
+];
+
+const EVENT_TYPES = [
+  {key:'weddings', name:'Weddings', short:'From intimate celebrations to large-scale multi-day experiences.',
+   headline:'Your celebration.<span class="script" style="display:block;">Designed around your story.</span>',
+   desc:'From intimate ceremonies to large-scale celebrations, we manage the creative, production and operational details that make the day feel effortless.',
+   handle:['Planning','Creative','Venue','Décor','Production','Technology','Entertainment','Hospitality','Logistics','On-ground execution'],
+   journey:[{n:'01',name:'First Conversation'},{n:'02',name:'Venue &amp; Date'},{n:'03',name:'Theme &amp; Décor Design'},{n:'04',name:'Vendor &amp; Production Planning'},{n:'05',name:'Rituals &amp; Rehearsal'},{n:'06',name:'The Wedding, Run End to End'},{n:'07',name:'Send-Off &amp; Wrap-Up'}],
+   caseIds:['harsh-krutika-wedding-film']},
+  {key:'corporate', name:'Corporate', short:'Conferences, launches, annual meets, awards, offsites and brand experiences.',
+   headline:'Events that represent<span class="script" style="display:block;">your brand properly.</span>',
+   desc:'Conferences, product launches, annual meets, awards nights and offsites, planned and run with the discipline a business audience expects.',
+   handle:['Planning','Creative','Venue','Production','Technology','Branding','Hospitality','Logistics','On-ground execution'],
+   journey:[{n:'01',name:'Objective &amp; Audience'},{n:'02',name:'Venue &amp; Format'},{n:'03',name:'Brand &amp; Stage Design'},{n:'04',name:'Vendor &amp; AV Planning'},{n:'05',name:'Rehearsal &amp; Show Calling'},{n:'06',name:'The Event, Run End to End'},{n:'07',name:'Reporting &amp; Close-Out'}],
+   caseIds:['prozone-phase-2-launch','lg-branding-and-shoppe-launch','retailer-dealer-meet']},
+  {key:'social', name:'Social Celebrations', short:'Birthdays, anniversaries, engagements and milestone occasions.',
+   headline:'Milestones,<span class="script" style="display:block;">marked properly.</span>',
+   desc:'Birthdays, anniversaries, engagements and family milestones, designed and produced with the same rigour as our largest events.',
+   handle:['Planning','Creative','Décor','Production','Entertainment','Hospitality','Logistics'],
+   journey:[{n:'01',name:'The Occasion'},{n:'02',name:'Venue &amp; Date'},{n:'03',name:'Theme &amp; Décor'},{n:'04',name:'Vendor Coordination'},{n:'05',name:'Final Run-Through'},{n:'06',name:'The Celebration, Run End to End'},{n:'07',name:'Wrap-Up'}],
+   caseIds:['haldi-kumkum-event']},
+  {key:'public', name:'Public &amp; Large-Scale', short:'Festivals, public celebrations, exhibitions and high-footfall experiences.',
+   headline:'When thousands show up,<span class="script" style="display:block;">we plan for it.</span>',
+   desc:'Festivals, public celebrations and exhibitions built for high footfall, with the crowd management, infrastructure and technical control that scale demands.',
+   handle:['Master planning','Production','Infrastructure','Crowd management','Technical production','Hospitality','Logistics','On-ground execution'],
+   journey:[{n:'01',name:'Scale &amp; Objective'},{n:'02',name:'Venue &amp; Permissions'},{n:'03',name:'Master Plan &amp; Design'},{n:'04',name:'Infrastructure &amp; Vendor Planning'},{n:'05',name:'Crowd &amp; Technical Rehearsal'},{n:'06',name:'The Event, Run End to End'},{n:'07',name:'Close-Out &amp; Reporting'}],
+   caseIds:['state-level-sports-festival','grand-welcome-procession','masti-ki-pattshala','hindustan-pencils-school-activity']},
+  {key:'entertainment', name:'Entertainment', short:'Concerts, live shows, artist-led experiences and entertainment productions.',
+   headline:'Live shows,<span class="script" style="display:block;">run on show calling.</span>',
+   desc:'Concerts, roadshows and artist-led experiences, produced end to end, from artist logistics to sound and show control.',
+   handle:['Artist management','Production','Sound','Lighting','Show control','Hospitality','Logistics'],
+   journey:[{n:'01',name:'Concept &amp; Artist Line-Up'},{n:'02',name:'Venue &amp; Route Planning'},{n:'03',name:'Stage &amp; Sound Design'},{n:'04',name:'Artist &amp; Vendor Logistics'},{n:'05',name:'Technical Rehearsal'},{n:'06',name:'The Show, Run on Show Calling'},{n:'07',name:'Wrap-Up'}],
+   caseIds:['indian-idol-5-roadshow']},
+  {key:'sports', name:'Sports', short:'Sports days, tournaments, fan experiences and large sporting events.',
+   headline:'Fan energy,<span class="script" style="display:block;">managed on the ground.</span>',
+   desc:'Sports days, tournaments and stunt or fan experiences, planned for crowd safety, technical production and on-ground execution.',
+   handle:['Planning','Production','Crowd management','Technical production','Hospitality','Logistics','On-ground execution'],
+   journey:[{n:'01',name:'Format &amp; Fan Objective'},{n:'02',name:'Venue &amp; Safety Planning'},{n:'03',name:'Production &amp; Stunt Design'},{n:'04',name:'Vendor &amp; Crowd Logistics'},{n:'05',name:'Technical Rehearsal'},{n:'06',name:'Matchday, Run End to End'},{n:'07',name:'Close-Out'}],
+   caseIds:['bajaj-pulsar-stunt-show','state-level-sports-festival']},
+];
+
+const PROCESS_STEPS = [
+  {n:'01',name:'Discover',desc:'Understand the objective, audience, occasion and constraints.'},
+  {n:'02',name:'Define',desc:'Establish scope, direction, priorities and budget framework.'},
+  {n:'03',name:'Concept',desc:'Develop the creative idea and experience direction.'},
+  {n:'04',name:'Design',desc:'Translate the idea into space, visuals, production and guest journey.'},
+  {n:'05',name:'Plan',desc:'Build timelines, vendors, logistics, technical requirements and contingencies.'},
+  {n:'06',name:'Produce',desc:'Fabrication, rehearsals, technical setup and final coordination.'},
+  {n:'07',name:'Execute',desc:'Run the event on the ground.'},
+  {n:'08',name:'Close',desc:'Wrap-up, reporting, feedback and post-event closure.'},
+];
+
+const HANDLE_ITEMS = [
+  {name:'Venue',desc:'Finding, evaluating and coordinating the right space for the event.'},
+  {name:'Creative',desc:'Concept, theming and the storyline that ties the event together.'},
+  {name:'Décor',desc:'Styling, floral and the physical look and feel of the space.'},
+  {name:'Production',desc:'Turning the creative vision into a functioning physical and technical environment.'},
+  {name:'Artists',desc:'Sourcing, briefing and coordinating performers and entertainment.'},
+  {name:'Hospitality',desc:'Guest experience, catering coordination and on-site comfort.'},
+  {name:'Logistics',desc:'Managing movement, materials, suppliers, schedules and timing.'},
+  {name:'Technology',desc:'AV, sound, lighting and the technical systems that run the show.'},
+  {name:'On-ground execution',desc:'Show calling and real-time coordination once the doors open.'},
+];
+
+const SCALE_TIERS = [
+  {n:'50',label:'50 guests',items:['Planning','Décor','Hospitality','Entertainment']},
+  {n:'500',label:'500 guests',items:['Planning','Venue','Production','AV','Hospitality','Entertainment','Logistics']},
+  {n:'5000',label:'5,000 guests',items:['Master planning','Production','Infrastructure','Crowd management','Artist management','Hospitality','Technical control','Logistics']},
+  {n:'50000',label:'50,000+ guests',items:['Master planning','Production','Infrastructure','Crowd management','Security coordination','Artist management','Transportation','Hospitality','Technical control']},
+];
+
+const WHY_US = [
+  {name:'One accountable team',desc:'From concept to execution.'},
+  {name:'Creative + production',desc:'Ideas don’t stop at presentation decks.'},
+  {name:'Execution discipline',desc:'Timelines, owners and checkpoints.'},
+  {name:'Vendor ecosystem',desc:'The right specialists for the right requirement.'},
+  {name:'Experience design',desc:'The event is designed around the guest.'},
+  {name:'On-ground control',desc:'Because the real test starts when the doors open.'},
+];
+
+const SERVICE_FAQS = [
+  {q:'Do you handle complete event planning?',a:'Yes, we can take an event from initial concept through to on-ground execution and close-out, as a single accountable team.'},
+  {q:'Can we hire only specific services?',a:'Yes. If parts of your event are already handled, we can take on specific pieces, such as production, décor, or on-ground coordination, rather than the full scope.'},
+  {q:'Do you work outside our city?',a:'Yes, our work spans multiple cities and states; we plan logistics around wherever the event is happening.'},
+  {q:'Can you work with our existing vendors?',a:'Yes. We regularly coordinate with vendors a client has already chosen, alongside our own vendor ecosystem.'},
+  {q:'Do you provide production and technical services?',a:'Yes. Stage production, LED, AV, sound, lighting and show control are part of our in-house capability.'},
+  {q:'Can you work within an existing budget?',a:'Yes. Tell us the budget framework and we’ll shape scope and recommendations around it.'},
+  {q:'How early should we contact you?',a:'The earlier the better, especially for large-scale or multi-day events, but reach out even close to your date and we’ll tell you honestly what’s possible.'},
+  {q:'What happens after we submit an enquiry?',a:'We review your brief and follow up to understand the event in more detail before shaping a plan and a quote.'},
+];
+
+const CASE_MASTI_IMAGES = [
+  "/case-masti-ki-pathshala-1.jpg",
+  "/case-masti-ki-pathshala-2.jpg",
+  "/case-masti-ki-pathshala-3.jpg",
+  "/case-masti-ki-pathshala-4.jpg",
+  "/case-masti-ki-pathshala-5.jpg",
+  "/case-masti-ki-pathshala-6.jpg",
+  "/case-masti-ki-pathshala-7.jpg",
+  "/case-masti-ki-pathshala-8.jpg",
+];
+
+const CASE_HPENCIL_IMAGES = [
+  "/case-hindustan-pencils-1.jpg",
+  "/case-hindustan-pencils-2.jpg",
+];
+
+const CASE_RETAILER_IMAGES = [
+  "/case-retailer-dealer-meet-1.jpg",
+  "/case-retailer-dealer-meet-2.jpg",
+  "/case-retailer-dealer-meet-3.jpg",
+  "/case-retailer-dealer-meet-4.jpg",
+  "/case-retailer-dealer-meet-5.jpg",
+  "/case-retailer-dealer-meet-6.jpg",
+  "/case-retailer-dealer-meet-7.jpg",
+  "/case-retailer-dealer-meet-8.jpg",
+];
+
+const CASE_HALDI_IMAGES = [
+  "/case-haldi-kumkum-1.jpg",
+  "/case-haldi-kumkum-2.jpg",
+  "/case-haldi-kumkum-3.jpg",
+  "/case-haldi-kumkum-4.jpg",
+  "/case-haldi-kumkum-5.jpg",
+  "/case-haldi-kumkum-6.jpg",
+  "/case-haldi-kumkum-7.jpg",
+  "/case-haldi-kumkum-8.jpg",
+];
+
+const FOUNDER_PHOTO = "/founder-deepak-sonavane.jpg";
+
+const CASE_IDOL_IMAGES = [
+  "/case-indian-idol-roadshow-1.jpg",
+  "/case-indian-idol-roadshow-2.jpg",
+  "/case-indian-idol-roadshow-3.jpg",
+];
+
+const CASE_BAJAJ_IMAGES = [
+  "/case-bajaj-pulsar-stunt-show-1.jpg",
+];
+
+const CASE_PROZONE_IMAGES = [
+  "/case-prozone-phase-2-launch-1.jpg",
+  "/case-prozone-phase-2-launch-2.jpg",
+];
+
+const CASE_LG_IMAGES = [
+  "/case-lg-branding-shoppe-launch-1.jpg",
+  "/case-lg-branding-shoppe-launch-2.jpg",
+  "/case-lg-branding-shoppe-launch-3.jpg",
+  "/case-lg-branding-shoppe-launch-4.jpg",
+  "/case-lg-branding-shoppe-launch-5.jpg",
+  "/case-lg-branding-shoppe-launch-6.jpg",
+];
+
+const CLIENT_LIST = [
+  'Tata Tele Services', 'LG India', 'Reliance Infocomm', "Spencer's Retail",
+  'Big Bazaar', 'DOW Seeds', 'Empire Mall (Prozone)', 'Encompass',
+  'Wizcraft International', 'IOCL', 'Ambuja Cement', 'Vespa', 'RK Associates', 'Idea Cellular'
+];
+
+const AWARD_PHOTOS = [
+  "/award-photo-1.jpg",
+  "/award-photo-2.jpg",
+  "/award-photo-3.jpg",
+];
+
+const POSTER_WEDDING = "/hero-poster-wedding-film.jpg";
+const POSTER_SPORTS = "/hero-poster-sports-festival.jpg";
+const POSTER_WELCOME = "/hero-poster-welcome-procession.jpg";
+const CASE_STUDIES = {
+  'harsh-krutika-wedding-film': {
+    title:'Harsh & Krutika — Wedding Production',
+    client:'Private client — full wedding production',
+    location:'Maharashtra',
+    meta:'2026 | Multi-day wedding | Full production & coordination',
+    challenge:'A family wanted their wedding celebration -- from the rituals to the sangeet night -- produced and coordinated end to end, with the kind of scale and energy usually reserved for large public events.',
+    concept:'We treated the wedding like a full production: ceremony logistics, décor, staging, lighting, and a night of celebration built around colour, music, and choreadded moments -- confetti, colour bursts, and a dance floor that never stopped.',
+    execution:'We ran the rituals, decor, and family coordination through the day, then produced the sangeet night as a fully staged event -- lighting rig, sound, colour-powder and confetti effects, and a run of show that kept the energy building toward a big finish.',
+    result:'A celebration that moved smoothly from intimate family ritual to a full-scale night event, captured end to end and edited into a highlight film for the family to keep and share.',
+    images:[POSTER_WEDDING],
+    video:'Edit Video Claude/web_wedding.mp4',
+    imageNote:'Watch the highlight film below.',
+  },
+  'state-level-sports-festival': {
+    title:'State-Level Sports Festival',
+    client:'Samajik Nyay va Vishesh Sahayya Vibhag, Maharashtra Shasan',
+    location:'Maharashtra',
+    meta:'2026 | State-level sports & cultural festival | Full-day event',
+    challenge:'A state-level sports and cultural festival needed full-day production across a large stadium ground -- athlete coordination, VIP hosting, audience management, and a cultural programme, all running to a public schedule.',
+    concept:'We built the event around the ground itself -- a full track-and-field layout, dedicated courts, a VIP stage with felicitation area, and tiered seating for a large audience -- so every part of the day had its own dedicated space.',
+    execution:'We managed dignitary hosting and trophy presentation on stage, seating and crowd flow for the audience, athletic events across track and court, a cultural performance segment, and on-ground safety coverage throughout the day.',
+    result:'A full-day state-level event run without a hitch across athletics, ceremony, and culture, with the scale of the production captured on film for the organisers.',
+    images:[POSTER_SPORTS],
+    video:'Event Video Claude For SAMAJ/web_sports.mp4',
+    imageNote:'Watch the event highlight film below.',
+  },
+  'grand-welcome-procession': {
+    title:'Grand Welcome Procession',
+    client:'Samajik Nyay va Vishesh Sahayya Vibhag, Maharashtra Shasan',
+    location:'Maharashtra',
+    meta:'2026 | Ceremonial welcome | Dhol-tasha procession',
+    challenge:'The opening of a large public event needed a welcome grand enough to set the tone for the whole day -- announcing the arrival of guests and dignitaries with genuine ceremony rather than a quiet walk-in.',
+    concept:'A traditional dhol-tasha welcome: a red-carpet entrance lined with drummers in ceremonial dress, a decorated welcome arch, and a procession built to build anticipation as guests arrived.',
+    execution:'We coordinated the drummers, red-carpet entrance, welcome arch, and arrival sequencing for VIP guests, timing the procession to build energy right up to the moment dignitaries reached the stage.',
+    result:'A high-energy, memorable opening that set the tone for the event from the first minute -- captured on film as its own standalone highlight.',
+    images:[POSTER_WELCOME],
+    video:'grand-welcome-procession.mp4',
+    imageNote:'Watch the procession highlight film below.',
+  },
+  'masti-ki-pattshala': {
+    title:'Masti Ki Pattshala',
+    client:'Ambuja Cement — employee family day',
+    location:'Aurangabad',
+    year:'2010',
+    meta:'2010 | 2-day event | approximately 500 attendees per day',
+    challenge:'A corporate client wanted a genuine family fun day for employees and their families -- something playful and inclusive rather than a standard corporate function, across two full days.',
+    concept:'We designed "Masti Ki Pattshala" (School of Fun) around games, stalls, and live entertainment that worked for every age group in the family at once -- kids, parents, and grandparents.',
+    execution:'Games and snack stalls opened at 10am with soft music, followed by on-the-spot games at 11, lunch at 1, and a live orchestra with songs and dance from 2pm. We handled entertainment design, on-ground games, stage decor, and coordination -- the client arranged venue, catering, and invitations.',
+    result:'Two full days of high-participation family entertainment, with games, group activities, and a themed stage that gave the event its own identity rather than feeling generic.',
+    images:CASE_MASTI_IMAGES,
+    imageNote:null,
+  },
+  'hindustan-pencils-school-activity': {
+    title:'Hindustan Pencils School Contact Programme',
+    client:'Hindustan Pencils (Natraj & Apsara) — BTL school activation',
+    location:'Aurangabad, Jalna, Beed, Ahmednagar, Barshi, Latur, Parbhani & Nanded',
+    year:'2005',
+    meta:'2005 | 8-city on-ground activation | 475 schools covered',
+    challenge:'Hindustan Pencils needed to build brand preference for Natraj & Apsara among students across Marathwada -- reaching urban and upcountry schools alike, not just the obvious big-city audience.',
+    concept:'A direct school-contact programme: trained promoter teams ran in-school activities, engaged students and teachers directly, explained the brand scheme, and awarded prizes on the spot -- turning brand reach into a lived classroom experience rather than a poster campaign.',
+    execution:'Two trained volunteers covered each school, backed by a permission coordinator (school approvals), a promoter coordinator (on-ground activity), and a team leader for real-time decisions. The programme was centrally governed from Aurangabad, with a formal training session for all promoters and supervisors before launch, and every completed school signed off and tracked back to headquarters.',
+    result:'475 schools covered across 8 cities, reaching 64,001 students in total, run by a team of 12 supervisors and 20 promoters. Roughly 65% of retailers in the coverage area actively participated in the promotion, and the campaign created measurable new brand awareness in upcountry markets beyond Aurangabad.',
+    images:CASE_HPENCIL_IMAGES,
+  },
+  'retailer-dealer-meet': {
+    title:'Retailer & Dealer Meet',
+    client:'Ambuja Cement — channel partner family day',
+    location:'Aurangabad',
+    year:'2010',
+    meta:'2010 | Retailer & dealer engagement day',
+    challenge:'Ambuja Cement wanted to strengthen loyalty with its retailer and dealer network -- not through another sales meeting, but through an experience their families would actually enjoy and remember.',
+    concept:'We turned the channel meet into a family fun day: lawn games, food, races, and stage entertainment for retailers, dealers, and the people who matter most to them -- their families.',
+    execution:'A full outdoor day of activities -- open lawns for games and races, a shared meal, stage entertainment, and branded touchpoints throughout -- built to feel like a celebration rather than a corporate obligation.',
+    result:'A well-attended, high-energy channel event that gave Ambuja Cement retailers and dealers a reason to associate the brand with goodwill, not just business terms.',
+    images:CASE_RETAILER_IMAGES,
+    imageNote:null,
+  },
+  'haldi-kumkum-event': {
+    title:'Haldi Kumkum Event',
+    client:'Community women\'s festival gathering',
+    location:'Aurangabad',
+    year:'2010',
+    meta:'2010 | Traditional community festival event',
+    challenge:'A traditional Haldi Kumkum gathering needed to be organized at scale -- coordinating a large turnout of women from the community for a festival rooted in ritual and social connection.',
+    concept:'We kept the cultural core of the tradition intact while managing it as a proper large-scale public event: staging, sponsor branding, seating, and flow for a high-turnout community gathering.',
+    execution:'On-ground coordination of seating and staging for large crowds, sponsor-branded backdrops, and a smooth flow for attendees arriving throughout the day at a public venue.',
+    result:'A well-organized, high-turnout community festival that honored the tradition while running smoothly at scale.',
+    images:CASE_HALDI_IMAGES,
+    imageNote:null,
+  },
+  'indian-idol-5-roadshow': {
+    title:'Indian Idol 5 Roadshow',
+    client:'Sony Entertainment Television — audition roadshow',
+    location:'Rural Aurangabad district',
+    year:'2012',
+    meta:'2012 | On-ground roadshow with live auditions (per original event poster)',
+    challenge:'Indian Idol Season 5 needed to reach talent in rural Aurangabad district -- audiences the show\'s usual city-centre audition circuit didn\'t cover.',
+    concept:'A fully fabricated roadshow vehicle, built around the show\'s theme and branding, carrying its own sound system out to villages the audition circuit would otherwise skip.',
+    execution:'We mapped a full route through rural Aurangabad district, and at each stop the vehicle drew a crowd, an anchor invited people up for a live audition on the float itself, and each audition was recorded and uploaded straight to the Indian Idol website. Strong performers were handed passes to the final auditions on the spot.',
+    result:'A mobile audition stage that turned a talent search into a travelling event, reaching participants who never would have made it to a studio audition.',
+    images:CASE_IDOL_IMAGES,
+    imageNote:null,
+  },
+  'bajaj-pulsar-stunt-show': {
+    title:'Bajaj Pulsar Stunt Show',
+    client:'Bajaj — Pulsar 200 product demonstration',
+    location:'Aurangabad',
+    year:'circa 2010',
+    meta:'circa 2010 | Live stunt show | approximately 3,500-strong crowd',
+    challenge:'Bajaj needed to prove the sturdiness of the Pulsar 200 in a way that would actually convince a crowd -- not a spec sheet, a demonstration.',
+    concept:'A live stunt show, with professional stunt riders performing on plain sand ground rather than a smooth concrete track -- deliberately the harder surface, to make the point about the bike\'s toughness unmistakable.',
+    execution:'We brought in stunt riders experienced on rough terrain, who trained and then performed in front of a crowd of roughly 3,500 people. Sales staff worked the crowd immediately after, promoting an on-the-spot scheme and taking bookings while the demonstration was still fresh.',
+    result:'A visceral, credible demonstration of the product\'s durability that converted directly into on-the-spot bookings.',
+    images:CASE_BAJAJ_IMAGES,
+    imageNote:null,
+  },
+  'prozone-phase-2-launch': {
+    title:'Prozone Phase II Launch',
+    client:'Empire Mall Ltd. (Prozone) — mall launch event',
+    location:'Aurangabad',
+    year:'circa 2012',
+    meta:'circa 2012 | VIP product launch with dignitary in attendance',
+    challenge:'Prozone\'s Phase II launch needed to be handled with the formality the occasion called for -- the event was to be inaugurated in the presence of Mr. Gopinath Munde.',
+    concept:'A formal auditorium launch designed around the dignitary\'s presence, built to feel appropriately significant without losing warmth.',
+    execution:'We staged the launch in the Satyam Complex auditorium, building a stage finished with flower decor and LED lighting to give the moment the visual weight it needed.',
+    result:'A launch event that matched the seniority of its guest of honour and gave Prozone Phase II the send-off a project of that scale deserved.',
+    images:CASE_PROZONE_IMAGES,
+    imageNote:null,
+  },
+  'lg-branding-and-shoppe-launch': {
+    title:'LG Branding & Shoppe Launch',
+    client:'LG India — exhibition branding & retail launch',
+    location:'Aurangabad and 8 towns across the region',
+    year:'circa 2011',
+    meta:'circa 2011 | Exhibition branding + multi-town retail launch',
+    challenge:'LG needed two different things done well: strong brand presence at an exhibition on a fixed budget, and a proper retail launch for LG Mobile Shoppe across eight towns.',
+    concept:'For the exhibition, a complete branding kit -- leaflets, standees, backdrops, danglers, buntings, and posters -- built to generate leads within budget. For the Shoppe launch, a promotional push ahead of each opening so customers arrived already informed.',
+    execution:'At the exhibition, every touchpoint carried consistent LG branding, engineered to convert visitors into leads. For the Shoppe launches, promoters staffed product displays ahead of time, walked customers through the new handset, and invited them back for each evening launch -- which included shop decor, a puja, cake cutting, and ribbon cutting.',
+    result:'A consistent brand presence at the exhibition and eight successful retail launches, each opened with the right blend of ceremony and customer education.',
+    images:CASE_LG_IMAGES,
+    imageNote:null,
+  }
+};
+
+/* ============ STORIES FROM THE FIELD — DATA ============ */
+/* STORY_INDEX holds only what's been explicitly approved: id, sequence, headline, client tag. */
+/* No narrative content is invented here — STORIES (below) is filled in only once verified source material is supplied. */
+const STORY_INDEX = [
+  {id:'reliance-mobile-1000-phones', n:1, headline:'1,000 Phones. Five Sold by Noon.', client:'Reliance Mobile'},
+  {id:'taj-engagement-budget', n:2, headline:'₹4 Lakh. A ₹7.5 Lakh Brief.', client:'Taj Engagement'},
+  {id:'celebrity-mall-appearance', n:3, headline:'The Crowd Was Going to Move.', client:'Celebrity Mall Appearance'},
+  {id:'distributor-event-fire', n:4, headline:'The Fire During the Dry Run.', client:'1,800-Distributor Event'},
+  {id:'supermarket-cooking-competition', n:5, headline:'The Supermarket Had a Footfall Problem.', client:'Cooking Competition'},
+  {id:'corporate-marathi-star-show', n:6, headline:'Two Days. One Complete Event Concept.', client:'Corporate Marathi Star Show'},
+  {id:'mercedes-benz-kk-concert', n:7, headline:'The Singer Was Performing to an Empty Room.', client:'Mercedes-Benz / KK'},
+  {id:'school-drawing-activation', n:8, headline:'How a Drawing Brought Families Into a Supermarket.', client:'School Drawing Activation'},
+  {id:'limca-fanta-sonali-bendre', n:9, headline:'One Minute With Sonali Bendre.', client:'Limca / Fanta'},
+  {id:'bajaj-pulsar-rahul-bajaj-welcome', n:10, headline:'The Best Welcome Rahul Bajaj Had Received.', client:'Bajaj Pulsar Launch'},
+];
+
+/* STORIES: full narrative content, keyed by id, added only once verified source material is supplied. */
+/* Each entry, when populated, follows: brief, arrived, problem, decision, move, moment, result, lesson, connection, image(s). */
+const STORIES = {
+  "reliance-mobile-1000-phones": {
+    "before": [
+      "The target for the day was 1,000 handset sales, in a village too small to easily hold that number of customers. A large team had come in for the launch — head office staff, zone officials, distributors — all watching a number that, by noon, sat at five.",
+      "Direct selling wasn't going to close that gap. The team made a call: stop selling, and start with the village itself. One group went to meet the village head, inviting him and around 300 guests to a dinner on ground the team prepared. A second group — Deepak among them — rented three vegetable carts. Two carried musicians playing traditional instruments through the streets; the third carried printed material about the handsets.",
+      "They walked the village door to door, cart and music leading the way, explaining the phones to people who hadn't been part of any sales pitch that morning."
+    ],
+    "quote": "By evening, the door-to-door walk alone had sold around 450 phones — nine times the entire morning's total.",
+    "after": [
+      "The village dinner followed: the chief and respected elders spoke, food was served, and more than 200 additional handsets sold on the spot. That still left the day short of 1,000 — until the team activated the remaining connections before 11 PM, closing out the target from a morning that had produced five sales."
+    ],
+    "reflection": "Create relatedness with people first, and the selling takes care of itself. Every event has a version of this — a plan that assumes a context it doesn't actually have, and a room full of people waiting to be met on their own terms instead."
+  },
+  "taj-engagement-budget": {
+    "before": [
+      "A competitor had quoted ₹7.5 lakh for the engagement. The budget on the table was ₹4 lakh, and the brief hadn't shrunk to match — an evening haldi with playing colours, a morning kumkum function, all at the Taj.",
+      "A site visit changed the plan more than any spreadsheet could. The existing trees and green lighting on the property could do visual work a bigger budget elsewhere would have had to pay for. An entry platform went up between two trees. Games on one side, gift carts on the other, a large lit truss built around the colour requirement.",
+      "Two things had quietly gone missing along the way: a thousand gas balloons, cut for budget, and — discovered the night before the event — the plain-cloth wall the brief actually called for, once the white body-cloth option on hand was rejected as wrong for the space."
+    ],
+    "quote": "The balloons that had been cut for cost ended up decorating the gift carts an hour before the event even started.",
+    "after": [
+      "A former team member sourced the right cloth between roughly 11 PM and 2 AM the night before. Fifty kilograms of coloured powder went into the haldi — so much that the leftover packets were thrown into the crowd rather than go unused.",
+      "The only change the family asked for, once the event was underway, was more flowers at the entrance. Afterward, one family member told Deepak, \\u201cThank you for being my brother,\\u201d and said they'd chosen the right person. They asked for help with another family event soon after, and referrals followed."
+    ],
+    "reflection": "A smaller number doesn't have to mean a smaller experience. It usually just means the thinking has to work harder — using what's already on the site, and solving two problems with one move instead of cutting the moment altogether."
+  },
+  "celebrity-mall-appearance": {
+    "before": [
+      "Miracle Eventz wasn't originally running this event — Deepak was called in at the last moment for a mall appearance built around two well-known film stars promoting a new release.",
+      "What was already in place worried him: a huge, mostly male crowd, a stage barely a foot and a half off the ground, and barricading that didn't look like it would hold. He could see what was coming — as the show ended, that crowd was going to move toward the stage, fast, with no controlled way to get the stars out through it."
+    ],
+    "quote": "The safest moment to plan an exit is before the crowd starts moving — not during.",
+    "after": [
+      "A neighbouring store became the answer: a back route through to the mall office, bouncers repositioned there in advance, security forming a human chain, and the stage backdrop deliberately loosened beforehand so it could clear out of the way fast.",
+      "When the show ended, the crowd surged toward the stage exactly as expected. But the stars were already moving through the prepared route, with barely any crowd contact at all. Deepak was called into the mall office afterward and thanked personally for how cleanly it had gone."
+    ],
+    "reflection": "The visible part of an event — the stage, the show — is rarely where the real risk sits. It's usually the exit nobody's watching, the moment after the applause, that separates a smooth night from a dangerous one."
+  },
+  "distributor-event-fire": {
+    "before": [
+      "A distributor event for 1,800 people, built around a lucky-draw car giveaway, with a client asking for something genuinely out of the ordinary. The concept centred on a large custom-built stage structure lit to form a striking visual centrepiece, with projection standing in for the LED walls that weren't available — which meant sealing the hall against daylight on three sides.",
+      "The dry run surfaced a problem no one had planned for: the hall's electrical supply couldn't carry the load. Then a team member spotted something worse — a fire starting in the wiring on the first floor."
+    ],
+    "quote": "A shirt to smother the flames, sand from someone nearby, and a standby generator already in place — the team responded in the time it had, not the time it wished it had.",
+    "after": [
+      "The equipment switched over to the generator, and the dry run continued. The event went ahead the next day without incident. When the final lucky-draw winner was announced, they weren't just called to the stage — they were welcomed in with a traditional procession: men, horses, dhol-tasha, and a palki carried in by four bearers.",
+      "The client's GM called the following morning to thank the team, aware of what the outcome could have looked like if the fire hadn't been caught in time."
+    ],
+    "reflection": "Preparedness isn't about expecting disaster. It's about already having a working answer for the moment reality changes the plan — and having it in place before you need it, not while you're improvising one."
+  },
+  "supermarket-cooking-competition": {
+    "before": [
+      "Weekday footfall at a supermarket had dropped, and the brief wasn't for an event — it was for a behaviour. One big weekend promotion wasn't going to rebuild a weekday habit; that had to be built house by house, area by area.",
+      "Ten local areas were chosen, ten venues booked, ten promoters sent out to walk from house to house and society to society, inviting women to a cooking competition. Each area had its own dish, set in advance by the store's chef, and the cooking itself happened at home rather than at a venue — smaller footprint, lower cost, easier for people to actually join."
+    ],
+    "quote": "Over three days, roughly 300 houses were reached — and more than 300 women showed up to compete.",
+    "after": [
+      "Three judges selected three winners per area, with entertainment and weekday shopping coupons alongside. The finale brought the area winners together at the supermarket on a Sunday, cooking live on a full setup, with prizes drawn from sponsors. The format performed well enough that it was later carried into other markets beyond where it started."
+    ],
+    "reflection": "Start with the behaviour you actually need — in this case, a weekday visit — and let the event format follow from that, rather than deciding on the format first and hoping the behaviour shows up."
+  },
+  "corporate-marathi-star-show": {
+    "before": [
+      "A large corporate family event built around well-known Marathi performers, with food and a full production for a few thousand attendees. Deepak was first approached while away on a shoot, and came back to a client meeting under real time pressure — he asked for three days to bring back a concept.",
+      "He spent essentially two continuous days building it alone before presenting, and was then asked to help with execution as well. During rehearsal, something practical came up: the stage, around five feet high, needed additional bracing. Deepak raised it with the vendor's site manager, who didn't agree."
+    ],
+    "quote": "During the very first performance, the stage began to shake — and the bracing that had been argued against had to go up while the show was already running.",
+    "after": [
+      "The team caught it in time, and the event went ahead successfully."
+    ],
+    "reflection": "A tight deadline is never a reason to skip the unglamorous checks. The team that raises the uncomfortable structural question before the show — not during it — is the one worth having in the room."
+  },
+  "mercedes-benz-kk-concert": {
+    "before": [
+      "Ground-support work for a Mercedes-Benz roadshow moving through Aurangabad — enquiries, test drives, bookings — with an evening programme built around a performance by KK. Midway through the set, dinner opened, and the room emptied toward the food counters."
+    ],
+    "quote": "A performer's energy drops fast in front of an empty room, and it was starting to happen in real time.",
+    "after": [
+      "Deepak pulled together a team of around 20 people to fill the empty chairs — clapping, whistling, keeping the energy up until the crowd drifted back from dinner. The rest of the event's team noticed what was happening and joined in too, and the room filled back in around the performance."
+    ],
+    "reflection": "Event ownership doesn't stop at the assigned task list. If the experience in front of you is failing, someone has to notice and act — whether or not it's technically their job that day."
+  },
+  "school-drawing-activation": {
+    "before": [
+      "The same underlying problem as the cooking-competition activation — weekday footfall — approached through a different door: instead of inviting adults directly, give a child a reason to bring their parents in.",
+      "The supermarket partnered with nearby schools. Students got drawing sheets to take home, parents were welcome to help, and each school was given its own weekday to submit — with the submission counter placed at the far end of the store, so the walk to hand in a drawing became a walk through the whole store."
+    ],
+    "quote": "Around 40 schools took part, and thousands of drawings came in over the course of the programme.",
+    "after": [
+      "The final event brought hundreds of children and their parents into the store together, and for one day the supermarket felt genuinely busy on a weekday — child involvement leading to parent involvement, leading to a visit, a walk through the aisles, and real exposure to what was on the shelves."
+    ],
+    "reflection": "Create a reason someone actually wants to act, then design the journey around that reason — not around what the store needs from them."
+  },
+  "limca-fanta-sonali-bendre": {
+    "before": [
+      "Five shop visits across a city, with Sonali Bendre appearing as brand ambassador for Limca and Fanta — gift distribution, crowd interaction, ground support handled by Miracle Eventz's promoters and production team.",
+      "The first visit didn't go well, and the schedule shifted to evenings for the rest. A press conference later ran late enough that many of the invited guests had already left by the time it started; the team brought in stand-ins so it could proceed at all. By the fifth shop, the brand side initially wanted to call the appearance off altogether — with a very large crowd already gathered, in the rain."
+    ],
+    "quote": "Deepak judged that cancelling outright, in front of that crowd, was a bigger risk than the visit itself — so he negotiated for one minute instead of none.",
+    "after": [
+      "When the car arrived, a pothole made it hard to step out; Deepak offered a hand, she took it, and climbed the stairs to wave and smile before returning to the car. The crowd followed the vehicle as it pulled away, and the moment passed without incident."
+    ],
+    "reflection": "When the original plan stops working, the professional move isn't to hold out for the version that isn't happening — it's to find the smallest version of the commitment that still holds everything together."
+  },
+  "bajaj-pulsar-rahul-bajaj-welcome": {
+    "before": [
+      "A dealer asked Deepak to plan the first Bajaj Pulsar launch for that dealership, with Rahul Bajaj attending as chief guest. The brief was open: build the event plan.",
+      "The idea was to start the launch before the stage programme did. A Dhol-Tasha Pathak came in from Kolhapur, and a citywide treasure hunt ran alongside it — around 100 bikers, in Bajaj T-shirts for visibility, starting five kilometres out from the venue. A newspaper advertisement set the hunt in motion across 10 points around the city, ten motorcycle batches each following a trail of clues, riders covering the city for roughly four hours before converging."
+    ],
+    "quote": "As Rahul Bajaj's car reached the venue, the bikers were already there to welcome him — two motorcycles riding ahead with a banner stretched between them, dhol-tasha playing him in.",
+    "after": [
+      "Rahul Bajaj reportedly called it the best welcome he'd received. A 30-day test-drive camp followed the launch."
+    ],
+    "reflection": "The moment an event actually starts is a choice, not a fixed point on the run sheet. Sometimes the most memorable part of a launch happens before anyone reaches the venue at all."
+  }
+};
+
+const ARCHIVE_HIGHLIGHTS = [
+  {img:"/archive-wizcraft-internation-1.jpg", client:"Wizcraft International", title:"Bajaj RE Rickshaw Launch \u2014 Nigeria Dealers", caption:"Bajaj RE Rickshaw launch, Nigeria Dealers e-Club Convention \u2014 client: Wizcraft International"},
+  {img:"/archive-rk-associates-2.jpg", client:"RK Associates", title:"Annual Meet", caption:"RK Associates \u2014 Annual Meet, Aurangabad"},
+  {img:"/archive-rk-associates-3.jpg", client:"RK Associates", title:"Annual Meet", caption:"RK Associates \u2014 Annual Meet, Aurangabad"},
+  {img:"/archive-vespa-4.jpg", client:"Vespa", title:"Mall Display", caption:"Vespa \u2014 mall display activation"},
+  {img:"/archive-prozone-mall-5.jpg", client:"Prozone Mall", title:"Aashiqui 2 Launch", caption:"Aashiqui 2 cast promotion \u2014 Prozone Mall, 21 April 2013"},
+  {img:"/archive-ticketed-live-event-6.jpg", client:"Ticketed live event", title:"Bharti Singh \u2014 Live Comedy Evening", caption:"Bharti Singh \u2014 ticketed live comedy evening, with founder Deepak Sonavane"},
+  {img:"/archive-emd-dj-night-7.jpg", client:"EMD DJ Night", title:"EMD DJ Night", caption:"EMD DJ Night \u2014 Pune, sponsored by Miracle Eventz"}
+];
+
+const FOLIO = [
+  {cls:'folio-1', title:'Harsh & Krutika — Wedding Production', tag:'Private client | Maharashtra | 2026', caseId:'harsh-krutika-wedding-film'},
+  {cls:'folio-2', title:'State-Level Sports Festival', tag:'Maharashtra Shasan | 2026', caseId:'state-level-sports-festival'},
+  {cls:'folio-3', title:'Grand Welcome Procession', tag:'Maharashtra Shasan | 2026', caseId:'grand-welcome-procession'},
+  {cls:'folio-1', title:'Masti Ki Pattshala', tag:'Ambuja Cement | Aurangabad | 2010', caseId:'masti-ki-pattshala'},
+  {cls:'folio-2', title:'Hindustan Pencils School Activity', tag:'Natraj & Apsara | 8 cities | 2005', caseId:'hindustan-pencils-school-activity'},
+  {cls:'folio-3', title:'Retailer & Dealer Meet', tag:'Ambuja Cement | Aurangabad | 2010', caseId:'retailer-dealer-meet'},
+  {cls:'folio-4', title:'Haldi Kumkum Event', tag:'Community festival | Aurangabad | 2010', caseId:'haldi-kumkum-event'},
+  {cls:'folio-5', title:'Indian Idol 5 Roadshow', tag:'Sony Entertainment TV | Rural Aurangabad', caseId:'indian-idol-5-roadshow'},
+  {cls:'folio-6', title:'Bajaj Pulsar Stunt Show', tag:'Bajaj | 3,500-strong crowd', caseId:'bajaj-pulsar-stunt-show'},
+  {cls:'folio-1', title:'Prozone Phase II Launch', tag:'Empire Mall Ltd. | Aurangabad', caseId:'prozone-phase-2-launch'},
+  {cls:'folio-2', title:'LG Branding & Shoppe Launch', tag:'LG India | 8 towns', caseId:'lg-branding-and-shoppe-launch'},
+];
+
+const TESTIMONIALS = [];
+
+const STEP_META = [
+  {n:1, label:'Event type'},
+  {n:2, label:'Date'},
+  {n:3, label:'Guest count'},
+  {n:4, label:'Budget'},
+  {n:5, label:'Venue'},
+  {n:6, label:'Add-ons'},
+  {n:7, label:'Your details'},
+];
+
+let quoteData = {eventType:null, date:'', guests:100, budget:'', venue:null, addons:[], name:'', email:'', phone:'', notes:''};
+let currentStep = 1;
+let route = 'home';
+
+/* ============ ROUTER ============ */
+const VALID_ROUTES = ['home','thinking','stories','services','portfolio','testimonials','contact','quote'];
+
+function goTo(r){
+  route = r;
+  history.pushState(null, '', '#' + route);
+  render();
+  const nav = document.getElementById('navLinks');
+  if(nav) nav.classList.remove('mobile-open');
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function routeFromHash(){
+  const h = (window.location.hash || '').replace(/^#/, '');
+  if(!h) return 'home';
+  if(VALID_ROUTES.includes(h) || h.indexOf('story-')===0 || h.indexOf('case-')===0) return h;
+  return 'home';
+}
+
+window.addEventListener('popstate', function(){
+  route = routeFromHash();
+  render();
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+
+function toggleMobileNav(){
+  document.getElementById('navLinks').classList.toggle('mobile-open');
+}
+
+function render(){
+  document.querySelectorAll('nav.links button[data-route]').forEach(b=>{
+    b.classList.toggle('active', b.dataset.route===route);
+  });
+  const app = document.getElementById('app');
+  if(route==='home') app.innerHTML = renderHome();
+  else if(route==='thinking') app.innerHTML = renderThinking();
+  else if(route==='services') app.innerHTML = renderServices();
+  else if(route==='portfolio') app.innerHTML = renderPortfolio();
+  else if(route==='testimonials') app.innerHTML = renderTestimonials();
+  else if(route==='contact') app.innerHTML = renderContact();
+  else if(route==='quote') app.innerHTML = renderQuote();
+  else if(route==='stories') app.innerHTML = renderStories();
+  else if(route.indexOf('story-')===0) app.innerHTML = renderStory(route.slice(6));
+  else if(route.indexOf('case-')===0) app.innerHTML = renderCaseStudy(route.slice(5));
+  if(route==='quote') renderStep();
+  document.title = route==='thinking' ? 'Thinking Before the Event — Miracle Eventz'
+    : route==='stories' ? 'Stories From The Field — Miracle Eventz'
+    : route.indexOf('story-')===0 ? 'Stories From The Field — Miracle Eventz'
+    : 'Miracle Eventz';
+  wireReveals();
+  const fc = document.getElementById('floatCta');
+  if(fc) fc.classList.toggle('show', route!=='quote' && window.scrollY > 480);
+  // GA4 pageview — this is an SPA (no real page loads), so the automatic
+  // gtag pageview never fires again after the first load. We fire one
+  // manually on every route change instead (config above has send_page_view:false).
+  if(typeof gtag === 'function'){
+    gtag('event', 'page_view', {
+      page_title: document.title,
+      page_path: '#' + route,
+      page_location: window.location.href
+    });
+  }
+}
+
+function yearsInBusiness(){
+  return new Date().getFullYear() - 1998;
+}
+
+/* ============ HOME ============ */
+function renderHome(){
+  return `
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow" style="color:#FFE8B0;">Event Strategy, Creative &amp; On-Ground Execution — Since 1998</div>
+        <h1>We plan it.<span class="script">You feel the magic.</span></h1>
+        <p class="lede">Miracle Eventz takes a brief and turns it into ground reality — weddings, corporate programmes, brand activations, and large-scale live events, planned and run end to end by one accountable team.</p>
+        <div class="hero-ctas">
+          <button type="button" class="btn-gold" onclick="goTo('quote')">Plan Your Event &rarr;</button>
+          <button type="button" class="btn-ghost" onclick="goTo('portfolio')">See Our Work</button>
+        </div>
+        <div class="hero-stats">
+          <div><div class="num">${yearsInBusiness()}</div><div class="lbl">Years of experience</div></div>
+          <div><div class="num">1998</div><div class="lbl">Founded</div></div>
+          <div><div class="num">672+</div><div class="lbl">Events &amp; promotions</div></div>
+        </div>
+      </div>
+      <div class="medallion">
+        ${medallionSVG()}
+      </div>
+    </div>
+    ${ribbonSVG()}
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section class="page-wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
+      <div>
+        <div class="eyebrow">Who we are</div>
+        <h2 style="margin-top:10px;font-size:2rem;">${yearsInBusiness()} years of knowing what can go wrong</h2>
+        <p style="margin-top:16px;color:var(--text-muted);font-size:1.02rem;">Miracle Eventz was founded in 1998 on a simple idea: an event should feel effortless to the people attending it, no matter how complicated it was to build. We're not just event managers — we work as strategy, creative, and on-ground execution partner in one, taking a client's brief and turning it into a real, physical moment: a crowd gathered, a stage lit, a launch that goes off exactly as planned.</p>
+        <p style="margin-top:14px;color:var(--text-muted);font-size:1.02rem;">Since then we've worked across weddings, corporate programs, brand activations, and cultural events — building the kind of practical, hands-on experience that only comes from actually running events, year after year.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="svc-card" style="padding:22px 24px;">
+          <div class="eyebrow">1998</div>
+          <p style="margin-top:6px;font-weight:700;">Founded as an event-planning studio.</p>
+        </div>
+        <div class="svc-card" style="padding:22px 24px;">
+          <div class="eyebrow">Since then</div>
+          <p style="margin-top:6px;font-weight:700;">Expanded into corporate events, brand activations, sports properties, and cultural shows.</p>
+        </div>
+        <div class="svc-card" style="padding:22px 24px;">
+          <div class="eyebrow">Today</div>
+          <p style="margin-top:6px;font-weight:700;">A full-service studio working across nine event categories.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY MIRACLE EVENTZ -->
+  <section class="page-wrap" style="padding-top:0;">
+    <div class="section-head">
+      <div class="eyebrow">Why Miracle Eventz</div>
+      <h2>One brief, one team, no gaps</h2>
+      <p>The same discipline that runs a multi-city brand activation runs your wedding weekend — strategy and execution under one roof.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card"><div class="n">01</div><h3>One accountable team</h3><p>A single dedicated planner coordinates every vendor, timeline, and detail — you deal with one point of contact, not a dozen.</p></div>
+      <div class="why-card"><div class="n">02</div><h3>An honest budget</h3><p>We tell you what things actually cost, and build the plan to fit — no surprise line items on event day.</p></div>
+      <div class="why-card"><div class="n">03</div><h3>Hands-on execution</h3><p>We're on the ground for the load-in, the run-of-show, and the strike — the same team that designed it is the one running it.</p></div>
+    </div>
+    <div style="margin-top:28px;padding-top:24px;border-top:1px solid var(--border);">
+      <span class="eyebrow">From the Thinking page</span>
+      <p style="margin-top:8px;font-size:1.05rem;font-weight:700;">Who's actually in charge on your event day?</p>
+      <p style="margin-top:6px;color:var(--text-muted);">Most event stress isn't a vendor problem — it's a structure problem. Here's how we think about who owns what.</p>
+      <button type="button" class="think-inline-link" style="margin-top:10px;" onclick="goTo('thinking')">Read the thinking →</button>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / CREDIBILITY -->
+  <section class="page-wrap">
+    <div class="stat-strip">
+      <div><div class="e">Field Experience</div><div class="n">${yearsInBusiness()} Years</div><div class="l">Seeing what actually happens on the ground.</div></div>
+      <div><div class="e">Scale</div><div class="n">672+</div><div class="l">Events &amp; promotions across different briefs and situations.</div></div>
+      <div><div class="e">Range</div><div class="n n-compact">Corporate · Brand · Wedding · Retail</div><div class="l">Different audiences. Different objectives. One execution mindset.</div></div>
+      <div><div class="e">Evidence</div><div class="n">10</div><div class="l">Real stories from the field. Not claims.</div></div>
+    </div>
+  </section>
+
+  <!-- HOW WE THINK / METHOD -->
+  <section class="page-wrap" style="background:var(--bg-sunken);border-radius:28px;padding:56px 40px;max-width:1124px;margin-top:48px;">
+    <div class="section-head" style="max-width:720px;">
+      <div class="eyebrow">How we think</div>
+      <h2>From a brief to ground reality</h2>
+      <p>Every project — a school activation, a stunt show, a wedding — moves through the same four stages.</p>
+    </div>
+    <div class="method-row" style="margin-top:8px;">
+      <div class="method-step"><div class="m-n">01 — The Brief</div><h3>Understand the objective</h3><p>We start with what you're actually trying to achieve, not the event format — the objective drives the plan, not the other way around.</p></div>
+      <div class="method-step"><div class="m-n">02 — The Idea</div><h3>Build the concept</h3><p>A concept built around your audience and your budget — one that's distinctive enough to remember, and practical enough to build.</p></div>
+      <div class="method-step"><div class="m-n">03 — The Execution</div><h3>Coordinate every detail</h3><p>Vendors, timelines, permissions, staging — one dedicated planner keeps every moving part on schedule.</p></div>
+      <div class="method-step"><div class="m-n">04 — Ground Reality</div><h3>Show up and run it</h3><p>We're on-site for the day itself, running the plan in real time so it holds up in front of a real crowd.</p></div>
+    </div>
+  </section>
+
+  <!-- FOUNDER / HUMAN STORY -->
+  <section class="page-wrap" style="margin-bottom:16px;margin-top:48px;">
+    <div style="display:grid;grid-template-columns:0.8fr 1.2fr;gap:44px;align-items:center;background:var(--bg-sunken);border-radius:28px;padding:44px;">
+      <div style="position:relative;">
+        <div style="position:absolute;inset:-10px;border:2px solid var(--gold-accent);border-radius:20px;opacity:0.5;pointer-events:none;"></div>
+        <img src="${FOUNDER_PHOTO}" alt="Deepak H. Sonavane, Founder of Miracle Eventz" style="width:100%;border-radius:16px;display:block;box-shadow:var(--shadow);object-fit:cover;aspect-ratio:2/3;" loading="lazy">
+      </div>
+      <div>
+        <div class="eyebrow">Who's actually running this</div>
+        <h2 style="margin-top:10px;font-size:2rem;">Deepak H. Sonavane</h2>
+        <p class="mono" style="margin-top:4px;color:var(--accent);font-size:0.85rem;">Event Strategist &amp; Consultant</p>
+        <p style="margin-top:16px;color:var(--text-muted);font-size:1.02rem;">Deepak founded Miracle Eventz in 1998 and has led it through weddings, corporate programmes, brand activations, and community events ever since. His approach stays the same on every brief: understand the objective first, then build the plan around it -- not the other way around.</p>
+        <p style="margin-top:14px;color:var(--text-muted);font-size:1.02rem;">${yearsInBusiness()} years in, that's still the whole method — one team, on the ground, for whatever the day actually requires.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEDDINGS — distinct warm tonal section -->
+  <section class="page-wrap" style="margin-top:40px;">
+    <div class="wed-zone">
+      <div class="wed-grid wed-grid--text-only">
+        <div>
+          <div class="eyebrow" style="color:var(--red);">Weddings &amp; celebrations</div>
+          <h2 style="margin-top:10px;font-size:clamp(1.7rem,3.2vw,2.3rem);">The tone changes here, on purpose.</h2>
+          <p style="margin-top:14px;color:var(--mauve);font-size:1.02rem;">Everything above is proof we can run a national brand activation at scale. This is where that same discipline gets warm — a full-service wedding weekend or a two-day family celebration like Masti Ki Pattshala, planned by one accountable team that understands the difference between a product launch and a family's biggest day.</p>
+          <div class="wed-fact-row">
+            <span class="chip">Full-service wedding design</span>
+            <span class="chip">One planner, start to finish</span>
+            <span class="chip">Décor, catering &amp; entertainment coordinated</span>
+          </div>
+          <div class="hero-ctas" style="margin-top:26px;">
+            <button type="button" class="btn-primary" onclick="goTo('quote')">Plan Your Event &rarr;</button>
+            <button type="button" class="btn-secondary" onclick="goTo('case-masti-ki-pattshala')">See Masti Ki Pattshala &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / PROOF -->
+  <section class="page-wrap">
+    <div class="section-head">
+      <div class="eyebrow">Proof, not promises</div>
+      <h2>Recognition earned over ${yearsInBusiness()} years</h2>
+      <p>Two industry awards, and an unopposed election to lead the region's event-management association.</p>
+    </div>
+    <div class="proof-row-mini">
+      <div class="proof-card-mini">
+        <img src="${AWARD_PHOTOS[0]}" alt="Business and Service Excellence Award 2012" loading="lazy">
+        <div class="pc-body"><div class="eyebrow">2012</div><p class="title">Business and Service Excellence Award</p></div>
+      </div>
+      <div class="proof-card-mini">
+        <img src="${AWARD_PHOTOS[1]}" alt="Leadership and Service Excellence Award 2013" loading="lazy">
+        <div class="pc-body"><div class="eyebrow">2013</div><p class="title">Leadership and Service Excellence Award</p></div>
+      </div>
+      <div class="proof-card-mini">
+        <img src="${AWARD_PHOTOS[2]}" alt="Marathwada Event Management Association leadership" loading="lazy">
+        <div class="pc-body"><div class="eyebrow">Industry leadership</div><p class="title">President, Marathwada Event Management Association</p></div>
+      </div>
+    </div>
+    <div style="margin-top:28px;text-align:center;">
+      <button type="button" class="btn-secondary" onclick="goTo('testimonials')">See full awards &amp; recognition</button>
+    </div>
+  </section>
+
+  <!-- CLIENT LIST -->
+  <section class="page-wrap" style="padding-bottom:0;">
+    <div class="eyebrow" style="text-align:center;">Client history</div>
+    <h2 style="margin-top:10px;font-size:1.6rem;text-align:center;">Brands we've worked with over the years</h2>
+    <p style="margin-top:10px;color:var(--text-muted);text-align:center;max-width:640px;margin-left:auto;margin-right:auto;">A selection from our project history -- past client relationships, not all necessarily current.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:32px;">
+      ${CLIENT_LIST.map(c=>`<span class="mono" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">${c}</span>`).join('')}
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="page-wrap">
+    <div class="final-cta">
+      <div class="eyebrow" style="color:#FFE8B0;">Get started</div>
+      <h2 style="margin-top:10px;">Let's turn your brief into ground reality</h2>
+      <p>Tell us your event type, date, guest count, and budget in seven quick steps — we'll come back with a tailored proposal, no obligation.</p>
+      <div class="final-cta-ctas">
+        <button type="button" class="btn-primary" onclick="goTo('quote')">Plan Your Event &rarr;</button>
+        <button type="button" class="btn-ghost" onclick="goTo('contact')">Or just say hello &rarr;</button>
+      </div>
+    </div>
+  </section>
+  `;
+}
+
+function svcCard(s){
+  return `<div class="svc-card">
+    <div class="svc-icon" style="font-size:1.8rem;">${s.icon}</div>
+    <h3>${s.name}</h3>
+    <p>${s.desc}</p>
+  </div>`;
+}
+
+/* ============ SERVICES PAGE (Celebration Ribbon System) ============ */
+let activeDrawerKey = null;
+let activeScaleTier = 1;
+let drawerTriggerEl = null;
+let lastViewedEventType = null;
+let drawerListenerAttached = false;
+
+function pillarCard(c){
+  return `<div class="pillar-card reveal">
+    <div class="pillar-ribbon" aria-hidden="true"></div>
+    <div class="pillar-tag">${c.tag}</div>
+    <h3>${c.name}</h3>
+    <ul class="pillar-list">${c.items.map(i=>`<li>${i}</li>`).join('')}</ul>
+    <button type="button" class="btn-link" onclick="document.getElementById('svc-plan-anchor').scrollIntoView({behavior:'smooth'})">Explore &rarr;</button>
+  </div>`;
+}
+
+const EVENT_IMAGES = {
+  weddings: '/planning-weddings.jpg',
+  corporate: '/planning-corporate.jpg',
+  social: '/planning-social.jpg',
+  public: '/planning-public.jpg',
+  entertainment: '/planning-entertainment.jpg',
+  sports: POSTER_SPORTS,
+};
+
+function evtCard(e){
+  const img = EVENT_IMAGES[e.key] || '';
+  const style = img ? ` style="background-image:linear-gradient(155deg,rgba(184,18,26,0.82) 0%, rgba(227,28,35,0.55) 48%, rgba(212,160,23,0.72) 145%), url('${img}');background-size:cover;background-position:center;"` : '';
+  return `<button type="button" class="evt-card reveal"${style} onclick="openServiceDrawer('${e.key}', this)" aria-haspopup="dialog">
+    <div class="evt-name">${e.name}</div>
+    <div class="evt-desc">${e.short}</div>
+    <div class="evt-cta">EXPLORE &rarr;</div>
+  </button>`;
+}
+
+function caseThumbFor(caseId){
+  const c = CASE_STUDIES[caseId];
+  const img = (c && c.images && c.images[0]) || '';
+  const title = (c && c.title) || caseId;
+  return `<button type="button" class="drawer-case" onclick="goToFromDrawer('case-${caseId}')">
+    ${img?`<img src="${img}" alt="${title}" loading="lazy">`:''}
+    <div>
+      <div style="font-weight:700;font-size:0.92rem;">${title}</div>
+      <div style="color:var(--text-muted);font-size:0.8rem;margin-top:2px;">View case study &rarr;</div>
+    </div>
+  </button>`;
+}
+
+function renderDrawerContent(key){
+  const e = EVENT_TYPES.find(x=>x.key===key);
+  if(!e) return '';
+  const journey = e.journey || PROCESS_STEPS.slice(0,7).map(s=>({n:s.n,name:s.name}));
+  return `
+    <div class="drawer-head">
+      <button type="button" class="drawer-close" onclick="closeServiceDrawer()" aria-label="Close">&times;</button>
+      <div class="eyebrow" style="color:#FFE8B0;">${e.name}</div>
+      <h2 style="color:#fff;font-size:clamp(1.6rem,3.4vw,2.3rem);margin-top:10px;">${e.headline}</h2>
+      <p style="margin-top:14px;color:rgba(255,255,255,0.92);max-width:44ch;">${e.desc}</p>
+    </div>
+    <div class="drawer-body">
+      <h4>What we handle</h4>
+      <div class="handle-chip-row">${e.handle.map(h=>`<span class="handle-chip">${h}</span>`).join('')}</div>
+
+      <h4>The journey</h4>
+      <div class="drawer-journey">${journey.map(s=>`<div class="dj-step"><span class="dj-n">${s.n}</span><span>${s.name}</span></div>`).join('')}</div>
+
+      ${e.caseIds && e.caseIds.length ? `<h4>See relevant work</h4><div class="drawer-cases">${e.caseIds.map(caseThumbFor).join('')}</div>` : ''}
+    </div>
+    <div class="drawer-sticky-cta">
+      <button type="button" class="btn-gold" style="flex:1;" onclick="goToFromDrawer('quote')">Start Your Event Brief &rarr;</button>
+    </div>`;
+}
+
+function openServiceDrawer(key, triggerEl){
+  activeDrawerKey = key;
+  lastViewedEventType = key;
+  drawerTriggerEl = triggerEl || document.activeElement;
+  const overlay = document.getElementById('svcDrawerOverlay');
+  const drawer = document.getElementById('svcDrawer');
+  if(!overlay || !drawer) return;
+  drawer.innerHTML = renderDrawerContent(key);
+  overlay.classList.add('open');
+  drawer.classList.add('open');
+  drawer.setAttribute('aria-hidden','false');
+  document.body.style.overflow = 'hidden';
+  const fc = document.getElementById('floatCta');
+  if(fc) fc.classList.add('drawer-hidden');
+  const closeBtn = drawer.querySelector('.drawer-close');
+  if(closeBtn) closeBtn.focus();
+  if(!drawerListenerAttached){
+    document.addEventListener('keydown', drawerKeyHandler);
+    drawerListenerAttached = true;
+  }
+}
+function closeServiceDrawer(){
+  if(activeDrawerKey === null) return;
+  const overlay = document.getElementById('svcDrawerOverlay');
+  const drawer = document.getElementById('svcDrawer');
+  if(!overlay || !drawer) return;
+  overlay.classList.remove('open');
+  drawer.classList.remove('open');
+  drawer.setAttribute('aria-hidden','true');
+  document.body.style.overflow = '';
+  const fc = document.getElementById('floatCta');
+  if(fc) fc.classList.remove('drawer-hidden');
+  activeDrawerKey = null;
+  if(drawerTriggerEl && drawerTriggerEl.isConnected && drawerTriggerEl.focus) drawerTriggerEl.focus();
+  drawerTriggerEl = null;
+}
+function goToFromDrawer(route){
+  closeServiceDrawer();
+  goTo(route);
+}
+function drawerKeyHandler(ev){
+  if(activeDrawerKey === null) return;
+  if(ev.key === 'Escape'){ closeServiceDrawer(); return; }
+  if(ev.key === 'Tab'){
+    const drawer = document.getElementById('svcDrawer');
+    if(!drawer) return;
+    const focusable = drawer.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])');
+    if(focusable.length === 0) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if(ev.shiftKey && document.activeElement === first){
+      ev.preventDefault(); last.focus();
+    } else if(!ev.shiftKey && document.activeElement === last){
+      ev.preventDefault(); first.focus();
+    }
+  }
+}
+
+function toggleFaq(el){
+  const item = el.closest('.faq-item');
+  const wasOpen = item.classList.contains('open');
+  item.parentElement.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+  if(!wasOpen) item.classList.add('open');
+  el.setAttribute('aria-expanded', String(!wasOpen));
+}
+
+function setScaleTier(i){
+  activeScaleTier = i;
+  document.querySelectorAll('.scale-btn').forEach((b,idx)=>b.classList.toggle('active', idx===i));
+  const panel = document.getElementById('scalePanel');
+  if(panel) panel.innerHTML = scalePanelHTML(SCALE_TIERS[i]);
+}
+function scalePanelHTML(tier){
+  return `<div class="eyebrow">${tier.label}</div>
+    <div class="handle-chip-row">${tier.items.map(x=>`<span class="handle-chip">${x}</span>`).join('')}</div>`;
+}
+
+function renderServices(){
+  const preferredType = lastViewedEventType && EVENT_TYPES.find(x=>x.key===lastViewedEventType);
+  const preferredIds = preferredType ? preferredType.caseIds : [];
+  const prioritized = FOLIO.filter(f=>preferredIds.includes(f.caseId));
+  const rest = FOLIO.filter(f=>!preferredIds.includes(f.caseId));
+  const relevantCases = [...prioritized, ...rest].slice(0,6);
+  const caseSectionEyebrow = preferredType ? `Proof, not promises — ${preferredType.name}` : 'Proof, not promises';
+  return `
+  <section class="svc-hero">
+    <div class="svc-hero-inner">
+      <div class="eyebrow">Services</div>
+      <h1>From the first idea<span class="script" style="display:block;color:var(--gold-accent);font-size:clamp(2.6rem,5.8vw,4.6rem);">to the final applause.</span></h1>
+      <p class="lede">We bring together strategy, creativity, production and on-ground execution to create events that feel effortless to the people experiencing them.</p>
+      <div class="hero-ctas">
+        <button type="button" class="btn-gold" onclick="goTo('quote')">Plan Your Event &rarr;</button>
+        <button type="button" class="btn-ghost" onclick="document.getElementById('svc-plan-anchor').scrollIntoView({behavior:'smooth'})">Explore Services &darr;</button>
+      </div>
+    </div>
+    ${ribbonSVG()}
+  </section>
+
+  <!-- 02: ONE EVENT. EVERY MOVING PART. -->
+  <section class="page-wrap">
+    <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;max-width:640px;">
+      <div class="eyebrow">How it comes together</div>
+      <h2>One event. Every moving part.</h2>
+      <p>An event may look simple from the outside. Behind it are hundreds of decisions, suppliers, timelines, people and details. We bring those moving parts together under one coordinated execution system.</p>
+    </div>
+    <div class="journey-seq reveal">
+      ${['Idea','Strategy','Design','Planning','Production','Execution','Experience'].map((s,i,arr)=>`<div class="journey-step"><div class="jn">${s}</div></div>${i<arr.length-1?'<div class="journey-arrow"></div>':''}`).join('')}
+    </div>
+  </section>
+
+  <!-- 03: FOUR CORE CAPABILITY PILLARS -->
+  <section class="page-wrap" style="background:var(--bg-sunken);border-radius:28px;padding:56px 28px;">
+    <div class="section-head reveal">
+      <div class="eyebrow">What Miracle Eventz does</div>
+      <h2>Four core capabilities</h2>
+      <p>Not event types — the disciplines that come together on every project we run.</p>
+    </div>
+    <div class="pillar-grid">
+      ${CAPABILITIES.map(pillarCard).join('')}
+    </div>
+  </section>
+
+  <!-- 04: WHAT ARE YOU PLANNING? -->
+  <section class="page-wrap" id="svc-plan-anchor">
+    <div class="section-head reveal">
+      <div class="eyebrow">Start here</div>
+      <h2>What are you planning?</h2>
+      <p>Start with the occasion. We'll show you what it takes to make it happen.</p>
+    </div>
+    <div class="evt-grid">
+      ${EVENT_TYPES.map(evtCard).join('')}
+    </div>
+  </section>
+
+  <!-- 06: WHAT WE ACTUALLY HANDLE -->
+  <section class="page-wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">The depth of the work</div>
+      <h2>Behind every great event is a lot of invisible work.</h2>
+    </div>
+    <div class="handle-grid">
+      ${HANDLE_ITEMS.map(h=>`<div class="handle-item reveal"><div class="hn">${h.name}</div><p>${h.desc}</p></div>`).join('')}
+    </div>
+  </section>
+
+  <!-- 07: FROM BRIEF TO APPLAUSE -->
+  <section class="page-wrap" style="background:var(--bg-sunken);border-radius:28px;padding:56px 28px;">
+    <div class="section-head reveal">
+      <div class="eyebrow">Our process</div>
+      <h2>From brief to applause.</h2>
+    </div>
+    <div class="process-ribbon-wrap reveal">
+      <div class="process-list">
+        ${PROCESS_STEPS.map(s=>`<div class="process-step"><div class="ps-n">${s.n}</div><div class="ps-name">${s.name}</div><p>${s.desc}</p></div>`).join('')}
+      </div>
+    </div>
+  </section>
+
+  <!-- 08: EVENT SCALE -->
+  <section class="page-wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Any size, same rigour</div>
+      <h2>Small room or massive crowd. The thinking stays rigorous.</h2>
+    </div>
+    <div class="scale-selector reveal" role="tablist" aria-label="Event scale">
+      ${SCALE_TIERS.map((t,i)=>`<button type="button" class="scale-btn${i===1?' active':''}" onclick="setScaleTier(${i})" role="tab" aria-selected="${i===1}">${t.n==='50000'?'50,000+':t.n}</button>`).join('')}
+    </div>
+    <div class="scale-panel reveal" id="scalePanel">${scalePanelHTML(SCALE_TIERS[1])}</div>
+  </section>
+
+  <!-- 09: SELECTED CASE STUDIES -->
+  <section class="page-wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">${caseSectionEyebrow}</div>
+      <h2>What we've made happen.</h2>
+    </div>
+    <div class="folio-grid">
+      ${relevantCases.map(f=>{const img=(f.caseId && CASE_STUDIES[f.caseId] && CASE_STUDIES[f.caseId].images && CASE_STUDIES[f.caseId].images[0])||''; return `<button type="button" class="svc-card reveal" style="padding:0;overflow:hidden;border:none;cursor:pointer;text-align:left;" onclick="goTo('case-${f.caseId}')">
+        ${img?`<img src="${img}" alt="${f.title}" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;" loading="lazy">`:''}
+        <div style="padding:16px 18px;">
+          <div class="eyebrow">${f.tag}</div>
+          <p style="margin-top:6px;font-weight:700;">${f.title}</p>
+          <p style="margin-top:6px;color:var(--accent);font-size:0.85rem;font-weight:700;">View Case Study &rarr;</p>
+        </div>
+      </button>`;}).join('')}
+    </div>
+    <div style="margin-top:32px;text-align:center;">
+      <button type="button" class="btn-primary" onclick="goTo('portfolio')">See the full archive &rarr;</button>
+    </div>
+  </section>
+
+  <!-- 10: WHY MIRACLE EVENTZ -->
+  <section class="page-wrap" style="background:var(--bg-sunken);border-radius:28px;padding:56px 28px;">
+    <div class="section-head reveal">
+      <div class="eyebrow">Why work with us</div>
+      <h2>Why Miracle Eventz?</h2>
+    </div>
+    <div class="why-grid">
+      ${WHY_US.map(w=>`<div class="why-item reveal"><div class="wn">${w.name}</div><p>${w.desc}</p></div>`).join('')}
+    </div>
+  </section>
+
+  <!-- 11: FAQ -->
+  <section class="page-wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Questions</div>
+      <h2>Frequently asked</h2>
+    </div>
+    <div class="svc-faq reveal">
+      ${SERVICE_FAQS.map((f,i)=>`<div class="faq-item">
+        <button type="button" class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" id="faq-q-${i}">
+          <span>${f.q}</span><span class="fx">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">${f.a}</div></div>
+      </div>`).join('')}
+    </div>
+  </section>
+
+  <!-- 12: FINAL CTA -->
+  <section class="svc-final-cta reveal">
+    <div class="page-wrap">
+      <h2>Let's build<span class="script" style="display:block;color:var(--gold-accent);">your event.</span></h2>
+      <p>Tell us what you're planning. We'll help you figure out what it needs.</p>
+      <div style="margin-top:28px;">
+        <button type="button" class="btn-gold" onclick="goTo('quote')">Start Your Event Brief &rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="drawer-overlay" id="svcDrawerOverlay" onclick="closeServiceDrawer()"></div>
+  <div class="svc-drawer" id="svcDrawer" role="dialog" aria-modal="true" aria-hidden="true"></div>
+  `;
+}
+
+
+function medallionSVG(){
+  const STAR_COUNT = 25;
+  let stars = '';
+  for(let i=0;i<STAR_COUNT;i++){
+    const left = (Math.random()*94+3).toFixed(1);
+    const size = (Math.random()*10+9).toFixed(1);
+    const dur = (Math.random()*4+3.5).toFixed(1);
+    const delay = (Math.random()*8).toFixed(1);
+    const opacity = (Math.random()*0.5+0.5).toFixed(2);
+    stars += `<span class="falling-star" style="left:${left}%;font-size:${size}px;animation-duration:${dur}s;animation-delay:-${delay}s;opacity:${opacity};">&#9733;</span>`;
+  }
+  return `<div class="star-field">${stars}</div>`;
+}
+
+function ribbonSVG(){
+  return `<svg class="ribbon" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+    <path d="M0,30 C200,60 400,0 600,25 C800,50 1000,5 1200,30 L1200,60 L0,60 Z" fill="var(--bg)"/>
+  </svg>`;
+}
+
+/* ============ THINKING ============ */
+function renderThinking(){
+  return `
+  <section class="thinking-page">
+    <div class="think-hero">
+      <div class="eyebrow">Thinking</div>
+      <h1>Thinking Before the Event</h1>
+      <p class="lede">Some notes on how we approach event planning and event management — the questions worth asking before the vendors, the venue, and the date lock themselves in.</p>
+    </div>
+
+    <div class="think-open">
+      <p>Before an event becomes an event, someone has to figure out how it's actually going to work. You may already have the date, the venue, a concept, or a brief someone handed you — the hard part is turning that into something that survives contact with the real world.</p>
+      <p>Maybe you have an idea and need someone to make it real. Maybe you've just been told, at work, that you're now the person responsible for the annual conference or the product launch, and you're not entirely sure where that responsibility starts and ends. Or maybe you started planning something simple — a wedding, a milestone celebration — and watched it quietly become more complicated than you expected, with more vendors, more moving parts, and more people asking you questions you don't have answers to yet.</p>
+      <p>Wherever you're starting from, the thinking underneath good event planning is mostly the same. It's worth doing before you sign anything.</p>
+    </div>
+
+    <div class="think-section">
+      <div class="think-marker"><div class="mk">01</div><h2>Who Is Actually In Charge?</h2></div>
+      <p>Most events involve a caterer, a decorator, a sound and lighting vendor, a venue team, sometimes a separate photography and entertainment crew — each competent at their own job, none of them responsible for how the pieces fit together. That gap is where most event-day stress actually comes from.</p>
+      <p>It shows up in familiar ways: vendors blaming each other when something slips, a timeline that three different people have three different versions of, and — the question that matters most — who do you actually call if something goes wrong at 6pm the day of? If the honest answer is "several different people, depending on what broke," that's not a vendor problem, it's a structure problem. Good event management means one accountable owner holds the whole picture, coordinates every vendor against a single timeline, and is the one number you call, regardless of which piece is misbehaving.</p>
+      <p class="think-caselink">One place this played out at scale: <button type="button" class="think-inline-link" onclick="goTo('case-hindustan-pencils-school-activity')">the Hindustan Pencils school programme — 475 schools, 8 cities, one governing team →</button></p>
+    </div>
+
+    <div class="think-section">
+      <div class="think-marker"><div class="mk">02</div><h2>The Hidden Cost</h2></div>
+      <p>The number on the first quote and the number you actually pay are rarely the same number, and that's true across the event industry, not just with any one vendor. It's a well-worn pattern: a headline price that looks reasonable, followed by a string of line items disclosed later — security deposits, corkage or outside-vendor fees, AV markups, service charges and gratuities, taxes, rush charges for last-minute changes.</p>
+      <p>None of these are necessarily unfair on their own. The problem is timing — finding out about them after you've committed, not before. The fix is asking for an all-in number up front: one document that states what's included, what's excluded, and what triggers an extra charge, before advance money changes hands.</p>
+    </div>
+
+    <div class="think-section">
+      <div class="think-marker"><div class="mk">03</div><h2>Vendor Trust</div></div>
+      <p>A polished portfolio tells you what a vendor's best day looked like. It doesn't tell you how they behave on an average day, or a bad one — and that's the day you actually need to plan around.</p>
+      <p>Before paying an advance to any vendor or agency, it's worth doing a few unglamorous things: asking for references you can actually call, not just quote; getting the scope of work in writing, specific enough that "included" and "not included" aren't left to memory; and asking to see real past work — a full event, ideally one you can verify with the client — rather than a highlight reel. Red flags worth taking seriously: no written contract, reluctance to share references, and pressure to pay the full amount before any of the above is settled.</p>
+    </div>
+
+    <div class="think-section">
+      <div class="think-marker"><div class="mk">04</div><h2>Sequencing &amp; Timeline</div></div>
+      <p>A surprising amount of event planning stress comes from booking things in the wrong order. Venues get locked in before the guest count or format is settled. Decor gets briefed before the run-of-show exists. A date gets confirmed before checking whether the vendors you actually want are even free that week.</p>
+      <p>Each of these causes rework later — a venue that doesn't fit the final numbers, a decor brief that has to be redone once the stage plan changes, a preferred vendor who's already booked. The value of a correct sequence — objective and format first, then date and venue, then the specialist vendors, then the fine detail — isn't just tidiness. It's fewer expensive do-overs in the final weeks, when there's the least room to absorb them.</p>
+    </div>
+
+    <div class="think-section">
+      <div class="think-marker"><div class="mk">05</div><h2>What Can Go Wrong</h2></div>
+      <p>Rain on an outdoor event. A power or AV failure mid-programme. A vendor who doesn't show. A last-minute change from a client, a couple, or a keynote speaker. None of these are exotic scenarios — they're the ordinary risks of running anything live, and the plan for them is what a contingency plan actually is: not fear-mongering, just the plan for what you hope never happens.</p>
+      <p>What matters is whether that plan exists before the day, not whether it's ever needed. A backup power source on standby, an indoor fallback for outdoor moments, a vendor bench for no-shows, and someone with the authority to make a call in real time — that's the difference between a hiccup nobody in the audience notices and one that becomes the story of the event.</p>
+    </div>
+
+    <div class="think-section" style="border-top:none;padding-top:0;margin-top:48px;">
+      <div class="think-marker"><div class="mk">06</div><h2>Wedding Thinking, Corporate Thinking</h2></div>
+      <p class="muted">The mechanics of event execution are similar across weddings and corporate events. The pressures underneath them are not.</p>
+      <div class="think-doors">
+        <div class="think-door">
+          <div class="eyebrow">Weddings</div>
+          <h3>The emotional load is part of the job</h3>
+          <p>A wedding carries family expectations, multi-generational opinions, and a couple who — without help — end up as their own event's unpaid project managers, on top of everything else a wedding already asks of them. Good wedding planning absorbs that load rather than adding to it.</p>
+          <button type="button" class="btn-secondary" onclick="goTo('case-harsh-krutika-wedding-film')">Explore wedding planning →</button>
+        </div>
+        <div class="think-door">
+          <div class="eyebrow">Corporate</div>
+          <h3>Logistics follow the objective, not the other way round</h3>
+          <p>A corporate event needs a clear objective before it needs a venue — what leadership is trying to achieve, who inside the company actually owns delivery across departments, and how visibility and ROI get reported afterward. Corporate events done well start with that question, not with the run sheet.</p>
+          <button type="button" class="btn-secondary" onclick="goTo('services')">Explore corporate events →</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="think-section">
+      <div class="think-marker"><div class="mk">07</div><h2>Concept → Reality</h2></div>
+      <p>Every event starts somewhere as an idea — a dream, a mood board, a one-line brief from a client. The work of event execution is translating that into something a team on the ground can actually build, on a specific date, within a specific budget, with a specific set of vendors.</p>
+      <p>In practice that translation runs through a fairly consistent sequence: understand what's actually being asked for, challenge the parts of it that won't survive contact with a real venue or a real budget, translate what's left into an execution architecture, build out the specialist ecosystem of vendors that architecture needs, govern the whole thing against one timeline, and arrive at the real event — the version people actually experience.</p>
+      <div class="think-flow">
+        <span class="step">Understand</span><span class="arrow">→</span>
+        <span class="step">Challenge</span><span class="arrow">→</span>
+        <span class="step">Translate</span><span class="arrow">→</span>
+        <span class="step">Execution architecture</span><span class="arrow">→</span>
+        <span class="step">Specialist ecosystem</span><span class="arrow">→</span>
+        <span class="step">Govern</span><span class="arrow">→</span>
+        <span class="step">Real event</span>
+      </div>
+      <p class="think-caselink">One place to see that translation happen in practice: <button type="button" class="think-inline-link" onclick="goTo('case-indian-idol-5-roadshow')">the Indian Idol 5 Roadshow case study →</button></p>
+    </div>
+
+    <div class="think-close">
+      <div class="eyebrow">Still thinking it through?</div>
+      <h2>That's the right place to start.</h2>
+      <p>None of this requires a decision today. If you've got a date, a budget, half a concept, or just a feeling that this is going to be more complicated than it looks, that's already enough to start a conversation.</p>
+      <div class="think-close-ctas">
+        <button type="button" class="btn-primary" onclick="goTo('quote')">Tell Us What You're Planning</button>
+        <button type="button" class="btn-secondary" onclick="goTo('contact')">Ask Miracle Eventz</button>
+        <button type="button" class="btn-secondary" onclick="goTo('contact')">Not Sure Yet? That's Okay</button>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ============ SERVICES ============ */
+
+
+/* ============ CASE STUDY ============ */
+const CASE_ORDER = ['harsh-krutika-wedding-film','state-level-sports-festival','grand-welcome-procession','masti-ki-pattshala','hindustan-pencils-school-activity','retailer-dealer-meet','haldi-kumkum-event','indian-idol-5-roadshow','bajaj-pulsar-stunt-show','prozone-phase-2-launch','lg-branding-and-shoppe-launch'];
+
+function renderCaseStudy(id){
+  const c = CASE_STUDIES[id];
+  if(!c) return `<section class="page-wrap" style="padding-top:56px;"><p>Case study not found.</p><button type="button" class="btn-secondary" onclick="goTo('portfolio')">Back to portfolio</button></section>`;
+
+  const idx = CASE_ORDER.indexOf(id);
+  const nextId = CASE_ORDER[(idx+1) % CASE_ORDER.length];
+  const next = CASE_STUDIES[nextId];
+
+  return `
+  <section class="page-wrap" style="padding-top:24px;">
+    <button type="button" class="btn-secondary" style="margin-bottom:8px;" onclick="goTo('portfolio')">&larr; Back to portfolio</button>
+
+    <!-- PROJECT HERO -->
+    <div class="case-hero">
+      ${c.video
+        ? `<video id="case-hero-video" src="${c.video}" poster="${c.images[0]}" playsinline preload="metadata"
+             onclick="this.paused ? this.play() : this.pause()"
+             onplay="document.getElementById('case-hero-play-btn').style.display='none'"
+             onpause="document.getElementById('case-hero-play-btn').style.display='flex'"
+             style="cursor:pointer;"></video>
+           <button type="button" id="case-hero-play-btn" class="case-hero-play" aria-label="Play highlight film" onclick="document.getElementById('case-hero-video').play()"><span>&#9658;</span></button>`
+        : `<img src="${c.images[0]}" alt="${c.title}" loading="lazy">`}
+      <div class="case-hero-body">
+        <div class="eyebrow">Case study</div>
+        <h1>${c.title}</h1>
+        <p class="meta-line">${c.client} &middot; ${c.location}</p>
+        <p class="mono meta-line" style="color:var(--gold-accent);font-size:0.85rem;">${c.meta}</p>
+      </div>
+    </div>
+
+    <!-- CHALLENGE / IDEA / EXECUTION / RESULT -->
+    <div class="case-flow">
+      <div class="case-flow-step">
+        <div class="cf-label">The Challenge</div>
+        <div class="cf-text">${c.challenge}</div>
+      </div>
+      <div class="case-flow-step">
+        <div class="cf-label">The Idea</div>
+        <div class="cf-text">${c.concept}</div>
+      </div>
+      <div class="case-flow-step">
+        <div class="cf-label">The Execution</div>
+        <div class="cf-text">${c.execution}</div>
+      </div>
+      <div class="case-flow-step result">
+        <div class="cf-label">The Result</div>
+        <div class="cf-text">${c.result}</div>
+      </div>
+    </div>
+
+    <!-- IMAGE / VIDEO STORY -->
+    <div class="section-head" style="margin-top:56px;margin-bottom:24px;">
+      <div class="eyebrow">Image story</div>
+      <h2 style="font-size:1.6rem;">From the campaign</h2>
+      ${c.imageNote ? `<p style="margin-top:10px;color:var(--text-muted);font-size:0.9rem;">${c.imageNote}</p>` : ''}
+    </div>
+    ${c.video ? `<div class="case-video-solo" style="border-radius:14px;overflow:hidden;max-width:820px;margin:0 auto 24px;aspect-ratio:16/9;"><video src="${c.video}" poster="${c.images[0]}" controls playsinline preload="none" style="width:100%;height:100%;object-fit:cover;display:block;background:#000;"></video></div>` : ''}
+    ${(() => {
+      const remaining = c.images.filter(src => !(c.video && src === c.images[0]));
+      if(!remaining.length) return '';
+      return `<div class="case-gallery">${remaining.map((src,i)=>{
+        const pattern = ['g-big','','g-tall','','','g-wide','',''];
+        const cls = pattern[i % pattern.length];
+        return `<a href="${src}" target="_blank" rel="noopener" class="${cls}"><img src="${src}" alt="${c.title} event photo ${i+1}" loading="lazy"></a>`;
+      }).join('')}</div>`;
+    })()}
+
+    <!-- KEY TAKEAWAY -->
+    <div class="case-takeaway">
+      <div class="eyebrow">Key takeaway</div>
+      <p>${c.result}</p>
+    </div>
+
+    <!-- NEXT PROJECT -->
+    <button type="button" class="next-project" onclick="goTo('case-${nextId}')">
+      <img src="${next.images[0]}" alt="${next.title}" loading="lazy">
+      <div class="np-body">
+        <div class="eyebrow">Next project</div>
+        <h3>${next.title}</h3>
+        <p style="margin-top:6px;color:var(--text-muted);font-size:0.92rem;">${next.client}</p>
+        <div class="np-arrow">View case study &rarr;</div>
+      </div>
+    </button>
+
+    <!-- START A CONVERSATION -->
+    <div style="text-align:center;margin-top:52px;margin-bottom:16px;">
+      <button type="button" class="btn-primary" onclick="goTo('quote')">Plan Your Event &rarr;</button>
+    </div>
+  </section>`;
+}
+
+/* ============ STORIES FROM THE FIELD ============ */
+function renderStories(){
+  return `
+  <section class="page-wrap" style="padding-top:56px;">
+    <div class="stories-hero">
+      <div class="eyebrow">Stories</div>
+      <h1>Stories From The Field</h1>
+      <p class="lede">Every event teaches you something. These are some of ours.</p>
+    </div>
+    <div class="stories-intro">
+      <p>These come from real situations encountered over years of event work — on the ground, mid-event, when a brief met reality and something had to be decided on the spot. Not a highlight reel of what we produced, but what actually happened, what we noticed, what we decided, and what we did.</p>
+    </div>
+    <div class="story-grid">
+      ${STORY_INDEX.map(s => `
+      <button type="button" class="story-card" onclick="goTo('story-${s.id}')">
+        <div class="story-n">${String(s.n).padStart(2,'0')}</div>
+        <h3>${s.headline}</h3>
+        <div class="story-client">${s.client}</div>
+        <div class="story-readlink">Read the story &rarr;</div>
+      </button>`).join('')}
+    </div>
+  </section>`;
+}
+
+function renderStory(id){
+  const meta = STORY_INDEX.find(s => s.id === id);
+  if(!meta){
+    return `<section class="page-wrap" style="padding-top:56px;"><p>Story not found.</p><button type="button" class="btn-secondary" onclick="goTo('stories')">&larr; Back to Stories From The Field</button></section>`;
+  }
+  const c = STORIES[id];
+  if(!c){
+    return `
+    <section class="page-wrap" style="padding-top:56px;">
+      <button type="button" class="btn-secondary" style="margin-bottom:8px;" onclick="goTo('stories')">&larr; Back to Stories From The Field</button>
+      <div class="story-hero">
+        <div class="eyebrow">Story ${String(meta.n).padStart(2,'0')} &middot; ${meta.client}</div>
+        <h1>${meta.headline}</h1>
+      </div>
+      <div class="story-pending">This story is being prepared and will be published soon.</div>
+    </section>`;
+  }
+  const idx = STORY_INDEX.findIndex(s => s.id === id);
+  const next = STORY_INDEX[(idx + 1) % STORY_INDEX.length];
+  return `
+  <section class="page-wrap" style="padding-top:56px;">
+    <button type="button" class="btn-secondary" style="margin-bottom:8px;" onclick="goTo('stories')">&larr; Back to Stories From The Field</button>
+    <div class="story-hero">
+      <div class="eyebrow">Story ${String(meta.n).padStart(2,'0')} &middot; ${meta.client}</div>
+      <h1>${meta.headline}</h1>
+    </div>
+    <article class="story-narrative">
+      ${c.before.map(p => `<p>${p}</p>`).join('')}
+      <blockquote class="story-pullquote">${c.quote}</blockquote>
+      ${c.after.map(p => `<p>${p}</p>`).join('')}
+      <p class="story-reflection">${c.reflection}</p>
+    </article>
+    <button type="button" class="next-project" onclick="goTo('story-${next.id}')" style="margin-top:44px;">
+      <div class="np-body">
+        <div class="eyebrow">Next story</div>
+        <h3>${next.headline}</h3>
+        <p style="margin-top:6px;color:var(--text-muted);font-size:0.92rem;">${next.client}</p>
+        <div class="np-arrow">Read the story &rarr;</div>
+      </div>
+    </button>
+    <div style="text-align:center;margin-top:44px;margin-bottom:16px;">
+      <button type="button" class="btn-secondary" onclick="goTo('contact')">Ask Miracle Eventz</button>
+    </div>
+  </section>`;
+}
+
+/* ============ PORTFOLIO ============ */
+function renderPortfolio(){
+  return `
+  <section class="page-wrap" style="padding-top:56px;">
+    <div class="section-head">
+      <div class="eyebrow">Portfolio</div>
+      <h2>More from the archive</h2>
+      <p>These are real Miracle Eventz projects we have photos and client names for, but not the full brief-to-result writeup — brief, factual credits rather than full case studies.</p>
+    </div>
+    <div class="archive-strip">
+      ${ARCHIVE_HIGHLIGHTS.map(a=>`<div class="svc-card" style="padding:0;overflow:hidden;">
+        <img src="${a.img}" alt="${a.title}" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;" loading="lazy">
+        <div style="padding:16px 18px;">
+          <div class="eyebrow">${a.client}</div>
+          <p style="margin-top:6px;font-weight:700;">${a.title}</p>
+          <p style="margin-top:6px;color:var(--text-muted);font-size:0.88rem;">${a.caption}</p>
+        </div>
+      </div>`).join('')}
+    </div>
+
+    <div class="section-head" style="margin-top:56px;">
+      <div class="eyebrow">Full case studies</div>
+      <h2>Real work, from the archive</h2>
+      <p>Case studies below are pulled straight from our own project archives — real briefs, real photos, real outcomes. We're adding more from the archive as we go.</p>
+    </div>
+    <div class="folio-grid">
+      ${FOLIO.map(f=>{const img=(f.caseId && CASE_STUDIES[f.caseId] && CASE_STUDIES[f.caseId].images && CASE_STUDIES[f.caseId].images[0])||''; const bg=img?`style="border:none;cursor:pointer;text-align:left;width:100%;background-image:url('${img}');background-size:cover;background-position:center;"`:`style="border:none;cursor:pointer;text-align:left;width:100%;"`; return f.caseId ? `<button type="button" class="folio-card" ${bg} onclick="goTo('case-${f.caseId}')"><div><h4>${f.title}</h4><span>${f.tag}</span></div></button>` : `<div class="folio-card ${f.cls}"><div><h4>${f.title}</h4><span>${f.tag}</span></div></div>`;}).join('')}
+    </div>
+  </section>`;
+}
+
+/* ============ TESTIMONIALS ============ */
+function renderTestimonials(){
+  if(TESTIMONIALS.length===0){
+    return `
+    <section class="page-wrap" style="padding-top:56px;">
+      <div class="section-head">
+        <div class="eyebrow">Testimonials</div>
+        <h2>Client stories, coming soon</h2>
+        <p>We only publish feedback clients have actually given us — nothing invented. As reviews come in, they'll appear here. If you have quotes from past clients you'd like featured, send them over and we'll add them.</p>
+      </div>
+      
+    <div class="section-head" style="margin-top:56px;">
+      <div class="eyebrow">Awards &amp; recognition</div>
+      <h2>Industry recognition over the years</h2>
+      <p>Awards and industry leadership from our project archive.</p>
+    </div>
+    <div class="case-detail-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="svc-card" style="padding:0;overflow:hidden;">
+        <img src="${AWARD_PHOTOS[0]}" alt="Business and Service Excellence Award 2012" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;" loading="lazy">
+        <div style="padding:22px 20px;">
+          <div class="eyebrow">2012</div>
+          <p style="margin-top:8px;font-weight:700;">Business and Service Excellence Award</p>
+          <p style="margin-top:6px;color:var(--text-muted);font-size:0.9rem;">Most Promising Event Management Company in Aurangabad -- awarded to Deepak H. Sonavane.</p>
+        </div>
+      </div>
+      <div class="svc-card" style="padding:0;overflow:hidden;">
+        <img src="${AWARD_PHOTOS[1]}" alt="Leadership and Service Excellence Award 2013" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;" loading="lazy">
+        <div style="padding:22px 20px;">
+          <div class="eyebrow">2013</div>
+          <p style="margin-top:8px;font-weight:700;">Leadership and Service Excellence Award</p>
+          <p style="margin-top:6px;color:var(--text-muted);font-size:0.9rem;">Most Promising Event Management Company in Aurangabad -- awarded to Deepak H. Sonavane.</p>
+        </div>
+      </div>
+      <div class="svc-card" style="padding:0;overflow:hidden;">
+        <img src="${AWARD_PHOTOS[2]}" alt="Marathwada Event Management Association" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;" loading="lazy">
+        <div style="padding:22px 20px;">
+          <div class="eyebrow">Industry leadership</div>
+          <p style="margin-top:8px;font-weight:700;">President, Marathwada Event Management Association</p>
+          <p style="margin-top:6px;color:var(--text-muted);font-size:0.9rem;">Deepak H. Sonavane was elected unopposed as President of the association.</p>
+        </div>
+      </div>
+    </div>
+    </section>`;
+  }
+  return `
+  <section class="page-wrap" style="padding-top:56px;">
+    <div class="section-head">
+      <div class="eyebrow">Testimonials</div>
+      <h2>What clients tell us afterward</h2>
+      <p>We ask every client for honest feedback within a week of their event. Here's a sample, unedited.</p>
+    </div>
+    <div class="testi-row">
+      ${TESTIMONIALS.map(t=>`<div class="testi-card">
+        <p class="testi-quote">${t.quote}</p>
+        <div class="testi-who">
+          <div class="testi-avatar">${t.name.split(' ').map(w=>w[0]).slice(0,2).join('')}</div>
+          <div>
+            <div class="testi-name">${t.name}</div>
+            <div class="testi-event">${t.event}</div>
+          </div>
+        </div>
+      </div>`).join('')}
+    </div>
+    
+    <div class="section-head" style="margin-top:56px;">
+      <div class="eyebrow">Awards &amp; recognition</div>
+      <h2>Industry recognition over the years</h2>
+      <p>Awards and industry leadership from our project archive.</p>
+    </div>
+    <div class="case-detail-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="svc-card" style="padding:0;overflow:hidden;">
+        <img src="${AWARD_PHOTOS[0]}" alt="Business and Service Excellence Award 2012" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;" loading="lazy">
+        <div style="padding:22px 20px;">
+          <div class="eyebrow">2012</div>
+          <p style="margin-top:8px;font-weight:700;">Business and Service Excellence Award</p>
+          <p style="margin-top:6px;color:var(--text-muted);font-size:0.9rem;">Most Promising Event Management Company in Aurangabad -- awarded to Deepak H. Sonavane.</p>
+        </div>
+      </div>
+      <div class="svc-card" style="padding:0;overflow:hidden;">
+        <img src="${AWARD_PHOTOS[1]}" alt="Leadership and Service Excellence Award 2013" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;" loading="lazy">
+        <div style="padding:22px 20px;">
+          <div class="eyebrow">2013</div>
+          <p style="margin-top:8px;font-weight:700;">Leadership and Service Excellence Award</p>
+          <p style="margin-top:6px;color:var(--text-muted);font-size:0.9rem;">Most Promising Event Management Company in Aurangabad -- awarded to Deepak H. Sonavane.</p>
+        </div>
+      </div>
+      <div class="svc-card" style="padding:0;overflow:hidden;">
+        <img src="${AWARD_PHOTOS[2]}" alt="Marathwada Event Management Association" style="width:100%;aspect-ratio:4/3;object-fit:cover;display:block;" loading="lazy">
+        <div style="padding:22px 20px;">
+          <div class="eyebrow">Industry leadership</div>
+          <p style="margin-top:8px;font-weight:700;">President, Marathwada Event Management Association</p>
+          <p style="margin-top:6px;color:var(--text-muted);font-size:0.9rem;">Deepak H. Sonavane was elected unopposed as President of the association.</p>
+        </div>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ============ CONTACT ============ */
+function renderContact(){
+  return `
+  <section class="page-wrap" style="padding-top:56px;">
+    <div class="section-head">
+      <div class="eyebrow">Contact</div>
+      <h2>Talk to a planner</h2>
+      <p>Prefer a fast, structured path? Use our <a href="#" onclick="goTo('quote');return false;" style="color:var(--accent);font-weight:700;">7-step quote flow</a> instead — most clients hear back within one business day either way.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="row">
+          <span>📍</span>
+          <div><h4>Studio</h4><p>Plot No. 22, Khivansara Park, Opp. Vardhman Residency, Ulkanagri, Chhatrapati Sambhaji Nagar, MS 431001</p></div>
+        </div>
+        <div class="row">
+          <span>✉️</span>
+          <div><h4>Email</h4><p>deepakk.sonavane@outlook.com</p></div>
+        </div>
+        <div class="row">
+          <span>📞</span>
+          <div><h4>Phone</h4><p>+91 9325205557</p></div>
+        </div>
+        <div class="row">
+          <span>🕐</span>
+          <div><h4>Studio hours</h4><p>Mon–Sat, 10am–7pm IST</p></div>
+        </div>
+      </div>
+      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="submitContact(event)">
+        <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" required></div>
+        <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required></div>
+        <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required placeholder="Tell us a bit about your event..."></textarea></div>
+        <div id="contactFormError" class="field-error" style="display:none;margin-bottom:12px;">Something went wrong sending your message — please try again, or email us directly.</div>
+        <button type="submit" class="btn-primary" style="width:100%;" id="contactSubmitBtn">Send message</button>
+      </form>
+    </div>
+  </section>`;
+}
+function submitContact(e){
+  e.preventDefault();
+  const form = e.target;
+  const btn = document.getElementById('contactSubmitBtn');
+  const errBox = document.getElementById('contactFormError');
+  if(errBox) errBox.style.display = 'none';
+  if(btn){ btn.disabled = true; btn.textContent = 'Sending…'; }
+
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(res => {
+    if(res.ok){
+      form.outerHTML = `<div class="testi-card" style="background:var(--bg-sunken);"><p style="font-weight:700;">Thanks — your message is in. A planner will reply within one business day.</p></div>`;
+      if(typeof gtag === 'function') gtag('event', 'conversion', { send_to: 'G-XXXXXXXXXX', event_category:'form', event_label:'contact_form' });
+    } else {
+      throw new Error('Formspree returned ' + res.status);
+    }
+  }).catch(() => {
+    if(errBox) errBox.style.display = 'block';
+    if(btn){ btn.disabled = false; btn.textContent = 'Send message'; }
+  });
+}
+
+/* ============ 7-STEP QUOTE FLOW ============ */
+function renderQuote(){
+  return `
+  <div class="quote-shell page-wrap">
+    <form id="quoteForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div id="quoteBody"></div>
+      <!-- Hidden fields aggregating the full quote flow, filled in at final submit -->
+      <input type="hidden" name="eventType" id="qh-eventType">
+      <input type="hidden" name="date" id="qh-date">
+      <input type="hidden" name="guests" id="qh-guests">
+      <input type="hidden" name="budget" id="qh-budget">
+      <input type="hidden" name="venue" id="qh-venue">
+      <input type="hidden" name="addons" id="qh-addons">
+      <input type="hidden" name="name" id="qh-name">
+      <input type="hidden" name="email" id="qh-email">
+      <input type="hidden" name="phone" id="qh-phone">
+      <input type="hidden" name="notes" id="qh-notes">
+    </form>
+  </div>`;
+}
+
+function renderStep(){
+  const body = document.getElementById('quoteBody');
+  if(currentStep > 7){ body.innerHTML = renderSuccess(); return; }
+  const meta = STEP_META[currentStep-1];
+  const pct = ((currentStep-1)/7)*100;
+  body.innerHTML = `
+    <div class="progress-label"><span>Step ${currentStep} of 7</span><span>${meta.label}</span></div>
+    <div class="progress-track">
+      ${STEP_META.map(s=>`<div class="progress-seg"><div class="fill" style="width:${s.n < currentStep ? '100' : s.n===currentStep ? '50' : '0'}%;"></div></div>`).join('')}
+    </div>
+    <div class="step-card">
+      <div class="step-num">${currentStep}</div>
+      ${stepContent(currentStep)}
+      <div class="step-actions">
+        <button type="button" class="btn-secondary" onclick="prevStep()" ${currentStep===1?'style="visibility:hidden;"':''}>← Back</button>
+        <button type="button" class="btn-primary" id="nextBtn" onclick="nextStep()">${currentStep===7?'Review & Submit':'Continue →'}</button>
+      </div>
+    </div>
+  `;
+  wireStepInputs();
+}
+
+function stepContent(n){
+  if(n===1){
+    const opts = [{v:'wedding',i:'💍',l:'Wedding'},{v:'corporate',i:'🏢',l:'Corporate Event'},{v:'milestone',i:'🎂',l:'Milestone Celebration'},{v:'graduation',i:'🎓',l:'Graduation'},{v:'festival',i:'🎊',l:'Festival / Social'},{v:'engagement',i:'💐',l:'Engagement'}];
+    return `<h3>What are we planning?</h3><p class="step-sub">Pick the closest match — we'll tailor the rest of the questions to it.</p>
+      <div class="opt-grid">
+        ${opts.map(o=>`<button type="button" class="opt-card ${quoteData.eventType===o.v?'selected':''}" data-val="${o.v}" onclick="selectOpt('eventType','${o.v}')"><span class="ico">${o.i}</span><span class="lbl">${o.l}</span></button>`).join('')}
+      </div>`;
+  }
+  if(n===2){
+    return `<h3>When's the big day?</h3><p class="step-sub">A rough date is fine — you can confirm the exact date later.</p>
+      <div class="field"><label for="q-date">Preferred date</label><input id="q-date" name="date" type="date" value="${quoteData.date}" onchange="quoteData.date=this.value; validateStep();"></div>`;
+  }
+  if(n===3){
+    return `<h3>How many guests?</h3><p class="step-sub">Drag to estimate — exact headcount can wait until closer to the date.</p>
+      <div class="range-wrap">
+        <div class="range-val" id="guestVal">${quoteData.guests} guests</div>
+        <input type="range" name="guests" min="10" max="2000" step="10" value="${quoteData.guests}" oninput="quoteData.guests=this.value; document.getElementById('guestVal').textContent=this.value+' guests';">
+      </div>`;
+  }
+  if(n===4){
+    const opts = ['Under ₹1,00,000','₹1,00,000 – ₹3,00,000','₹3,00,000 – ₹7,00,000','₹7,00,000 – ₹15,00,000','₹15,00,000+'];
+    return `<h3>What's your budget range?</h3><p class="step-sub">This helps us recommend the right package — nothing is locked in.</p>
+      <div class="chip-row">
+        ${opts.map(o=>`<button type="button" class="chip ${quoteData.budget===o?'selected':''}" onclick="selectOpt('budget','${o}')">${o}</button>`).join('')}
+      </div>`;
+  }
+  if(n===5){
+    const opts = [{v:'have',i:'✅',l:'I already have a venue'},{v:'help',i:'🔍',l:'Help me find one'},{v:'undecided',i:'🤔',l:'Still deciding'}];
+    return `<h3>Venue status</h3><p class="step-sub">If you need sourcing help, our venue team will send shortlisted options.</p>
+      <div class="opt-grid">
+        ${opts.map(o=>`<button type="button" class="opt-card ${quoteData.venue===o.v?'selected':''}" data-val="${o.v}" onclick="selectOpt('venue','${o.v}')"><span class="ico">${o.i}</span><span class="lbl">${o.l}</span></button>`).join('')}
+      </div>`;
+  }
+  if(n===6){
+    const opts = ['Catering','Photography & Video','Decor & Florals','Entertainment / DJ','Transportation','Invitations & Stationery'];
+    return `<h3>Any add-ons you'd like included?</h3><p class="step-sub">Select all that apply — this is optional.</p>
+      <div class="chip-row">
+        ${opts.map(o=>`<button type="button" class="chip ${quoteData.addons.includes(o)?'selected':''}" onclick="toggleAddon('${o}')">${o}</button>`).join('')}
+      </div>`;
+  }
+  if(n===7){
+    return `<h3>Your details</h3><p class="step-sub">So we know where to send your proposal.</p>
+      <div class="field"><label for="q-name">Full name</label><input id="q-name" name="name" required value="${quoteData.name}" oninput="quoteData.name=this.value; validateStep();"><div class="field-error">Please enter your name.</div></div>
+      <div class="field"><label for="q-email">Email</label><input id="q-email" name="email" type="email" required value="${quoteData.email}" oninput="quoteData.email=this.value; validateStep();"><div class="field-error">Please enter a valid email.</div></div>
+      <div class="field"><label for="q-phone">Phone</label><input id="q-phone" name="phone" required value="${quoteData.phone}" oninput="quoteData.phone=this.value; validateStep();"><div class="field-error">Please enter a phone number.</div></div>
+      <div class="field"><label for="q-notes">Anything else we should know? (optional)</label><textarea id="q-notes" name="notes" oninput="quoteData.notes=this.value;">${quoteData.notes}</textarea></div>`;
+  }
+}
+
+function selectOpt(key, val){
+  quoteData[key] = val;
+  renderStep();
+}
+function toggleAddon(name){
+  const i = quoteData.addons.indexOf(name);
+  if(i>-1) quoteData.addons.splice(i,1); else quoteData.addons.push(name);
+  renderStep();
+}
+function wireStepInputs(){
+  validateStep();
+}
+function validateStep(){
+  const btn = document.getElementById('nextBtn');
+  if(!btn) return;
+  let ok = true;
+  if(currentStep===1) ok = !!quoteData.eventType;
+  if(currentStep===2) ok = !!quoteData.date;
+  if(currentStep===4) ok = !!quoteData.budget;
+  if(currentStep===5) ok = !!quoteData.venue;
+  if(currentStep===7) ok = quoteData.name.trim().length>0 && /\S+@\S+\.\S+/.test(quoteData.email) && quoteData.phone.trim().length>=7;
+  btn.disabled = !ok;
+}
+function nextStep(){
+  if(currentStep===7){
+    // validate with visible errors
+    let valid = true;
+    const nameField = document.getElementById('q-name').closest('.field');
+    const emailField = document.getElementById('q-email').closest('.field');
+    const phoneField = document.getElementById('q-phone').closest('.field');
+    [nameField,emailField,phoneField].forEach(f=>f.classList.remove('has-error'));
+    if(quoteData.name.trim().length===0){nameField.classList.add('has-error');valid=false;}
+    if(!/\S+@\S+\.\S+/.test(quoteData.email)){emailField.classList.add('has-error');valid=false;}
+    if(quoteData.phone.trim().length<7){phoneField.classList.add('has-error');valid=false;}
+    if(!valid) return;
+    currentStep = 8; // review
+    renderReview();
+    return;
+  }
+  currentStep++;
+  renderStep();
+}
+function prevStep(){
+  if(currentStep>1){ currentStep--; renderStep(); }
+}
+
+function renderReview(){
+  const body = document.getElementById('quoteBody');
+  const labelFor = {wedding:'Wedding',corporate:'Corporate Event',milestone:'Milestone Celebration',graduation:'Graduation',festival:'Festival / Social',engagement:'Engagement',have:'Already have one',help:'Needs sourcing help',undecided:'Still deciding'};
+  body.innerHTML = `
+    <div class="progress-label"><span>Almost there</span><span>Review</span></div>
+    <div class="progress-track">${STEP_META.map(()=>`<div class="progress-seg"><div class="fill" style="width:100%;"></div></div>`).join('')}</div>
+    <div class="step-card">
+      <h3>Review your request</h3>
+      <p class="step-sub">Everything look right? Submit and a planner will follow up within one business day.</p>
+      <div class="review-list">
+        <div class="review-row"><span class="k">Event type</span><span class="v">${labelFor[quoteData.eventType]||'—'}</span></div>
+        <div class="review-row"><span class="k">Date</span><span class="v">${quoteData.date||'—'}</span></div>
+        <div class="review-row"><span class="k">Guests</span><span class="v">${quoteData.guests}</span></div>
+        <div class="review-row"><span class="k">Budget</span><span class="v">${quoteData.budget||'—'}</span></div>
+        <div class="review-row"><span class="k">Venue</span><span class="v">${labelFor[quoteData.venue]||'—'}</span></div>
+        <div class="review-row"><span class="k">Add-ons</span><span class="v">${quoteData.addons.length?quoteData.addons.join(', '):'None'}</span></div>
+        <div class="review-row"><span class="k">Contact</span><span class="v">${quoteData.name} · ${quoteData.email}</span></div>
+      </div>
+      <div class="step-actions">
+        <button type="button" class="btn-secondary" onclick="currentStep=7; renderStep();">← Edit</button>
+        <button type="button" class="btn-primary" id="quoteSubmitBtn" onclick="submitQuote()">Submit request</button>
+      </div>
+      <div id="quoteFormError" class="field-error" style="display:none;margin-top:10px;">Something went wrong sending your request — please try again, or reach us directly on the Contact page.</div>
+    </div>`;
+}
+
+function submitQuote(){
+  const btn = document.getElementById('quoteSubmitBtn');
+  const errBox = document.getElementById('quoteFormError');
+  const form = document.getElementById('quoteForm');
+  if(errBox) errBox.style.display = 'none';
+  if(btn){ btn.disabled = true; btn.textContent = 'Submitting…'; }
+
+  // aggregate all 7 steps of quoteData into the hidden fields before submitting
+  document.getElementById('qh-eventType').value = quoteData.eventType || '';
+  document.getElementById('qh-date').value = quoteData.date || '';
+  document.getElementById('qh-guests').value = quoteData.guests || '';
+  document.getElementById('qh-budget').value = quoteData.budget || '';
+  document.getElementById('qh-venue').value = quoteData.venue || '';
+  document.getElementById('qh-addons').value = (quoteData.addons || []).join(', ');
+  document.getElementById('qh-name').value = quoteData.name || '';
+  document.getElementById('qh-email').value = quoteData.email || '';
+  document.getElementById('qh-phone').value = quoteData.phone || '';
+  document.getElementById('qh-notes').value = quoteData.notes || '';
+
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(res => {
+    if(res.ok){
+      currentStep = 8;
+      document.getElementById('quoteBody').innerHTML = renderSuccess();
+      if(typeof gtag === 'function') gtag('event', 'conversion', { send_to: 'G-XXXXXXXXXX', event_category:'form', event_label:'quote_flow' });
+    } else {
+      throw new Error('Formspree returned ' + res.status);
+    }
+  }).catch(() => {
+    if(errBox) errBox.style.display = 'block';
+    if(btn){ btn.disabled = false; btn.textContent = 'Submit request'; }
+  });
+}
+
+function renderSuccess(){
+  return `<div class="step-card success-card">
+    <div class="big-check">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M4 12.5L9.5 18L20 6" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h3>Request sent!</h3>
+    <p class="step-sub">Thanks, ${quoteData.name.split(' ')[0]||'there'} — we've got your ${labelForSuccess()} details. A planner will email you at ${quoteData.email} within one business day.</p>
+    <button type="button" class="btn-primary" onclick="goTo('home')">Back to home</button>
+  </div>`;
+}
+function labelForSuccess(){
+  const m = {wedding:'wedding',corporate:'corporate event',milestone:'milestone celebration',graduation:'graduation',festival:'festival',engagement:'engagement'};
+  return m[quoteData.eventType] || 'event';
+}
+
+/* ============ V3 SCROLL BEHAVIOR ============ */
+let revealObserver = null;
+function wireReveals(){
+  if(revealObserver) revealObserver.disconnect();
+  const els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window) || els.length===0) return;
+  revealObserver = new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); revealObserver.unobserve(en.target); } });
+  }, {threshold:0.12});
+  els.forEach(el=>revealObserver.observe(el));
+}
+window.addEventListener('scroll', ()=>{
+  const btn = document.getElementById('floatCta');
+  if(!btn) return;
+  btn.classList.toggle('show', window.scrollY > 480 && route !== 'quote');
+}, {passive:true});
+
+/* ============ ANALYTICS: CTA CLICK TRACKING ============ */
+// Delegated listener so it catches every "Plan Your Event" CTA (hero pill,
+// floating CTA, nav link, and every in-page card button) regardless of
+// which render() pass put it on the page.
+document.addEventListener('click', function(e){
+  const el = e.target.closest('[onclick*="goTo(\'quote\')"]');
+  if(el && typeof gtag === 'function'){
+    gtag('event', 'cta_click', {
+      event_category: 'engagement',
+      event_label: 'Plan Your Event',
+      cta_text: el.textContent.trim()
+    });
+  }
+});
+
+/* ============ INIT ============ */
+route = routeFromHash();
+render();
+wireReveals();
+</script>
