@@ -2412,7 +2412,8 @@ function renderContact(){
           <div><h4>Studio hours</h4><p>Mon–Sat, 10am–7pm IST</p></div>
         </div>
       </div>
-      <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="submitContact(event)">
+      <form id="contactForm" action="https://formspree.io/f/mjyvvplb" method="POST" onsubmit="submitContact(event)">
+        <input type="hidden" name="_subject" value="New Contact Form Submission - Miracle Eventz">
         <div class="field"><label for="c-name">Name</label><input id="c-name" name="name" required></div>
         <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required></div>
         <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" name="message" required placeholder="Tell us a bit about your event..."></textarea></div>
@@ -2451,7 +2452,8 @@ function submitContact(e){
 function renderQuote(){
   return `
   <div class="quote-shell page-wrap">
-    <form id="quoteForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <form id="quoteForm" action="https://formspree.io/f/mjyvvplb" method="POST">
+      <input type="hidden" name="_subject" value="New Quote Request - Miracle Eventz">
       <div id="quoteBody"></div>
       <!-- Hidden fields aggregating the full quote flow, filled in at final submit -->
       <input type="hidden" name="eventType" id="qh-eventType">
