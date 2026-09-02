@@ -937,7 +937,7 @@ const EVENT_TYPES = [
    desc:'Festivals, public celebrations and exhibitions built for high footfall, with the crowd management, infrastructure and technical control that scale demands.',
    handle:['Master planning','Production','Infrastructure','Crowd management','Technical production','Hospitality','Logistics','On-ground execution'],
    journey:[{n:'01',name:'Scale &amp; Objective'},{n:'02',name:'Venue &amp; Permissions'},{n:'03',name:'Master Plan &amp; Design'},{n:'04',name:'Infrastructure &amp; Vendor Planning'},{n:'05',name:'Crowd &amp; Technical Rehearsal'},{n:'06',name:'The Event, Run End to End'},{n:'07',name:'Close-Out &amp; Reporting'}],
-   caseIds:['state-level-sports-festival','grand-welcome-procession','masti-ki-pattshala','hindustan-pencils-school-activity']},
+   caseIds:['state-level-sports-festival','grand-welcome-procession','hindustan-pencils-school-activity']},
   {key:'entertainment', name:'Entertainment', short:'Concerts, live shows, artist-led experiences and entertainment productions.',
    headline:'Live shows,<span class="script" style="display:block;">run on show calling.</span>',
    desc:'Concerts, roadshows and artist-led experiences, produced end to end, from artist logistics to sound and show control.',
@@ -1002,16 +1002,6 @@ const SERVICE_FAQS = [
   {q:'What happens after we submit an enquiry?',a:'We review your brief and follow up to understand the event in more detail before shaping a plan and a quote.'},
 ];
 
-const CASE_MASTI_IMAGES = [
-  "/case-masti-ki-pathshala-1.jpg",
-  "/case-masti-ki-pathshala-2.jpg",
-  "/case-masti-ki-pathshala-3.jpg",
-  "/case-masti-ki-pathshala-4.jpg",
-  "/case-masti-ki-pathshala-5.jpg",
-  "/case-masti-ki-pathshala-6.jpg",
-  "/case-masti-ki-pathshala-7.jpg",
-  "/case-masti-ki-pathshala-8.jpg",
-];
 
 const CASE_HPENCIL_IMAGES = [
   "/case-hindustan-pencils-1.jpg",
@@ -1120,19 +1110,6 @@ const CASE_STUDIES = {
     images:[POSTER_WELCOME],
     video:'grand-welcome-procession.mp4',
     imageNote:'Watch the procession highlight film below.',
-  },
-  'masti-ki-pattshala': {
-    title:'Masti Ki Pattshala',
-    client:'Ambuja Cement — employee family day',
-    location:'Aurangabad',
-    year:'2010',
-    meta:'2010 | 2-day event | approximately 500 attendees per day',
-    challenge:'A corporate client wanted a genuine family fun day for employees and their families -- something playful and inclusive rather than a standard corporate function, across two full days.',
-    concept:'We designed "Masti Ki Pattshala" (School of Fun) around games, stalls, and live entertainment that worked for every age group in the family at once -- kids, parents, and grandparents.',
-    execution:'Games and snack stalls opened at 10am with soft music, followed by on-the-spot games at 11, lunch at 1, and a live orchestra with songs and dance from 2pm. We handled entertainment design, on-ground games, stage decor, and coordination -- the client arranged venue, catering, and invitations.',
-    result:'Two full days of high-participation family entertainment, with games, group activities, and a themed stage that gave the event its own identity rather than feeling generic.',
-    images:CASE_MASTI_IMAGES,
-    imageNote:null,
   },
   'hindustan-pencils-school-activity': {
     title:'Hindustan Pencils School Contact Programme',
@@ -1375,7 +1352,7 @@ const FOLIO = [
   {cls:'folio-1', title:'Harsh & Krutika — Wedding Production', tag:'Private client | Maharashtra | 2026', caseId:'harsh-krutika-wedding-film'},
   {cls:'folio-2', title:'State-Level Sports Festival', tag:'Maharashtra Shasan | 2026', caseId:'state-level-sports-festival'},
   {cls:'folio-3', title:'Grand Welcome Procession', tag:'Maharashtra Shasan | 2026', caseId:'grand-welcome-procession'},
-  {cls:'folio-1', title:'Masti Ki Pattshala', tag:'Ambuja Cement | Aurangabad | 2010', caseId:'masti-ki-pattshala'},
+
   {cls:'folio-2', title:'Hindustan Pencils School Activity', tag:'Natraj & Apsara | 8 cities | 2005', caseId:'hindustan-pencils-school-activity'},
   {cls:'folio-3', title:'Retailer & Dealer Meet', tag:'Ambuja Cement | Aurangabad | 2010', caseId:'retailer-dealer-meet'},
   {cls:'folio-4', title:'Haldi Kumkum Event', tag:'Community festival | Aurangabad | 2010', caseId:'haldi-kumkum-event'},
@@ -2092,7 +2069,7 @@ function renderThinking(){
 
 
 /* ============ CASE STUDY ============ */
-const CASE_ORDER = ['harsh-krutika-wedding-film','state-level-sports-festival','grand-welcome-procession','masti-ki-pattshala','hindustan-pencils-school-activity','retailer-dealer-meet','haldi-kumkum-event','indian-idol-5-roadshow','bajaj-pulsar-stunt-show','prozone-phase-2-launch','lg-branding-and-shoppe-launch'];
+const CASE_ORDER = ['harsh-krutika-wedding-film','state-level-sports-festival','grand-welcome-procession','hindustan-pencils-school-activity','retailer-dealer-meet','haldi-kumkum-event','indian-idol-5-roadshow','bajaj-pulsar-stunt-show','prozone-phase-2-launch','lg-branding-and-shoppe-launch'];
 
 function renderCaseStudy(id){
   const c = CASE_STUDIES[id];
