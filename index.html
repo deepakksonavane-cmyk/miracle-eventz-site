@@ -851,6 +851,43 @@ input[type=range]{width:100%;accent-color:var(--accent);}
 @media (prefers-reduced-motion: reduce){
   .pillar-card, .evt-card, .svc-drawer, .drawer-overlay, .faq-a{transition:none !important;}
 }
+
+/* ============ SCROLL-TRIGGERED REVEAL ANIMATIONS ============ */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered reveal animations for card grids */
+.why-card:nth-child(1) { transition-delay: 0s !important; }
+.why-card:nth-child(2) { transition-delay: 0.1s !important; }
+.why-card:nth-child(3) { transition-delay: 0.2s !important; }
+
+.proof-card-mini:nth-child(1) { transition-delay: 0s !important; }
+.proof-card-mini:nth-child(2) { transition-delay: 0.15s !important; }
+.proof-card-mini:nth-child(3) { transition-delay: 0.3s !important; }
+
+.pillar-card:nth-child(1) { transition-delay: 0s !important; }
+.pillar-card:nth-child(2) { transition-delay: 0.1s !important; }
+.pillar-card:nth-child(3) { transition-delay: 0.2s !important; }
+.pillar-card:nth-child(4) { transition-delay: 0.3s !important; }
+
+/* Parallax performance optimization */
+[data-parallax] { will-change: transform; }
+
+/* Smooth parallax movement */
+@media (prefers-reduced-motion: no-preference) {
+  [data-parallax] {
+    transition: none;
+  }
+}
+
 </style>
 
 <!-- ============ MARKUP ============ -->
@@ -1465,7 +1502,7 @@ function renderHome(){
           <div><div class="num">672+</div><div class="lbl">Events &amp; promotions</div></div>
         </div>
       </div>
-      <div class="medallion">
+      <div class="medallion" data-parallax="true">
         ${medallionSVG()}
       </div>
     </div>
@@ -1500,15 +1537,15 @@ function renderHome(){
 
   <!-- WHY MIRACLE EVENTZ -->
   <section class="page-wrap" style="padding-top:0;">
-    <div class="section-head">
+    <div class="reveal section-head">
       <div class="eyebrow">Why Miracle Eventz</div>
       <h2>One brief, one team, no gaps</h2>
       <p>The same discipline that runs a multi-city brand activation runs your wedding weekend — strategy and execution under one roof.</p>
     </div>
     <div class="why-grid">
-      <div class="why-card"><div class="n">01</div><h3>One accountable team</h3><p>A single dedicated planner coordinates every vendor, timeline, and detail — you deal with one point of contact, not a dozen.</p></div>
-      <div class="why-card"><div class="n">02</div><h3>An honest budget</h3><p>We tell you what things actually cost, and build the plan to fit — no surprise line items on event day.</p></div>
-      <div class="why-card"><div class="n">03</div><h3>Hands-on execution</h3><p>We're on the ground for the load-in, the run-of-show, and the strike — the same team that designed it is the one running it.</p></div>
+      <div class="reveal why-card"><div class="n">01</div><h3>One accountable team</h3><p>A single dedicated planner coordinates every vendor, timeline, and detail — you deal with one point of contact, not a dozen.</p></div>
+      <div class="reveal why-card"><div class="n">02</div><h3>An honest budget</h3><p>We tell you what things actually cost, and build the plan to fit — no surprise line items on event day.</p></div>
+      <div class="reveal why-card"><div class="n">03</div><h3>Hands-on execution</h3><p>We're on the ground for the load-in, the run-of-show, and the strike — the same team that designed it is the one running it.</p></div>
     </div>
     <div style="margin-top:28px;padding-top:24px;border-top:1px solid var(--border);">
       <span class="eyebrow">From the Thinking page</span>
@@ -1530,7 +1567,7 @@ function renderHome(){
 
   <!-- HOW WE THINK / METHOD -->
   <section class="page-wrap" style="background:var(--bg-sunken);border-radius:28px;padding:56px 40px;max-width:1124px;margin-top:48px;">
-    <div class="section-head" style="max-width:720px;">
+    <div class="reveal section-head" style="max-width:720px;">
       <div class="eyebrow">How we think</div>
       <h2>From a brief to ground reality</h2>
       <p>Every project — a school activation, a stunt show, a wedding — moves through the same four stages.</p>
@@ -1590,15 +1627,15 @@ function renderHome(){
       <p>Two industry awards, and an unopposed election to lead the region's event-management association.</p>
     </div>
     <div class="proof-row-mini">
-      <div class="proof-card-mini">
+      <div class="reveal proof-card-mini">
         <img src="${AWARD_PHOTOS[0]}" alt="Business and Service Excellence Award 2012" loading="lazy">
         <div class="pc-body"><div class="eyebrow">2012</div><p class="title">Business and Service Excellence Award</p></div>
       </div>
-      <div class="proof-card-mini">
+      <div class="reveal proof-card-mini">
         <img src="${AWARD_PHOTOS[1]}" alt="Leadership and Service Excellence Award 2013" loading="lazy">
         <div class="pc-body"><div class="eyebrow">2013</div><p class="title">Leadership and Service Excellence Award</p></div>
       </div>
-      <div class="proof-card-mini">
+      <div class="reveal proof-card-mini">
         <img src="${AWARD_PHOTOS[2]}" alt="Marathwada Event Management Association leadership" loading="lazy">
         <div class="pc-body"><div class="eyebrow">Industry leadership</div><p class="title">President, Marathwada Event Management Association</p></div>
       </div>
@@ -2673,6 +2710,51 @@ document.addEventListener('click', function(e){
     });
   }
 });
+
+
+/* ============ PARALLAX SCROLL HANDLER ============ */
+{
+  let ticking = false;
+  const prefersReducedMotion = () => {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  };
+
+  const handleParallax = () => {
+    if (prefersReducedMotion()) {
+      ticking = false;
+      return;
+    }
+
+    const parallaxElements = document.querySelectorAll('[data-parallax]');
+    parallaxElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const distance = rect.top / window.innerHeight;
+      const parallaxAmount = Math.max(-40, Math.min(40, distance * 40));
+      el.style.transform = `translateY(${parallaxAmount}px)`;
+    });
+    
+    ticking = false;
+  };
+
+  const onScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(handleParallax);
+      ticking = true;
+    }
+  };
+
+  // Listen for reduce-motion changes at runtime
+  window.matchMedia('(prefers-reduced-motion: reduce)').addListener(() => {
+    if (prefersReducedMotion()) {
+      document.querySelectorAll('[data-parallax]').forEach(el => {
+        el.style.transform = '';
+      });
+    }
+  });
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  handleParallax(); // Initial call
+}
 
 /* ============ INIT ============ */
 route = routeFromHash();
