@@ -81,8 +81,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Archivo:wght@500;600;700;800;900&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 
 <!-- ============ GOOGLE ANALYTICS 4 ============
-     Replace G-XXXXXXXXXX below with your real GA4 Measurement ID before going live. -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+     Replace G-ZNKNB3BL2D below with your real GA4 Measurement ID before going live. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNKNB3BL2D"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){ dataLayer.push(arguments); }
@@ -91,7 +91,7 @@
   // page_view events on every route change instead (see goTo()/render() in the
   // main script below), otherwise every internal route would look like the
   // same one pageview to GA4.
-  gtag('config', 'G-XXXXXXXXXX', { send_page_view: false });
+  gtag('config', 'G-ZNKNB3BL2D', { send_page_view: false });
 </script>
 
 <style>
@@ -2438,7 +2438,7 @@ function submitContact(e){
   }).then(res => {
     if(res.ok){
       form.outerHTML = `<div class="testi-card" style="background:var(--bg-sunken);"><p style="font-weight:700;">Thanks — your message is in. A planner will reply within one business day.</p></div>`;
-      if(typeof gtag === 'function') gtag('event', 'conversion', { send_to: 'G-XXXXXXXXXX', event_category:'form', event_label:'contact_form' });
+      if(typeof gtag === 'function') gtag('event', 'conversion', { send_to: 'G-ZNKNB3BL2D', event_category:'form', event_label:'contact_form' });
     } else {
       throw new Error('Formspree returned ' + res.status);
     }
@@ -2640,7 +2640,7 @@ function submitQuote(){
     if(res.ok){
       currentStep = 8;
       document.getElementById('quoteBody').innerHTML = renderSuccess();
-      if(typeof gtag === 'function') gtag('event', 'conversion', { send_to: 'G-XXXXXXXXXX', event_category:'form', event_label:'quote_flow' });
+      if(typeof gtag === 'function') gtag('event', 'conversion', { send_to: 'G-ZNKNB3BL2D', event_category:'form', event_label:'quote_flow' });
     } else {
       throw new Error('Formspree returned ' + res.status);
     }
