@@ -74,8 +74,68 @@
   ARCHIVE_HIGHLIGHTS, EVENT_IMAGES) so nothing breaks.
 -->
 <!-- Miracle Eventz — full site -->
-<title>Miracle Eventz</title><meta name="google-site-verification" content="N6ZzrjAortkenJLR_dxM7q5-c7z1hE_CIV_II-U9I30" />
+<title>Miracle Eventz — Event Management Company in Aurangabad (Chhatrapati Sambhajinagar)</title>
+<meta name="google-site-verification" content="N6ZzrjAortkenJLR_dxM7q5-c7z1hE_CIV_II-U9I30" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Miracle Eventz — 26+ years planning weddings, corporate events, brand activations & product launches in Chhatrapati Sambhajinagar (Aurangabad) &amp; Marathwada. One accountable team, brief to ground reality.">
+<link rel="canonical" href="https://miracleevents.net/">
+
+<!-- ============ OPEN GRAPH / TWITTER CARD ============ -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Miracle Eventz">
+<meta property="og:title" content="Miracle Eventz — Event Management Company in Aurangabad (Chhatrapati Sambhajinagar)">
+<meta property="og:description" content="26+ years planning weddings, corporate events, brand activations &amp; product launches in Chhatrapati Sambhajinagar (Aurangabad) &amp; Marathwada. One accountable team, brief to ground reality.">
+<meta property="og:url" content="https://miracleevents.net/">
+<meta property="og:image" content="https://miracleevents.net/images/hero-poster-sports-festival.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Miracle Eventz — Event Management Company in Aurangabad (Chhatrapati Sambhajinagar)">
+<meta name="twitter:description" content="26+ years planning weddings, corporate events, brand activations &amp; product launches in Chhatrapati Sambhajinagar (Aurangabad) &amp; Marathwada.">
+<meta name="twitter:image" content="https://miracleevents.net/images/hero-poster-sports-festival.jpg">
+
+<!-- ============ STRUCTURED DATA (JSON-LD) ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Miracle Eventz",
+  "image": "https://miracleevents.net/images/hero-poster-sports-festival.jpg",
+  "url": "https://miracleevents.net/",
+  "telephone": "+91-9325205557",
+  "email": "deepakk.sonavane@outlook.com",
+  "foundingDate": "1998",
+  "founder": {
+    "@type": "Person",
+    "name": "Deepak H. Sonavane"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Plot No. 22, Khivansara Park, Opp. Vardhman Residency, Ulkanagri",
+    "addressLocality": "Chhatrapati Sambhajinagar",
+    "addressRegion": "Maharashtra",
+    "postalCode": "431001",
+    "addressCountry": "IN"
+  },
+  "areaServed": ["Chhatrapati Sambhajinagar", "Aurangabad", "Marathwada", "Maharashtra"],
+  "description": "Event management company offering weddings, corporate events, brand activations, product launches and large-scale live events, planned and run end to end by one accountable team.",
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Do you handle complete event planning?","acceptedAnswer":{"@type":"Answer","text":"Yes, we can take an event from initial concept through to on-ground execution and close-out, as a single accountable team."}},
+    {"@type":"Question","name":"Can we hire only specific services?","acceptedAnswer":{"@type":"Answer","text":"Yes. If parts of your event are already handled, we can take on specific pieces, such as production, decor, or on-ground coordination, rather than the full scope."}},
+    {"@type":"Question","name":"Do you work outside our city?","acceptedAnswer":{"@type":"Answer","text":"Yes, our work spans multiple cities and states; we plan logistics around wherever the event is happening."}},
+    {"@type":"Question","name":"Can you work with our existing vendors?","acceptedAnswer":{"@type":"Answer","text":"Yes. We regularly coordinate with vendors a client has already chosen, alongside our own vendor ecosystem."}},
+    {"@type":"Question","name":"Do you provide production and technical services?","acceptedAnswer":{"@type":"Answer","text":"Yes. Stage production, LED, AV, sound, lighting and show control are part of our in-house capability."}},
+    {"@type":"Question","name":"Can you work within an existing budget?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tell us the budget framework and we will shape scope and recommendations around it."}},
+    {"@type":"Question","name":"How early should we contact you?","acceptedAnswer":{"@type":"Answer","text":"The earlier the better, especially for large-scale or multi-day events, but reach out even close to your date and we will tell you honestly what is possible."}},
+    {"@type":"Question","name":"What happens after we submit an enquiry?","acceptedAnswer":{"@type":"Answer","text":"We review your brief and follow up to understand the event in more detail before shaping a plan and a quote."}}
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Archivo:wght@500;600;700;800;900&family=Karla:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -1462,10 +1522,30 @@ function render(){
   else if(route.indexOf('story-')===0) app.innerHTML = renderStory(route.slice(6));
   else if(route.indexOf('case-')===0) app.innerHTML = renderCaseStudy(route.slice(5));
   if(route==='quote') renderStep();
-  document.title = route==='thinking' ? 'Thinking Before the Event — Miracle Eventz'
-    : route==='stories' ? 'Stories From The Field — Miracle Eventz'
-    : route.indexOf('story-')===0 ? 'Stories From The Field — Miracle Eventz'
-    : 'Miracle Eventz';
+  const ROUTE_META = {
+    home: {title:'Miracle Eventz — Event Management Company in Aurangabad (Chhatrapati Sambhajinagar)', desc:'26+ years planning weddings, corporate events, brand activations & product launches in Chhatrapati Sambhajinagar (Aurangabad) & Marathwada. One accountable team, brief to ground reality.'},
+    thinking: {title:'Thinking Before the Event — Miracle Eventz', desc:'How Miracle Eventz structures event ownership, planning and execution — the thinking behind 26+ years of running weddings and corporate events in Aurangabad.'},
+    stories: {title:'Stories From The Field — Miracle Eventz', desc:'Real stories from 26+ years of event execution — corporate activations, product launches, and weddings run by Miracle Eventz in Aurangabad and beyond.'},
+    services: {title:'Event Management Services — Miracle Eventz, Aurangabad', desc:'Wedding planning, corporate events, brand activations, product launches and large-scale live events — full-service event management in Chhatrapati Sambhajinagar (Aurangabad).'},
+    portfolio: {title:'Portfolio & Case Studies — Miracle Eventz', desc:'Real event management projects from Miracle Eventz — corporate activations, product launches, dealer meets and weddings executed in Aurangabad and across India.'},
+    testimonials: {title:'Testimonials & Awards — Miracle Eventz', desc:'Client feedback and industry recognition for Miracle Eventz, a 26+ year event management company based in Chhatrapati Sambhajinagar (Aurangabad).'},
+    contact: {title:'Contact Miracle Eventz — Event Planner in Aurangabad', desc:'Talk to an event planner at Miracle Eventz — Chhatrapati Sambhajinagar (Aurangabad). WhatsApp, call, or send an enquiry to start planning your event.'},
+    quote: {title:'Get a Quote — Miracle Eventz', desc:'Tell us about your event in seven quick steps and Miracle Eventz will come back with a tailored proposal — weddings, corporate events, brand activations and more.'},
+  };
+  const rMeta = route.indexOf('story-')===0 ? ROUTE_META.stories
+    : route.indexOf('case-')===0 ? {title:'Case Study — Miracle Eventz', desc:'A real Miracle Eventz project — planned and executed end to end in Aurangabad and beyond. See the brief, the approach, and the result.'}
+    : (ROUTE_META[route] || ROUTE_META.home);
+  document.title = rMeta.title;
+  const metaDescEl = document.querySelector('meta[name="description"]');
+  if(metaDescEl) metaDescEl.setAttribute('content', rMeta.desc);
+  const ogDescEl = document.querySelector('meta[property="og:description"]');
+  if(ogDescEl) ogDescEl.setAttribute('content', rMeta.desc);
+  const twDescEl = document.querySelector('meta[name="twitter:description"]');
+  if(twDescEl) twDescEl.setAttribute('content', rMeta.desc);
+  const ogTitleEl = document.querySelector('meta[property="og:title"]');
+  if(ogTitleEl) ogTitleEl.setAttribute('content', rMeta.title);
+  const twTitleEl = document.querySelector('meta[name="twitter:title"]');
+  if(twTitleEl) twTitleEl.setAttribute('content', rMeta.title);
   wireReveals();
   wireGsapScroll();
   const fc = document.getElementById('floatCta');
