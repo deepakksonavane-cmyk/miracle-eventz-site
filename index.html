@@ -1,3 +1,6 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
 <meta charset="utf-8">
 <!--
   ASSET MANIFEST — production image files
@@ -77,32 +80,41 @@
 <title>Miracle Eventz — Event Management Company in Aurangabad (Chhatrapati Sambhajinagar)</title>
 <meta name="google-site-verification" content="N6ZzrjAortkenJLR_dxM7q5-c7z1hE_CIV_II-U9I30" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Miracle Eventz — 28 years planning weddings, corporate events, brand activations & product launches in Chhatrapati Sambhajinagar (Aurangabad) &amp; Marathwada. One accountable team, brief to ground reality.">
+<meta name="theme-color" content="#E31C23">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="description" content="Since 1998, Miracle Eventz has planned weddings, corporate events, brand activations &amp; product launches in Chhatrapati Sambhajinagar (Aurangabad) &amp; Marathwada. One accountable team, brief to ground reality.">
 <link rel="canonical" href="https://miracleevents.net/">
 
 <!-- ============ OPEN GRAPH / TWITTER CARD ============ -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Miracle Eventz">
 <meta property="og:title" content="Miracle Eventz — Event Management Company in Aurangabad (Chhatrapati Sambhajinagar)">
-<meta property="og:description" content="28 years planning weddings, corporate events, brand activations &amp; product launches in Chhatrapati Sambhajinagar (Aurangabad) &amp; Marathwada. One accountable team, brief to ground reality.">
+<meta property="og:description" content="Since 1998, planning weddings, corporate events, brand activations &amp; product launches in Chhatrapati Sambhajinagar (Aurangabad) &amp; Marathwada. One accountable team, brief to ground reality.">
 <meta property="og:url" content="https://miracleevents.net/">
-<meta property="og:image" content="https://miracleevents.net/images/hero-poster-sports-festival.jpg">
+<meta property="og:image" content="https://miracleevents.net/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Decorated welcome gate at an event organised by Miracle Eventz">
+<meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Miracle Eventz — Event Management Company in Aurangabad (Chhatrapati Sambhajinagar)">
-<meta name="twitter:description" content="28 years planning weddings, corporate events, brand activations &amp; product launches in Chhatrapati Sambhajinagar (Aurangabad) &amp; Marathwada.">
-<meta name="twitter:image" content="https://miracleevents.net/images/hero-poster-sports-festival.jpg">
+<meta name="twitter:description" content="Since 1998, planning weddings, corporate events, brand activations &amp; product launches in Chhatrapati Sambhajinagar (Aurangabad) &amp; Marathwada.">
+<meta name="twitter:image" content="https://miracleevents.net/og-image.jpg">
 
 <!-- ============ STRUCTURED DATA (JSON-LD) ============ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://miracleevents.net/#business",
   "name": "Miracle Eventz",
-  "image": "https://miracleevents.net/images/hero-poster-sports-festival.jpg",
+  "image": "https://miracleevents.net/og-image.jpg",
   "url": "https://miracleevents.net/",
   "telephone": "+91-9325205557",
   "email": "deepakk.sonavane@outlook.com",
   "foundingDate": "1998",
+  "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"10:00","closes":"19:00"}],
   "founder": {
     "@type": "Person",
     "name": "Deepak H. Sonavane"
@@ -119,6 +131,9 @@
   "description": "Event management company offering weddings, corporate events, brand activations, product launches and large-scale live events, planned and run end to end by one accountable team.",
   "sameAs": ["https://instagram.com/deepaak_h._sonawaane", "https://facebook.com/deepakk.sonavane", "https://linkedin.com/company/deepak-sonavane-5a36bb12"]
 }
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","@id":"https://miracleevents.net/#website","url":"https://miracleevents.net/","name":"Miracle Eventz","inLanguage":"en-IN","publisher":{"@id":"https://miracleevents.net/#business"}}
 </script>
 <script type="application/ld+json">
 {
@@ -259,6 +274,10 @@ a{color:inherit;}
 }
 
 button{font-family:inherit;cursor:pointer;}
+ .skip-link{position:absolute;left:-9999px;top:8px;z-index:1000;background:#fff;color:#1A1512;padding:10px 14px;border-radius:8px;font-weight:700;}
+.skip-link:focus{left:8px;}
+.section-head h1{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-top:10px;}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
 :focus-visible{outline:3px solid var(--gold-accent); outline-offset:2px;}
 
 /* ============ LAYOUT SHELL ============ */
@@ -949,6 +968,10 @@ input[type=range]{width:100%;accent-color:var(--accent);}
 }
 
 </style>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+<a class="skip-link" href="#app">Skip to content</a>
 
 <!-- ============ MARKUP ============ -->
 <header class="site">
@@ -966,11 +989,197 @@ input[type=range]{width:100%;accent-color:var(--accent);}
       <button type="button" data-route="contact" onclick="goTo('contact')">Contact</button>
       <button type="button" class="cta-pill" onclick="goTo('quote')">Plan Your Event</button>
     </nav>
-    <button type="button" class="nav-toggle" onclick="toggleMobileNav()" aria-label="Toggle menu">☰</button>
+    <button type="button" class="nav-toggle" id="navToggle" onclick="toggleMobileNav()" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">☰</button>
   </div>
 </header>
 
-<main id="app"></main>
+<main id="app">
+<!-- Pre-rendered home content so crawlers that do not run JavaScript can read the page. JS re-renders this on load. -->
+<section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow" style="color:#FFE8B0;">Event Strategy, Creative &amp; On-Ground Execution — Since 1998</div>
+        <h1>We plan it.<span class="script">You feel the magic.</span></h1>
+        <p class="lede">Miracle Eventz takes a brief and turns it into ground reality — weddings, corporate programmes, brand activations, and large-scale live events, planned and run end to end by one accountable team.</p>
+        <div class="hero-ctas">
+          <button type="button" class="btn-gold" onclick="goTo('quote')">Plan Your Event &rarr;</button>
+          <button type="button" class="btn-ghost" onclick="goTo('portfolio')">See Our Work</button>
+        </div>
+        <div class="hero-stats">
+          <div><div class="num">28</div><div class="lbl">Years of experience</div></div>
+          <div><div class="num">1998</div><div class="lbl">Founded</div></div>
+          <div><div class="num">672+</div><div class="lbl">Events &amp; promotions</div></div>
+        </div>
+      </div>
+      <div class="medallion" data-parallax="true">
+        <div class="star-field"><span class="falling-star" style="left:22.8%;font-size:15.5px;animation-duration:4.0s;animation-delay:-2.9s;opacity:0.85;">&#9733;</span><span class="falling-star" style="left:60.1%;font-size:10.6px;animation-duration:3.6s;animation-delay:-2.8s;opacity:0.52;">&#9733;</span><span class="falling-star" style="left:35.8%;font-size:18.9px;animation-duration:5.2s;animation-delay:-6.9s;opacity:0.69;">&#9733;</span><span class="falling-star" style="left:47.3%;font-size:9.2px;animation-duration:4.8s;animation-delay:-5.4s;opacity:0.73;">&#9733;</span><span class="falling-star" style="left:90.8%;font-size:10.9px;animation-duration:3.8s;animation-delay:-5.7s;opacity:0.94;">&#9733;</span><span class="falling-star" style="left:21.3%;font-size:11.3px;animation-duration:5.6s;animation-delay:-2.9s;opacity:0.89;">&#9733;</span><span class="falling-star" style="left:5.9%;font-size:9.4px;animation-duration:3.7s;animation-delay:-3.1s;opacity:0.98;">&#9733;</span><span class="falling-star" style="left:13.8%;font-size:10.4px;animation-duration:6.3s;animation-delay:-2.6s;opacity:0.66;">&#9733;</span><span class="falling-star" style="left:69.3%;font-size:18.5px;animation-duration:6.9s;animation-delay:-3.0s;opacity:0.65;">&#9733;</span><span class="falling-star" style="left:61.2%;font-size:13.9px;animation-duration:6.0s;animation-delay:-0.5s;opacity:0.81;">&#9733;</span><span class="falling-star" style="left:20.7%;font-size:15.2px;animation-duration:5.6s;animation-delay:-4.0s;opacity:0.95;">&#9733;</span><span class="falling-star" style="left:54.3%;font-size:10.9px;animation-duration:4.8s;animation-delay:-4.4s;opacity:0.80;">&#9733;</span><span class="falling-star" style="left:89.6%;font-size:18.0px;animation-duration:3.7s;animation-delay:-2.3s;opacity:0.66;">&#9733;</span><span class="falling-star" style="left:71.0%;font-size:15.7px;animation-duration:6.1s;animation-delay:-2.7s;opacity:0.55;">&#9733;</span><span class="falling-star" style="left:61.5%;font-size:16.7px;animation-duration:5.0s;animation-delay:-5.2s;opacity:0.65;">&#9733;</span><span class="falling-star" style="left:8.8%;font-size:12.6px;animation-duration:6.9s;animation-delay:-4.1s;opacity:0.63;">&#9733;</span><span class="falling-star" style="left:76.9%;font-size:9.7px;animation-duration:4.1s;animation-delay:-0.0s;opacity:0.52;">&#9733;</span><span class="falling-star" style="left:74.0%;font-size:11.3px;animation-duration:6.8s;animation-delay:-2.8s;opacity:0.67;">&#9733;</span><span class="falling-star" style="left:48.6%;font-size:13.0px;animation-duration:4.0s;animation-delay:-5.5s;opacity:0.65;">&#9733;</span><span class="falling-star" style="left:12.4%;font-size:15.0px;animation-duration:5.4s;animation-delay:-1.2s;opacity:0.64;">&#9733;</span><span class="falling-star" style="left:20.1%;font-size:13.2px;animation-duration:6.4s;animation-delay:-7.5s;opacity:0.90;">&#9733;</span><span class="falling-star" style="left:54.0%;font-size:10.7px;animation-duration:7.0s;animation-delay:-2.2s;opacity:0.73;">&#9733;</span><span class="falling-star" style="left:82.0%;font-size:17.3px;animation-duration:4.9s;animation-delay:-5.9s;opacity:0.85;">&#9733;</span><span class="falling-star" style="left:23.2%;font-size:16.9px;animation-duration:6.8s;animation-delay:-6.3s;opacity:0.53;">&#9733;</span><span class="falling-star" style="left:77.0%;font-size:10.6px;animation-duration:6.5s;animation-delay:-2.3s;opacity:0.91;">&#9733;</span></div>
+      </div>
+    </div>
+    <svg class="ribbon" viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" style="display:block;">
+    <path d="M0,30 C200,60 400,0 600,25 C800,50 1000,5 1200,30 L1200,60 L0,60 Z" fill="var(--bg)"/>
+  </svg>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section class="page-wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;">
+      <div>
+        <div class="eyebrow">Who we are</div>
+        <h2 style="margin-top:10px;font-size:2rem;">28 years of knowing what can go wrong</h2>
+        <p style="margin-top:16px;color:var(--text-muted);font-size:1.02rem;">Miracle Eventz was founded in 1998 on a simple idea: an event should feel effortless to the people attending it, no matter how complicated it was to build. We're not just event managers — we work as strategy, creative, and on-ground execution partner in one, taking a client's brief and turning it into a real, physical moment: a crowd gathered, a stage lit, a launch that goes off exactly as planned.</p>
+        <p style="margin-top:14px;color:var(--text-muted);font-size:1.02rem;">Since then we've worked across weddings, corporate programs, brand activations, and cultural events — building the kind of practical, hands-on experience that only comes from actually running events, year after year.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="svc-card" style="padding:22px 24px;">
+          <div class="eyebrow">1998</div>
+          <p style="margin-top:6px;font-weight:700;">Founded as an event-planning studio.</p>
+        </div>
+        <div class="svc-card" style="padding:22px 24px;">
+          <div class="eyebrow">Since then</div>
+          <p style="margin-top:6px;font-weight:700;">Expanded into corporate events, brand activations, sports properties, and cultural shows.</p>
+        </div>
+        <div class="svc-card" style="padding:22px 24px;">
+          <div class="eyebrow">Today</div>
+          <p style="margin-top:6px;font-weight:700;">A full-service studio working across six event categories, backed by four in-house creative and production disciplines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY MIRACLE EVENTZ -->
+  <section class="page-wrap" style="padding-top:0;">
+    <div class="reveal section-head">
+      <div class="eyebrow">Why Miracle Eventz</div>
+      <h2>One brief, one team, no gaps</h2>
+      <p>The same discipline that runs a multi-city brand activation runs your wedding weekend — strategy and execution under one roof.</p>
+    </div>
+    <div class="why-grid">
+      <div class="reveal why-card"><div class="n">01</div><h3>One accountable team</h3><p>A single dedicated planner coordinates every vendor, timeline, and detail — you deal with one point of contact, not a dozen.</p></div>
+      <div class="reveal why-card"><div class="n">02</div><h3>An honest budget</h3><p>We tell you what things actually cost, and build the plan to fit — no surprise line items on event day.</p></div>
+      <div class="reveal why-card"><div class="n">03</div><h3>Hands-on execution</h3><p>We're on the ground for the load-in, the run-of-show, and the strike — the same team that designed it is the one running it.</p></div>
+    </div>
+    <div style="margin-top:28px;padding-top:24px;border-top:1px solid var(--border);">
+      <span class="eyebrow">From the Thinking page</span>
+      <p style="margin-top:8px;font-size:1.05rem;font-weight:700;">Who's actually in charge on your event day?</p>
+      <p style="margin-top:6px;color:var(--text-muted);">Most event stress isn't a vendor problem — it's a structure problem. Here's how we think about who owns what.</p>
+      <button type="button" class="think-inline-link" style="margin-top:10px;" onclick="goTo('thinking')">Read the thinking →</button>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE / CREDIBILITY -->
+  <section class="page-wrap">
+    <div class="stat-strip">
+      <div><div class="e">Field Experience</div><div class="n">28 Years</div><div class="l">Seeing what actually happens on the ground.</div></div>
+      <div><div class="e">Scale</div><div class="n">672+</div><div class="l">Events &amp; promotions across different briefs and situations.</div></div>
+      <div><div class="e">Range</div><div class="n n-compact">Corporate · Brand · Wedding · Retail</div><div class="l">Different audiences. Different objectives. One execution mindset.</div></div>
+      <div><div class="e">Evidence</div><div class="n">10</div><div class="l">Real stories from the field. Not claims.</div></div>
+    </div>
+  </section>
+
+  <!-- HOW WE THINK / METHOD -->
+  <section class="page-wrap" style="background:var(--bg-sunken);border-radius:28px;padding:56px 40px;max-width:1124px;margin-top:48px;">
+    <div class="reveal section-head" style="max-width:720px;">
+      <div class="eyebrow">How we think</div>
+      <h2>From a brief to ground reality</h2>
+      <p>Every project — a school activation, a stunt show, a wedding — moves through the same four stages.</p>
+    </div>
+    <div class="method-row" style="margin-top:8px;">
+      <div class="method-step"><div class="m-n">01 — The Brief</div><h3>Understand the objective</h3><p>We start with what you're actually trying to achieve, not the event format — the objective drives the plan, not the other way around.</p></div>
+      <div class="method-step"><div class="m-n">02 — The Idea</div><h3>Build the concept</h3><p>A concept built around your audience and your budget — one that's distinctive enough to remember, and practical enough to build.</p></div>
+      <div class="method-step"><div class="m-n">03 — The Execution</div><h3>Coordinate every detail</h3><p>Vendors, timelines, permissions, staging — one dedicated planner keeps every moving part on schedule.</p></div>
+      <div class="method-step"><div class="m-n">04 — Ground Reality</div><h3>Show up and run it</h3><p>We're on-site for the day itself, running the plan in real time so it holds up in front of a real crowd.</p></div>
+    </div>
+  </section>
+
+  <!-- FOUNDER / HUMAN STORY -->
+  <section class="page-wrap" style="margin-bottom:16px;margin-top:48px;">
+    <div style="display:grid;grid-template-columns:0.8fr 1.2fr;gap:44px;align-items:center;background:var(--bg-sunken);border-radius:28px;padding:44px;">
+      <div style="position:relative;">
+        <div style="position:absolute;inset:-10px;border:2px solid var(--gold-accent);border-radius:20px;opacity:0.5;pointer-events:none;"></div>
+        <img src="/founder-deepak-sonavane.jpg" alt="Deepak H. Sonavane, Founder of Miracle Eventz" style="width:100%;border-radius:16px;display:block;box-shadow:var(--shadow);object-fit:cover;aspect-ratio:2/3;" loading="lazy">
+      </div>
+      <div>
+        <div class="eyebrow">Who's actually running this</div>
+        <h2 style="margin-top:10px;font-size:2rem;">Deepak H. Sonavane</h2>
+        <p class="mono" style="margin-top:4px;color:var(--accent);font-size:0.85rem;">Event Strategist &amp; Consultant</p>
+        <p style="margin-top:16px;color:var(--text-muted);font-size:1.02rem;">Deepak founded Miracle Eventz in 1998 and has led it through weddings, corporate programmes, brand activations, and community events ever since. His approach stays the same on every brief: understand the objective first, then build the plan around it -- not the other way around.</p>
+        <p style="margin-top:14px;color:var(--text-muted);font-size:1.02rem;">28 years in, that's still the whole method — one team, on the ground, for whatever the day actually requires.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEDDINGS — distinct warm tonal section -->
+  <section class="page-wrap" style="margin-top:40px;">
+    <div class="wed-zone">
+      <div class="wed-grid wed-grid--text-only">
+        <div>
+          <div class="eyebrow" style="color:var(--red);">Weddings &amp; celebrations</div>
+          <h2 style="margin-top:10px;font-size:clamp(1.7rem,3.2vw,2.3rem);">The tone changes here, on purpose.</h2>
+          <p style="margin-top:14px;color:var(--mauve);font-size:1.02rem;">Everything above is proof we can run a national brand activation at scale. This is where that same discipline gets warm — a full-service wedding weekend like Harsh &amp; Krutika's, planned by one accountable team that understands the difference between a product launch and a family's biggest day.</p>
+          <div class="wed-fact-row">
+            <span class="chip">Full-service wedding design</span>
+            <span class="chip">One planner, start to finish</span>
+            <span class="chip">Décor, catering &amp; entertainment coordinated</span>
+          </div>
+          <div class="hero-ctas" style="margin-top:26px;">
+            <button type="button" class="btn-primary" onclick="goTo('quote')">Plan Your Event &rarr;</button>
+            <button type="button" class="btn-secondary" onclick="goTo('case-harsh-krutika-wedding-film')">See Harsh &amp; Krutika's Wedding &rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST / PROOF -->
+  <section class="page-wrap">
+    <div class="section-head">
+      <div class="eyebrow">Proof, not promises</div>
+      <h2>Recognition earned over 28 years</h2>
+      <p>Two industry awards, and an unopposed election to lead the region's event-management association.</p>
+    </div>
+    <div class="proof-row-mini">
+      <div class="reveal proof-card-mini">
+        <img src="/award-photo-1.jpg" alt="Business and Service Excellence Award 2012" loading="lazy">
+        <div class="pc-body"><div class="eyebrow">2012</div><p class="title">Business and Service Excellence Award</p></div>
+      </div>
+      <div class="reveal proof-card-mini">
+        <img src="/award-photo-2.jpg" alt="Leadership and Service Excellence Award 2013" loading="lazy">
+        <div class="pc-body"><div class="eyebrow">2013</div><p class="title">Leadership and Service Excellence Award</p></div>
+      </div>
+      <div class="reveal proof-card-mini">
+        <img src="/award-photo-3.jpg" alt="Marathwada Event Management Association leadership" loading="lazy">
+        <div class="pc-body"><div class="eyebrow">Industry leadership</div><p class="title">President, Marathwada Event Management Association</p></div>
+      </div>
+    </div>
+    <div style="margin-top:28px;text-align:center;">
+      <button type="button" class="btn-secondary" onclick="goTo('testimonials')">See full awards &amp; recognition</button>
+    </div>
+  </section>
+
+  <!-- CLIENT LIST -->
+  <section class="page-wrap" style="padding-bottom:0;">
+    <div class="eyebrow" style="text-align:center;">Client history</div>
+    <h2 style="margin-top:10px;font-size:1.6rem;text-align:center;">Brands we've worked with over the years</h2>
+    <p style="margin-top:10px;color:var(--text-muted);text-align:center;max-width:640px;margin-left:auto;margin-right:auto;">A selection from our project history -- past client relationships, not all necessarily current.</p>
+    <div class="client-logo-wrap" style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:32px;">
+      <span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">Tata Tele Services</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">LG India</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">Reliance Infocomm</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">Spencer's Retail</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">Big Bazaar</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">DOW Seeds</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">Empire Mall (Prozone)</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">Encompass</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">Wizcraft International</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">IOCL</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">Ambuja Cement</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">Vespa</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">RK Associates</span><span class="mono client-logo-badge" style="border:1.5px solid var(--border-strong);border-radius:100px;padding:9px 18px;font-size:0.85rem;color:var(--text-muted);">Idea Cellular</span>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="page-wrap">
+    <div class="final-cta">
+      <div class="eyebrow" style="color:#FFE8B0;">Get started</div>
+      <h2 style="margin-top:10px;">Let's turn your brief into ground reality</h2>
+      <p>Tell us your event type, date, guest count, and budget in seven quick steps — we'll come back with a tailored proposal, no obligation.</p>
+      <div class="final-cta-ctas">
+        <button type="button" class="btn-primary" onclick="goTo('quote')">Plan Your Event &rarr;</button>
+        <button type="button" class="btn-ghost" onclick="goTo('contact')">Or just say hello &rarr;</button>
+      </div>
+    </div>
+  </section>
+</main>
+<script>if(location.hash && location.hash!=="#home"){document.getElementById("app").innerHTML="";}</script>
 <button type="button" class="float-cta" id="floatCta" onclick="goTo('quote')">Plan Your Event &rarr;</button>
 
 <footer>
@@ -978,6 +1187,7 @@ input[type=range]{width:100%;accent-color:var(--accent);}
     <div>
       <div class="script">Miracle Eventz</div>
       <div class="fine">Crafting unforgettable occasions since 1998.</div>
+      <address class="fine" style="font-style:normal;margin-top:8px;">Plot No. 22, Khivansara Park, Opp. Vardhman Residency, Ulkanagri, Chhatrapati Sambhajinagar, Maharashtra 431001<br><a href="tel:+919325205557">+91 93252 05557</a> &middot; <a href="https://wa.me/919325205557">WhatsApp</a> &middot; <a href="mailto:deepakk.sonavane@outlook.com">deepakk.sonavane@outlook.com</a></address>
     </div>
     <div class="foot-links">
       <a href="#" onclick="goTo('services');return false;">Services</a>
@@ -1487,6 +1697,7 @@ function goTo(r){
   render();
   const nav = document.getElementById('navLinks');
   if(nav) nav.classList.remove('mobile-open');
+  const nt = document.getElementById('navToggle'); if(nt) nt.setAttribute('aria-expanded','false');
   window.scrollTo({top:0, behavior:'smooth'});
 }
 
@@ -1504,7 +1715,8 @@ window.addEventListener('popstate', function(){
 });
 
 function toggleMobileNav(){
-  document.getElementById('navLinks').classList.toggle('mobile-open');
+  const open = document.getElementById('navLinks').classList.toggle('mobile-open');
+  const t = document.getElementById('navToggle'); if(t) t.setAttribute('aria-expanded', open ? 'true' : 'false');
 }
 
 function render(){
@@ -1524,12 +1736,12 @@ function render(){
   else if(route.indexOf('case-')===0) app.innerHTML = renderCaseStudy(route.slice(5));
   if(route==='quote') renderStep();
   const ROUTE_META = {
-    home: {title:'Miracle Eventz — Event Management Company in Aurangabad (Chhatrapati Sambhajinagar)', desc:'26+ years planning weddings, corporate events, brand activations & product launches in Chhatrapati Sambhajinagar (Aurangabad) & Marathwada. One accountable team, brief to ground reality.'},
-    thinking: {title:'Thinking Before the Event — Miracle Eventz', desc:'How Miracle Eventz structures event ownership, planning and execution — the thinking behind 26+ years of running weddings and corporate events in Aurangabad.'},
-    stories: {title:'Stories From The Field — Miracle Eventz', desc:'Real stories from 26+ years of event execution — corporate activations, product launches, and weddings run by Miracle Eventz in Aurangabad and beyond.'},
+    home: {title:'Miracle Eventz — Event Management Company in Aurangabad (Chhatrapati Sambhajinagar)', desc:'Since 1998, Miracle Eventz has planned weddings, corporate events, brand activations & product launches in Chhatrapati Sambhajinagar (Aurangabad) & Marathwada. One accountable team, brief to ground reality.'},
+    thinking: {title:'Thinking Before the Event — Miracle Eventz', desc:'How Miracle Eventz structures event ownership, planning and execution — the thinking behind '+yearsInBusiness()+' years of running weddings and corporate events in Aurangabad.'},
+    stories: {title:'Stories From The Field — Miracle Eventz', desc:'Real stories from '+yearsInBusiness()+' years of event execution — corporate activations, product launches, and weddings run by Miracle Eventz in Aurangabad and beyond.'},
     services: {title:'Event Management Services — Miracle Eventz, Aurangabad', desc:'Wedding planning, corporate events, brand activations, product launches and large-scale live events — full-service event management in Chhatrapati Sambhajinagar (Aurangabad).'},
     portfolio: {title:'Portfolio & Case Studies — Miracle Eventz', desc:'Real event management projects from Miracle Eventz — corporate activations, product launches, dealer meets and weddings executed in Aurangabad and across India.'},
-    testimonials: {title:'Testimonials & Awards — Miracle Eventz', desc:'Client feedback and industry recognition for Miracle Eventz, a 26+ year event management company based in Chhatrapati Sambhajinagar (Aurangabad).'},
+    testimonials: {title:'Testimonials & Awards — Miracle Eventz', desc:'Client feedback and industry recognition for Miracle Eventz, an event management company since 1998, based in Chhatrapati Sambhajinagar (Aurangabad).'},
     contact: {title:'Contact Miracle Eventz — Event Planner in Aurangabad', desc:'Talk to an event planner at Miracle Eventz — Chhatrapati Sambhajinagar (Aurangabad). WhatsApp, call, or send an enquiry to start planning your event.'},
     quote: {title:'Get a Quote — Miracle Eventz', desc:'Tell us about your event in seven quick steps and Miracle Eventz will come back with a tailored proposal — weddings, corporate events, brand activations and more.'},
   };
@@ -2121,13 +2333,13 @@ function renderThinking(){
     </div>
 
     <div class="think-section">
-      <div class="think-marker"><div class="mk">03</div><h2>Vendor Trust</div></div>
+      <div class="think-marker"><div class="mk">03</div><h2>Vendor Trust</h2></div>
       <p>A polished portfolio tells you what a vendor's best day looked like. It doesn't tell you how they behave on an average day, or a bad one — and that's the day you actually need to plan around.</p>
       <p>Before paying an advance to any vendor or agency, it's worth doing a few unglamorous things: asking for references you can actually call, not just quote; getting the scope of work in writing, specific enough that "included" and "not included" aren't left to memory; and asking to see real past work — a full event, ideally one you can verify with the client — rather than a highlight reel. Red flags worth taking seriously: no written contract, reluctance to share references, and pressure to pay the full amount before any of the above is settled.</p>
     </div>
 
     <div class="think-section">
-      <div class="think-marker"><div class="mk">04</div><h2>Sequencing &amp; Timeline</div></div>
+      <div class="think-marker"><div class="mk">04</div><h2>Sequencing &amp; Timeline</h2></div>
       <p>A surprising amount of event planning stress comes from booking things in the wrong order. Venues get locked in before the guest count or format is settled. Decor gets briefed before the run-of-show exists. A date gets confirmed before checking whether the vendors you actually want are even free that week.</p>
       <p>Each of these causes rework later — a venue that doesn't fit the final numbers, a decor brief that has to be redone once the stage plan changes, a preferred vendor who's already booked. The value of a correct sequence — objective and format first, then date and venue, then the specialist vendors, then the fine detail — isn't just tidiness. It's fewer expensive do-overs in the final weeks, when there's the least room to absorb them.</p>
     </div>
@@ -2359,7 +2571,7 @@ function renderPortfolio(){
   <section class="page-wrap" style="padding-top:56px;">
     <div class="section-head">
       <div class="eyebrow">Portfolio</div>
-      <h2>More from the archive</h2>
+      <h1>More from the archive</h1>
       <p>These are real Miracle Eventz projects we have photos and client names for, but not the full brief-to-result writeup — brief, factual credits rather than full case studies.</p>
     </div>
     <div class="archive-strip">
@@ -2391,7 +2603,7 @@ function renderTestimonials(){
     <section class="page-wrap" style="padding-top:56px;">
       <div class="section-head">
         <div class="eyebrow">Testimonials</div>
-        <h2>Client stories, coming soon</h2>
+        <h1>Client stories, coming soon</h1>
         <p>We only publish feedback clients have actually given us — nothing invented. As reviews come in, they'll appear here. If you have quotes from past clients you'd like featured, send them over and we'll add them.</p>
       </div>
       
@@ -2432,7 +2644,7 @@ function renderTestimonials(){
   <section class="page-wrap" style="padding-top:56px;">
     <div class="section-head">
       <div class="eyebrow">Testimonials</div>
-      <h2>What clients tell us afterward</h2>
+      <h1>What clients tell us afterward</h1>
       <p>We ask every client for honest feedback within a week of their event. Here's a sample, unedited.</p>
     </div>
     <div class="testi-row">
@@ -2488,14 +2700,14 @@ function renderContact(){
   <section class="page-wrap" style="padding-top:56px;">
     <div class="section-head">
       <div class="eyebrow">Contact</div>
-      <h2>Talk to a planner</h2>
+      <h1>Talk to a planner</h1>
       <p>Prefer a fast, structured path? Use our <a href="#" onclick="goTo('quote');return false;" style="color:var(--accent);font-weight:700;">7-step quote flow</a> instead — most clients hear back within one business day either way.</p>
     </div>
     <div class="contact-grid">
       <div class="contact-info">
         <div class="row">
           <span>📍</span>
-          <div><h4>Studio</h4><p>Plot No. 22, Khivansara Park, Opp. Vardhman Residency, Ulkanagri, Chhatrapati Sambhaji Nagar, MS 431001</p></div>
+          <div><h4>Studio</h4><p>Plot No. 22, Khivansara Park, Opp. Vardhman Residency, Ulkanagri, Chhatrapati Sambhajinagar, Maharashtra 431001</p></div>
         </div>
         <div class="row">
           <span>✉️</span>
@@ -2550,6 +2762,7 @@ function submitContact(e){
 function renderQuote(){
   return `
   <div class="quote-shell page-wrap">
+    <h1 class="sr-only">Get a quote from Miracle Eventz</h1>
     <form id="quoteForm" action="https://formspree.io/f/mjyvvplb" method="POST">
       <input type="hidden" name="_subject" value="New Quote Request - Miracle Eventz">
       <div id="quoteBody"></div>
@@ -2902,3 +3115,5 @@ render();
 wireReveals();
 wireGsapScroll();
 </script>
+</body>
+</html>
