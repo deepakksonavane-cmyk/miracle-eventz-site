@@ -173,6 +173,56 @@ footer strong{color:var(--ink)}
 
 <section>
   <div class="wrap">
+    <h2>Event Highlights</h2>
+    <style>
+      .gal { position: relative; width: 100%; aspect-ratio: 16 / 10; overflow: hidden; border-radius: 10px; background: #000; margin: 12px 0 8px; }
+      .gal-slide { position: absolute; inset: 0; opacity: 0; transition: opacity .5s ease; }
+      .gal-slide.active { opacity: 1; }
+      .gal-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .gal-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border: 0; border-radius: 50%; cursor: pointer; background: rgba(0,0,0,.45); color: #fff; font-size: 20px; line-height: 1; }
+      .gal-nav:hover, .gal-nav:focus-visible { background: #E31C23; outline: none; }
+      .gal-prev { left: 8px; } .gal-next { right: 8px; }
+      .gal-dots { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+      .gal-dot { width: 10px; height: 10px; border-radius: 50%; border: 0; padding: 0; cursor: pointer; background: #999; opacity: .5; }
+      .gal-dot.active { background: #E31C23; opacity: 1; }
+    </style>
+    <div class="gal" id="gal" aria-roledescription="carousel" aria-label="Photos from Miracle Eventz events">
+      <div class="gal-slide active"><img src="/gallery/event-5.jpg" alt="Celebration with colourful stage lighting and a crowd" loading="lazy"></div>
+      <div class="gal-slide"><img src="/gallery/event-6.jpg" alt="Guests under a decorated tree with string lights" loading="lazy"></div>
+      <div class="gal-slide"><img src="/gallery/event-7.jpg" alt="Coloured smoke bursts over a lit outdoor event" loading="lazy"></div>
+      <div class="gal-slide"><img src="/gallery/event-8.jpg" alt="Guests cheering at an outdoor celebration" loading="lazy"></div>
+      <div class="gal-slide"><img src="/gallery/event-9.jpg" alt="Confetti falling over a crowd at a celebration" loading="lazy"></div>
+      <div class="gal-slide"><img src="/gallery/event-10.jpg" alt="Dance team performing on stage" loading="lazy"></div>
+      <div class="gal-slide"><img src="/gallery/event-11.jpg" alt="Decorated outdoor venue with chairs and balloons" loading="lazy"></div>
+      <div class="gal-slide"><img src="/gallery/event-12.jpg" alt="Guests dancing with colourful powder" loading="lazy"></div>
+      <button class="gal-nav gal-prev" aria-label="Previous photo">&#10094;</button>
+      <button class="gal-nav gal-next" aria-label="Next photo">&#10095;</button>
+    </div>
+    <div class="gal-dots" id="gal-dots"></div>
+    <script>
+      (function () {
+        var box = document.getElementById('gal');
+        var slides = box.querySelectorAll('.gal-slide');
+        var dotsBox = document.getElementById('gal-dots');
+        var current = 0, timer = null;
+        slides.forEach(function (_, i) {
+          var b = document.createElement('button');
+          b.className = 'gal-dot';
+          b.setAttribute('aria-label', 'Show photo ' + (i + 1));
+          b.addEventListener('click', function () { show(i); restart(); });
+          dotsBox.appendChild(b);
+        });
+        function show(i) {
+          current = (i + slides.length) % slides.length;
+          slides.forEach(function (s, n) { s.classList.toggle('active', n === current); });
+          Array.prototype.forEach.call(dotsBox.children, function (d, n) { d.classList.toggle('active', n === current); });
+        }
+        function restart() { clearInterval(timer); timer = setInterval(function () { show(current + 1); }, 5000); }
+        box.querySelector('.gal-prev').addEventListener('click', function () { show(current - 1); restart(); });
+        box.querySelector('.gal-next').addEventListener('click', function () { show(current + 1); restart(); });
+        show(0); restart();
+      })();
+    </script>
     <h2>What Full-Service Event Management Covers</h2>
     <p>Full-service event management covers concept development, venue and vendor coordination, production logistics, scheduling, and on-ground execution. Operating on a single accountable team model ensures one point of contact manages every detail from the initial brief to the final strike, whether the project is a corporate gathering, a wedding, or a public event in Chhatrapati Sambhajinagar (Aurangabad).</p>
     
