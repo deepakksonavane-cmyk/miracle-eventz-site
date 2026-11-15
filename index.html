@@ -1675,7 +1675,15 @@ const FOLIO = [
   {cls:'folio-2', title:'LG Branding & Shoppe Launch', tag:'LG India | 8 towns', caseId:'lg-branding-and-shoppe-launch'},
 ];
 
-const TESTIMONIALS = [];
+const TESTIMONIALS = [
+  {quote:"We had a wonderful experience with Miracle Eventz for our ring ceremony and Haldi-Kumkum functions in Aurangabad (Chhatrapati Sambhajinagar). The team managed the arrangements beautifully and paid attention to the details, making our family celebrations special and memorable. Highly recommended for ring ceremonies, Haldi functions and traditional family events in Aurangabad.once again thank you team miracle makeing our family function so grand", name:"Vaishali Bamb", event:"Ring ceremony &amp; Haldi-Kumkum · Google review"},
+  {quote:"Had a great experience with Miracle Eventz for our family celebration in Aurangabad. From planning and decoration to managing the event on the day, the team handled everything very well. It was a stress-free and memorable celebration for our family.", name:"Yogesh Ramgirwar", event:"Family celebration · Google review"},
+  {quote:"Had a wonderful experience working with Miracle eventz. Their planning, concept presentations, and on ground execution for our corporate event were top-notch. Highly professional team and great value for money!", name:"Vicky Pawar", event:"Corporate event · Google review"},
+  {quote:"Worked with Miracle eventz. Excellent planning , great concept presentations and superb on ground execution. Really very supportive and proactive team enjoyed working with them on all our company events.", name:"Hemant Kharpe", event:"Company events · Google review"},
+  {quote:"Outstanding support and fantastic management we avail. Thank you team Miracle events and most thankful to Mr.DEEPAK SONAVANE for his genuine efforts .", name:"Golden Eye", event:"Google review"},
+  {quote:"Very good personalised service. Took care of every little things", name:"Manjit Singalkar", event:"Google review"},
+  {quote:"Awesome Event Planner &amp; Very Supportive", name:"Roli's !", event:"Google review"},
+];
 
 const STEP_META = [
   {n:1, label:'Event type'},
@@ -2668,7 +2676,7 @@ function renderTestimonials(){
     <div class="section-head">
       <div class="eyebrow">Testimonials</div>
       <h1>What clients tell us afterward</h1>
-      <p>We ask every client for honest feedback within a week of their event. Here's a sample, unedited.</p>
+      <p>Reviews clients have posted on our Google Business Profile, shown as written. <a href="https://www.google.com/maps/place/?q=place_id:ChIJVVVVWYOi2zsR9KH8HNoiDZQ" target="_blank" rel="noopener" style="color:var(--accent);font-weight:700;">Read all reviews on Google &rarr;</a></p>
     </div>
     <div class="testi-row">
       ${TESTIMONIALS.map(t=>`<div class="testi-card">
