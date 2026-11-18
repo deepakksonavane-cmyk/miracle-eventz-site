@@ -442,12 +442,13 @@ nav.links.mobile-open button{text-align:left;}
   display:grid;grid-template-columns:1.15fr 0.85fr;gap:48px;align-items:center;
 }
 @media (max-width:900px){.hero-inner{grid-template-columns:1fr;}}
-.hero h1{
+.hero-title{font-family:"Archivo",sans-serif;font-weight:800;text-wrap:balance;letter-spacing:-0.01em;}
+.hero .hero-title{
   font-size:clamp(2.6rem,5.4vw,4.4rem);
   color:#fff;
   line-height:1.03;
 }
-.hero h1 .script{
+.hero .hero-title .script{
   display:block;color:var(--gold-accent);
   font-size:clamp(2.8rem,6vw,4.8rem);
   margin-top:6px;
@@ -1091,8 +1092,8 @@ input[type=range]{width:100%;accent-color:var(--accent);}
 <section class="hero">
     <div class="hero-inner">
       <div>
-        <div class="eyebrow" style="color:#FFE8B0;">Event Strategy, Creative &amp; On-Ground Execution — Since 1998</div>
-        <h1>We plan it.<span class="script">You feel the magic.</span></h1>
+        <h1 class="eyebrow" style="color:#FFE8B0;">Event Management in Chhatrapati Sambhajinagar (Aurangabad) since 1998</h1>
+        <p class="hero-title">We plan it.<span class="script">You feel the magic.</span></p>
         <p class="lede">Miracle Eventz takes a brief and turns it into ground reality — weddings, corporate programmes, brand activations, and large-scale live events, planned and run end to end by one accountable team.</p>
         <div class="hero-ctas">
           <button type="button" class="btn-gold" onclick="goTo('quote')">Plan Your Event &rarr;</button>
@@ -1891,8 +1892,8 @@ function renderHome(){
   <section class="hero">
     <div class="hero-inner">
       <div>
-        <div class="eyebrow" style="color:#FFE8B0;">Event Strategy, Creative &amp; On-Ground Execution — Since 1998</div>
-        <h1>We plan it.<span class="script">You feel the magic.</span></h1>
+        <h1 class="eyebrow" style="color:#FFE8B0;">Event Management in Chhatrapati Sambhajinagar (Aurangabad) since 1998</h1>
+        <p class="hero-title">We plan it.<span class="script">You feel the magic.</span></p>
         <p class="lede">Miracle Eventz takes a brief and turns it into ground reality — weddings, corporate programmes, brand activations, and large-scale live events, planned and run end to end by one accountable team.</p>
         <div class="hero-ctas">
           <button type="button" class="btn-gold" onclick="goTo('quote')">Plan Your Event &rarr;</button>
