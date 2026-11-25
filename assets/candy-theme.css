@@ -84,3 +84,6 @@ section{position:relative;}
 [class*="hero"] .btn.primary,[class*="hero"] .btn.main,[class*="hero"] .btn-primary{color:#1E1433 !important;background:linear-gradient(180deg,#FFE680 0%,#FFD23F 50%,#FFB800 100%) !important;box-shadow:0 6px 0 #D99A00,0 12px 22px rgba(255,184,0,.32) !important;}
 [class*="hero"] .btn.ghost,[class*="hero"] .btn-secondary,[class*="hero"] .btn-ghost{color:#fff !important;background:transparent !important;border:2px solid #fff !important;box-shadow:none !important;}
 [class*="hero"] .btn.ghost:hover,[class*="hero"] .btn-ghost:hover{background:rgba(255,255,255,.12) !important;}
+
+/* Wordmark: Pacifico everywhere */
+.brand,footer .script,.brand *{font-family:"Pacifico","Pacifico Fallback",cursive !important;}
