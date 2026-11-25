@@ -70,9 +70,9 @@ nav.links button.active{background:linear-gradient(180deg,#FFE680,#FFD23F) !impo
 section{position:relative;}
 
 /* Text sitting on the coloured hero bands must be light */
-:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) h1,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) h2,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) h3,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) h1{color:#fff !important;}
-:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) p,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .lede,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .meta-line{color:rgba(255,255,255,.93) !important;}
-.hero .eyebrow,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .eyebrow{color:#FFE8B0 !important;}
+:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) h1,:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) h2,:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) h3,:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) h1{color:#fff !important;}
+:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) p,:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) .lede,:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) .meta-line{color:rgba(255,255,255,.93) !important;}
+.hero .eyebrow,:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) .eyebrow{color:#FFE8B0 !important;}
 
 /* Every button variant used on the site */
 .btn,.btnl,.btn.main{font-family:"Fredoka",sans-serif !important;font-weight:600 !important;border-radius:999px !important;transition:transform .15s ease,box-shadow .15s ease,filter .15s ease;}
@@ -81,8 +81,8 @@ section{position:relative;}
 .btn.ghost:hover,.btn-secondary:hover{background:#F3ECFF !important;}
 
 /* Buttons on the coloured hero bands: gold for primary, white outline for secondary */
-:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .btn.primary,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .btn.main,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .btn-primary{color:#1E1433 !important;background:linear-gradient(180deg,#FFE680 0%,#FFD23F 50%,#FFB800 100%) !important;box-shadow:0 6px 0 #D99A00,0 12px 22px rgba(255,184,0,.32) !important;}
-:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .btn.ghost,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .btn-secondary,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .btn-ghost{color:#fff !important;background:transparent !important;border:2px solid #fff !important;box-shadow:none !important;}
+:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) .btn.primary,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .btn.main,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .btn-primary{color:#1E1433 !important;background:linear-gradient(180deg,#FFE680 0%,#FFD23F 50%,#FFB800 100%) !important;box-shadow:0 6px 0 #D99A00,0 12px 22px rgba(255,184,0,.32) !important;}
+:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) .btn.ghost,:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) .btn-secondary,:is(.hero,.case-hero,.svc-hero,.story-hero,.stories-hero) .btn-ghost{color:#fff !important;background:transparent !important;border:2px solid #fff !important;box-shadow:none !important;}
 :is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .btn.ghost:hover,:is(.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero) .btn-ghost:hover{background:rgba(255,255,255,.12) !important;}
 
 /* Wordmark: Pacifico everywhere */
@@ -91,3 +91,10 @@ section{position:relative;}
 /* Spacing before the footer and after the wedding box */
 .final-cta{margin-bottom:64px;}
 .wed-zone{margin-bottom:56px;}
+
+/* Selected option in the quote wizard: clearly highlighted */
+.opt-card.selected{background:linear-gradient(180deg,#8A4BFF 0%,#7B2FF7 100%) !important;border-color:#7B2FF7 !important;color:#fff !important;box-shadow:0 8px 18px rgba(123,47,247,.35) !important;}
+.opt-card.selected .lbl,.opt-card.selected .ico{color:#fff !important;}
+
+/* Clear gap above the footer on every page */
+footer{margin-top:80px !important;}
