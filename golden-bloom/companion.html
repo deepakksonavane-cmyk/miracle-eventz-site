@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#FFF4DC">
+<title>SONERI · Guest Companion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Manrope:wght@400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#FFF7E8;--marigold:#F5A80F;--saffron:#E8711A;--gold:#C9962E;--gold2:#E9BE5C;--rani:#D61F6E;--peacock:#0B6E6E;--teal:#12A39A;--wine:#7A1638;--plum:#3E1240;--ink:#2B1420;--ink2:#6A4A52;--disp:"Fraunces",Georgia,serif;--body:Manrope,system-ui,sans-serif;--brand:30px;--pad:clamp(16px,4vw,40px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(var(--brand) + 70px)}
+body{margin:0;font-family:var(--body);color:var(--ink);background:var(--ivory);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+button,input,select{font:inherit;color:inherit}button{cursor:pointer;background:none;border:0}
+:focus-visible{outline:2px solid var(--rani);outline-offset:2px}
+h1,h2,h3,h4{font-family:var(--disp);color:var(--wine);margin:0;line-height:1.1}
+.brand{position:fixed;top:0;left:0;right:0;height:var(--brand);z-index:60;display:flex;align-items:center;justify-content:center;gap:12px;padding:0 var(--pad);background:#300c28;border-bottom:1px solid rgba(233,207,142,.32);color:#fff}
+.brand .by{font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.74)}.brand .me{font-family:"Pacifico",cursive;font-size:15px}.brand .sep{width:4px;height:4px;border-radius:50%;background:#E9CF8E}
+.brand .tel{display:inline-flex;align-items:center;gap:6px;min-height:24px;padding:0 10px;border-radius:999px;border:1px solid rgba(233,207,142,.55);color:#fff;text-decoration:none;font-size:12.5px;font-weight:700}
+.brand .tel svg{width:13px;height:13px}@media(max-width:560px){.brand{justify-content:space-between}.brand .by,.brand .sep{display:none}}
+.bar{position:fixed;top:var(--brand);left:0;right:0;z-index:55;display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px;padding:0 var(--pad);background:rgba(255,247,232,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,150,46,.25)}
+.bar .mk{font-family:var(--disp);font-style:italic;font-weight:600;color:var(--wine);font-size:18px;text-decoration:none}.bar .mk small{font-family:var(--body);font-style:normal;font-size:10.5px;font-weight:800;letter-spacing:.16em;color:var(--rani);margin-left:8px}
+.bar a.bk{font-size:13px;font-weight:700;color:var(--wine);text-decoration:none;border:1.5px solid rgba(122,22,56,.3);border-radius:999px;padding:7px 14px;white-space:nowrap}
+.demo{display:inline-block;padding:5px 12px;border-radius:999px;background:var(--marigold);color:#2a1420;font-size:12px;font-weight:800;letter-spacing:.04em}
+section{padding:clamp(56px,8vw,100px) var(--pad)}.in{max-width:1200px;margin:0 auto}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--rani);margin:0 0 8px}
+.hero{padding-top:calc(var(--brand) + 56px + clamp(48px,7vw,90px));background:radial-gradient(60% 50% at 80% 0%,rgba(214,31,110,.16),transparent 70%),radial-gradient(50% 40% at 10% 10%,rgba(245,168,15,.25),transparent 70%),linear-gradient(180deg,#FFF1DC,#FFF7E8)}
+.hero .in{display:grid;gap:30px;align-items:center}@media(min-width:900px){.hero .in{grid-template-columns:1.2fr .8fr}}
+.hero h1{font-size:clamp(2.4rem,6vw,4.4rem)}.hero h1 em{color:var(--rani)}
+.tl{font-family:var(--disp);font-style:italic;font-size:clamp(1.15rem,2.2vw,1.5rem);color:var(--saffron);margin:14px 0}
+.lead{color:var(--ink2);max-width:62ch;font-size:16px}
+.bloom{justify-self:center;width:min(320px,70vw)}
+/* journey */
+.jr{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px;margin-top:26px;counter-reset:s}
+.jr li{list-style:none;position:relative;padding:16px 14px;border-radius:18px;background:#fff;border:1px solid rgba(201,150,46,.3);box-shadow:0 20px 40px -36px rgba(122,22,56,.6)}
+.jr li i{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--marigold),var(--rani));color:#fff;font-style:normal;font-weight:800;font-size:13px;margin-bottom:8px}
+.jr li b{display:block;font-family:var(--disp);color:var(--wine);font-size:1.02rem;line-height:1.2}.jr li span{display:block;font-size:13px;color:var(--ink2);margin-top:4px}
+.jr li.s7{background:#FFF3E0;border-color:var(--marigold)}.jr li a{font-size:12px;font-weight:800;color:var(--rani)}
+.jr{padding:0}@media(max-width:1000px){.jr{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* phone demo */
+.demo-wrap{display:grid;gap:30px;margin-top:26px;align-items:start}@media(min-width:960px){.demo-wrap{grid-template-columns:380px minmax(0,1fr)}}
+.phone{justify-self:center;width:340px;max-width:100%;border-radius:42px;padding:12px;background:linear-gradient(160deg,var(--plum),var(--wine));box-shadow:0 50px 90px -50px rgba(62,18,64,.9);position:relative}
+.phone .scr{border-radius:32px;overflow:hidden;background:#F4ECE2;height:640px;display:flex;flex-direction:column}
+.phone .top{display:flex;align-items:center;gap:10px;padding:14px 16px;background:#3E1240;color:#fff}.phone .top .av{width:34px;height:34px;border-radius:50%;background:radial-gradient(circle,#FFE7A0,var(--marigold) 55%,var(--rani));flex:none}
+.phone .top b{font-size:14px;display:block}.phone .top small{font-size:11px;color:#E8CFDB}
+.phone .lbl{position:absolute;top:-12px;left:50%;transform:translateX(-50%);white-space:nowrap;padding:4px 12px;border-radius:999px;background:var(--marigold);color:#2a1420;font-size:11px;font-weight:800;z-index:2}
+.chat{flex:1;overflow-y:auto;padding:14px 12px;display:flex;flex-direction:column;gap:10px}
+.msg{max-width:88%;padding:10px 12px;border-radius:14px;background:#fff;font-size:13.5px;box-shadow:0 1px 1px rgba(0,0,0,.06)}.msg.me{align-self:flex-end;background:#FCE6EE}
+.msg h4{font-size:1.05rem;margin-bottom:4px}.msg .btnl{display:block;margin-top:8px;text-align:center;padding:8px;border-radius:10px;background:var(--wine);color:#fff;font-weight:700;font-size:13px}
+.msg .ph{color:#9a8790;font-style:italic}.msg small{display:block;color:#9a8790;font-size:11px;margin-top:4px}
+.msg .card{margin:-10px -12px 8px;height:110px;border-radius:14px 14px 0 0;background:radial-gradient(60% 80% at 50% 30%,#FFE7A0,var(--marigold) 50%,var(--rani));display:grid;place-items:center;color:#fff;font-family:var(--disp);font-size:1.5rem;letter-spacing:.06em}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:14px}
+.tabs button{min-height:38px;padding:0 14px;border-radius:999px;border:1.5px solid rgba(122,22,56,.25);background:#fff;font-size:13px;font-weight:700;color:var(--wine)}.tabs button[aria-pressed=true]{background:var(--wine);color:#fff}
+.form{padding:12px;display:flex;flex-direction:column;gap:10px;overflow-y:auto;flex:1}
+.form h4{font-size:1.05rem}.form .grp{background:#fff;border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:8px}
+.form label{display:flex;flex-direction:column;gap:3px;font-size:12px;font-weight:700;color:var(--ink2)}
+.form input,.form select{min-height:40px;border-radius:10px;border:1.5px solid rgba(122,22,56,.2);padding:0 10px;background:#FFFCF7;font-size:14px;color:var(--ink)}
+.form .row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}.form .row>label{min-width:0}.form input,.form select{width:100%;min-width:0}
+.form .seg{display:flex;gap:6px;flex-wrap:wrap}.form .seg button{flex:1;min-height:38px;border-radius:10px;border:1.5px solid rgba(122,22,56,.25);font-weight:700;font-size:12.5px;background:#fff}.form .seg button[aria-pressed=true]{background:var(--rani);color:#fff;border-color:var(--rani)}
+.form .tot{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:12px;background:#FFF1D6;font-weight:800;color:var(--wine)}
+.form .opt{font-weight:500;color:#9a8790}.form .warn{font-size:12px;color:#B3262C;font-weight:700}
+.form .sub{min-height:44px;border-radius:12px;background:linear-gradient(120deg,var(--rani),var(--saffron));color:#fff;font-weight:800}
+.notes h3{font-size:1.5rem}.notes p{color:var(--ink2)}
+.notes .pill{display:inline-block;padding:3px 10px;border-radius:999px;background:#FCE6EE;color:var(--rani);font-size:12px;font-weight:800;margin-right:6px}
+/* moments */
+.mgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:24px}@media(max-width:1000px){.mgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.mgrid{grid-template-columns:minmax(0,1fr)}}
+.mc{padding:18px;border-radius:20px;color:#fff;min-height:190px;display:flex;flex-direction:column;gap:8px;position:relative;overflow:hidden}
+.mc i{font-style:normal;font-size:11px;font-weight:800;letter-spacing:.16em;opacity:.85}.mc b{font-family:var(--disp);font-size:1.35rem;line-height:1.1}.mc span{font-size:13.5px;opacity:.95}.mc em{margin-top:auto;font-style:normal;font-size:11.5px;font-weight:800;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.22);align-self:flex-start}
+.prom{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}@media(max-width:900px){.prom{grid-template-columns:minmax(0,1fr)}}
+.jtog{display:inline-flex;gap:6px;margin:4px 0 16px;padding:4px;border-radius:999px;background:#fff;border:1px solid rgba(201,150,46,.35)}.jtog button{border:0;background:none;padding:8px 16px;border-radius:999px;font:600 14px var(--body,inherit);color:var(--ink2);cursor:pointer;min-height:40px}.jtog button[aria-pressed=true]{background:var(--wine,#7A1638);color:#fff}
+.jr li.na{opacity:.55;background:repeating-linear-gradient(135deg,#fff,#fff 8px,#FBF6EC 8px,#FBF6EC 16px)}.jr li.na em{display:block;font-style:normal;font-size:12px;font-weight:700;color:#7A1638;margin-top:4px}
+.optx{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}@media(max-width:900px){.optx{grid-template-columns:minmax(0,1fr)}}.optx div{padding:16px 18px;border-radius:16px;background:#FFF8E6;border:1.5px solid #E0A93A}.optx div:first-child{background:#FFF3F3;border-color:#F0A9AC}.optx b{display:block;color:var(--wine,#7A1638);margin-bottom:4px}.optx span{font-size:14px;color:var(--ink2)}
+.prom div{padding:18px;border-radius:18px;background:#fff;border:1px solid rgba(201,150,46,.25)}.prom b{display:block;font-family:var(--disp);color:var(--wine);font-size:1.15rem}.prom span{font-size:14px;color:var(--ink2)}
+.alt{background:linear-gradient(180deg,#FFF7E8,#FFEFD6)}
+@media(max-width:560px){.bar .mk{font-size:15px;white-space:nowrap}.bar .mk small{display:none}.bar a.bk{padding:6px 10px;font-size:12px}}
+footer{padding:40px var(--pad);background:#2a0f26;color:#E8CFDB;font-size:13px;text-align:center}footer a{color:#FFE7A0}
+@media(prefers-reduced-motion:no-preference){.rv{opacity:0;transform:translateY(16px);transition:opacity .7s,transform .7s}.rv.on{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="brand" role="complementary" aria-label="Event design and execution by Miracle Eventz">
+  <span class="by">Event design &amp; execution</span><span class="me">Miracle Eventz</span><span class="sep" aria-hidden="true"></span>
+  <a class="tel" href="https://wa.me/919823025557?text=Hello%20Miracle%20Eventz%2C%20I%20saw%20The%20Golden%20Bloom%20reception%20concept%20and%20want%20to%20discuss%20an%20event." target="_blank" rel="noopener" aria-label="WhatsApp Miracle Eventz on 98230 25557"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>98230 25557</span></a>
+</div>
+<div class="bar"><a class="mk" href="#top">SONERI · Guest Companion<small>Concept</small></a><a class="bk" href="index.html#guest">← The reception</a></div>
+<section class="hero" id="top">
+  <div class="in">
+    <div>
+      <p class="eyebrow">The SONERI Guest Companion</p>
+      <h1>From the first <em>invitation</em> to the journey home</h1>
+      <p class="tl">Your journey. Our welcome. Your celebration.</p>
+      <p class="lead">Every guest is looked after before they arrive, while they stay and after they leave: a personal invitation, an easy reply, help with travel and hotels, a few joyful moments along the way, and a warm thank-you with the memories.</p>
+      <p style="margin-top:16px"><span class="demo">Concept demonstration · fictional sample guest · no real data · no messages are sent</span></p>
+    </div>
+    <svg class="bloom" viewBox="-110 -110 220 220" aria-hidden="true"><circle r="104" fill="none" stroke="#E9BE5C" stroke-width="3"/><g id="petals"></g><circle r="20" fill="#FFE7A0"/></svg>
+  </div>
+</section>
+<section id="journey">
+  <div class="in">
+    <p class="eyebrow">The journey</p><h2>Fourteen moments of care</h2>
+    <p class="lead">Steps 10 to 12 happen at the reception itself, exactly as planned in the guest experience chapter. The journey adapts to each household: guests who live in the city are never asked about hotels, tickets or pickups.</p>
+    <div class="jtog" id="jtog" role="group" aria-label="Show the journey for"><button type="button" data-l="Outstation" aria-pressed="true">Travelling in</button><button type="button" data-l="Local" aria-pressed="false">Local guest</button></div>
+    <ol class="jr" id="jr"></ol>
+  </div>
+</section>
+<section class="alt" id="demo">
+  <div class="in">
+    <p class="eyebrow">See it as a guest would</p><h2>On the guest's phone</h2>
+    <p class="lead">An illustration of the messages and the reply form. Try the reply form: answers stay on this screen only and are not saved or sent anywhere.</p>
+    <div class="demo-wrap">
+      <div>
+        <div class="phone"><span class="lbl">Illustration · fictional guest</span><div class="scr"><div class="top"><span class="av"></span><div><b>SONERI · The Golden Bloom</b><small>WhatsApp message (illustration)</small></div></div><div id="pv" class="chat"></div></div></div>
+        <div class="tabs" id="ptabs" role="group" aria-label="Phone screens"></div>
+      </div>
+      <div class="notes" id="pnotes" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+<section id="moments">
+  <div class="in">
+    <p class="eyebrow">SONERI Moments</p><h2>A few joyful moments along the way</h2>
+    <p class="lead">Optional, occasional and never overwhelming: at most one or two optional messages a week per household, and no repeated reminders. Guests choose to join, and can leave the fun at any time while practical updates continue for everyone who agreed to receive them.</p>
+    <div class="mgrid" id="mgrid"></div>
+  </div>
+</section>
+<section class="alt" id="care">
+  <div class="in">
+    <p class="eyebrow">Looked after, without being asked twice</p><h2>One team that knows each guest's needs</h2>
+    <p class="lead">Behind the companion, the hospitality team keeps each household's reply, travel, pickup, hotel and special requirements together, so help arrives without repeated calls. At the reception, this connects to the welcome desk and the assistance point.</p>
+    <div class="prom">
+      <div><b>Your consent first</b><span>No WhatsApp message without the guest's agreement. Entertainment messages are optional and limited to one or two a week.</span></div>
+      <div><b>Your details stay private</b><span>Phone numbers, travel plans and hotel details are seen only by the team that arranges them, and never shown in any presentation.</span></div>
+      <div><b>Only what is needed</b><span>We ask only what helps us look after you; everything else is optional. Data is deleted after the celebration under a policy agreed with the family.</span></div>
+    </div>
+    <div class="optx"><div><b>Stop everything: reply STOP</b><span>All WhatsApp messages from the celebration stop, practical ones included. The request and its date are recorded, and nothing more is sent unless the guest chooses to start again.</span></div><div><b>Skip only the fun: SONERI Moments opt-out</b><span>Quizzes, countdowns and other optional messages stop. Practical updates the guest agreed to, such as the arrival card and the programme, continue.</span></div></div>
+    <p class="lead" style="margin-top:18px;font-size:14px">Concept for approval. Messages would be sent through the WhatsApp Business Platform or an approved provider, using approved message templates, once the family approves the system and a secure platform is in place.</p>
+  </div>
+</section>
+<footer>SONERI · The Golden Bloom · Guest Companion concept by Miracle Eventz, event conceptualisation, design, planning and execution since 1998.<br>All names and details shown are fictional illustrations. <a href="index.html">Back to the reception presentation</a></footer>
+<script>
+(function(){
+var $=function(s){return document.querySelector(s);},esc=function(x){return String(x==null?'':x).replace(/&/g,'&amp;').replace(/</g,'&lt;');};
+var P=$('#petals');for(var k=0;k<12;k++){var e=document.createElementNS('http://www.w3.org/2000/svg','ellipse');e.setAttribute('cx',0);e.setAttribute('cy',-52);e.setAttribute('rx',17);e.setAttribute('ry',42);e.setAttribute('fill',['#F5A80F','#D61F6E','#E8711A','#12A39A'][k%4]);e.setAttribute('opacity','.88');e.setAttribute('transform','rotate('+(k*30)+')');P.appendChild(e);}
+var J=[['Invitation','A personal WhatsApp invitation for each household.'],['Your reply','A simple reply form, in a minute or two.'],['Your needs','Diet, accessibility, elderly or child care, only if you wish.'],['Travel','Flight, train, bus or car: we note how you arrive.'],['Pickup and hotel','A driver and hotel help, arranged and confirmed.'],['Before you travel','One arrival card with everything confirmed.'],['You arrive','Met and guided, on time.'],['Hotel check-in','Assistance at the hotel.'],['SONERI Moments','Optional fun along the way.'],['Reception welcome','The welcome gateway and check-in.',1],['The evening','The reception experience.',1],['Departure','Help on the way home.',1],['Thank you','A message from the family.'],['Memories','Private gallery access.']];
+var NA_LOCAL=[3,4,6,7];
+function jr(loc){$('#jr').innerHTML=J.map(function(j,i){var na=loc==='Local'&&NA_LOCAL.indexOf(i)>=0;return '<li class="rv on'+(j[2]?' s7':'')+(na?' na':'')+'"><i>'+(i+1)+'</i><b>'+j[0]+'</b><span>'+(na?'You come straight to the venue.':j[1])+'</span>'+(na?'<em>Not applicable for local guests</em>':'')+(j[2]?'<a href="index.html#guest">In the guest experience →</a>':'')+'</li>';}).join('');
+ Array.prototype.forEach.call(document.querySelectorAll('#jtog button'),function(b){b.setAttribute('aria-pressed',b.getAttribute('data-l')===loc?'true':'false');});}
+jr('Outstation');
+$('#jtog').addEventListener('click',function(e){var b=e.target.closest('button');if(b)jr(b.getAttribute('data-l'));});
+var M=[['A','The Countdown','A few beautiful countdown cards before the day.','Occasional','#E8711A'],['B','Know the Couple','Light quizzes and polls about the couple.','Optional','#D61F6E'],['C','City Guide','Local experiences, food and travel tips: being curated and verified.','Optional','#0B6E6E'],['D','Celebration Playlist','Suggest a song and a dedication; reviewed before it plays.','Optional','#7A1638'],['E','Family Memories','Share a memory; shown only with the family\'s approval.','Optional','#B0156B'],['F','Wedding Insider','Short previews and important updates.','Occasional','#C9962E'],['G','Daily Guest Programme','Your arrival, pickup and timings, once confirmed.','Service','#3E1240'],['H','Memory Challenge','Capture three moments for the private gallery.','Optional','#12A39A']];
+$('#mgrid').innerHTML=M.map(function(m){return '<div class="mc rv" style="background:linear-gradient(150deg,'+m[4]+','+m[4]+'cc)"><i>'+m[0]+'</i><b>'+m[1]+'</b><span>'+m[2]+'</span><em>'+m[3]+'</em></div>';}).join('');
+/* phone screens */
+var st={att:'Attending',ad:2,ch:1,inv:4,loc:'',mode:'',acc:'',sent:false};
+function rsvp(){var tot=st.att==='Attending'?st.ad+st.ch:0,ov=st.att==='Attending'&&tot>st.inv;
+ var mf={'Flight':'<div class="row"><label>Airline<input></label><label>Flight number<input></label></div><label>Arrival airport<input></label><div class="row"><label>Arrival date<input type="date"></label><label>Time<input type="time"></label></div>','Train':'<div class="row"><label>Train number<input></label><label>Arrival station<input></label></div><div class="row"><label>Arrival date<input type="date"></label><label>Time<input type="time"></label></div><label><span>Coach / platform <span class="opt">(optional)</span></span><input></label>','Bus':'<div class="row"><label>Operator<input></label><label>Arrival point<input></label></div><div class="row"><label>Arrival date<input type="date"></label><label>Time<input type="time"></label></div>','Personal vehicle':'<label>Expected arrival time<input type="time"></label><label>Parking assistance<select><option>Not needed</option><option>Yes, please</option></select></label>','Taxi or other':'<label><span>Details <span class="opt">(optional)</span></span><input></label><div class="row"><label>Arrival date<input type="date"></label><label>Time<input type="time"></label></div>'};
+ return '<div class="form" id="rf"><h4>Your reply · Demo Household</h4>'+(st.sent?'<div class="tot">Thank you. Your reply is noted (demonstration only, nothing was sent). You can change it any time.</div>':'')+
+ '<div class="grp"><label>Will you join us?</label><div class="seg" data-k="att">'+['Attending','Not attending','Undecided'].map(function(v){return '<button type="button" data-v="'+v+'" aria-pressed="'+(st.att===v)+'">'+v+'</button>';}).join('')+'</div></div>'+
+ (st.att==='Attending'?'<div class="grp"><div class="row"><label>Adults<input type="number" min="0" id="ad" value="'+st.ad+'"></label><label>Children<input type="number" min="0" id="ch" value="'+st.ch+'"></label></div><div class="tot"><span>Total attending</span><span id="tot">'+tot+'</span></div>'+(ov?'<div class="warn">This is more than the '+st.inv+' invited; the family will confirm.</div>':'')+'<label><span>Accompanying guests <span class="opt">(optional)</span></span><input></label></div>'+
+ '<div class="grp"><label>Are you travelling from outside the city?<select id="loc"><option value="">Choose</option><option value="Local"'+(st.loc==='Local'?' selected':'')+'>No, we live locally</option><option value="Outstation"'+(st.loc==='Outstation'?' selected':'')+'>Yes, we are travelling in</option></select></label>'+(st.loc==='Local'?'<label>Expected arrival time at the venue<input type="time"></label><label>Parking assistance<select><option>Not needed</option><option>Yes, please</option></select></label><small class="opt">No hotel, ticket or pickup questions for local guests.</small>':'')+'</div>'+
+ (st.loc==='Outstation'?'<div class="grp"><div class="row"><label>Arrival date<input type="date"></label><label>Departure date<input type="date"></label></div><label>Accommodation needed?<select id="acc"><option value="">Choose</option><option'+(st.acc==='Yes'?' selected':'')+'>Yes</option><option'+(st.acc==='No'?' selected':'')+'>No</option></select></label>'+(st.acc==='Yes'?'<label>Rooms needed<input></label>':'')+'</div>'+
+ '<div class="grp"><label>How will you travel?<select id="mode"><option value="">Choose</option>'+['Flight','Train','Bus','Personal vehicle','Taxi or other'].map(function(m){return '<option'+(st.mode===m?' selected':'')+'>'+m+'</option>';}).join('')+'</select></label>'+(st.mode?mf[st.mode]:'')+'</div>':'')+
+ '<div class="grp"><label><span>Dietary needs <span class="opt">(optional)</span></span><input></label><label><span>Accessibility or elderly assistance <span class="opt">(optional)</span></span><input></label><label><span>Anything for the children <span class="opt">(optional)</span></span><input></label><label><span>Special requests <span class="opt">(optional)</span></span><input></label></div>':'')+
+ '<div class="grp"><label><input type="checkbox" style="min-height:0;width:auto;display:inline" checked disabled> I agree to receive practical WhatsApp updates</label><label><input type="checkbox" id="mom" style="min-height:0;width:auto;display:inline"> Yes to SONERI Moments (optional fun, at most one or two a week)</label><small class="opt">Reply STOP at any time to stop all WhatsApp messages. To skip only the optional fun, reply MOMENTS OFF: practical updates continue.</small></div><button class="sub" type="button" id="send">Send my reply</button></div>';}
+var SC=[['inv','Invitation',function(){return '<div class="msg"><div class="card">SONERI</div><h4>You are invited</h4>Dear Demo Guest,<br>With joy, the family invites your household (4 persons) to the wedding reception on a date to be confirmed.<br>Venue: <span class="ph">to be announced</span><span class="btnl">Reply to the invitation</span><small>Reply STOP to stop all WhatsApp messages · Reply MOMENTS OFF to skip only the optional fun</small></div>';},'A personal invitation','Each household receives its own invitation with a personal reply link. It is sent only with consent, using an approved WhatsApp template.'],
+ ['rsvp','Reply',rsvp,'An easy reply','Attendance, party size, travel and needs, in one short form. The questions adapt: local guests are not asked about hotels, tickets or pickups, travelling guests see questions for their travel mode, and everything not needed is optional. Guests can update their reply.'],
+ ['card','Arrival card',function(){return '<div class="msg"><h4>Your arrival information</h4>Travel: Flight · <span class="ph">confirmed details</span><br>Your driver: <span class="ph">name and number, once assigned</span><br>Pickup: <span class="ph">point and instructions</span><br>Hotel: <span class="ph">name, address and map link</span><br>Hotel assistant: <span class="ph">name and number</span><br>Venue: <span class="ph">location and map link</span><br>Guest assistance: <span class="ph">contact</span><small>Sent only when every detail is confirmed</small></div>';},'Everything in one card','Before travel, each household receives one card with their driver, pickup point, hotel, hotel assistant, venue and assistance contact. Nothing is sent until every detail is confirmed.'],
+ ['mom','SONERI Moments',function(){return '<div class="msg"><h4>7 days to go ✦</h4>The golden bloom is almost here.</div><div class="msg"><h4>Know the Couple</h4>Who said "I love you" first?<span class="btnl">Answer (optional)</span></div><div class="msg"><h4>Celebration Playlist</h4>Suggest a song for the dance floor, with a dedication if you like.</div><div class="msg me">Our song suggestion, with love.</div><div class="msg"><small>Thank you. The family reviews every suggestion before it is played.</small></div>';},'Joyful, optional, occasional','A handful of messages over several weeks, at most one or two a week: countdowns, quizzes, playlist and memories. Guests opt in, and can skip the fun alone while still receiving practical updates.'],
+ ['thanks','Thank you',function(){return '<div class="msg"><div class="card">Thank you</div>Thank you for celebrating with us. Your memories of the evening are waiting in a private gallery, shared only with invited guests.<span class="btnl">Open the private gallery</span><small>Link shared once the gallery is ready</small></div>';},'A warm goodbye','A thank-you from the family and access to the private, invitation-only memory gallery from the memories chapter.']];
+var cur='inv';
+function show(k){cur=k;var s=SC.find(function(x){return x[0]===k;});$('#pv').innerHTML=s[2]();$('#pv').className=k==='rsvp'?'':'chat';$('#pnotes').innerHTML='<p class="eyebrow">'+esc(s[1])+'</p><h3>'+esc(s[3])+'</h3><p>'+esc(s[4])+'</p><p><span class="pill">Fictional sample</span><span class="pill">Nothing is sent</span><span class="pill">Nothing is saved</span></p>';
+ Array.prototype.forEach.call(document.querySelectorAll('#ptabs button'),function(b){b.setAttribute('aria-pressed',b.getAttribute('data-k')===k?'true':'false');});}
+$('#ptabs').innerHTML=SC.map(function(s){return '<button type="button" data-k="'+s[0]+'" aria-pressed="false">'+s[1]+'</button>';}).join('');
+$('#ptabs').addEventListener('click',function(e){var b=e.target.closest('button');if(b)show(b.getAttribute('data-k'));});
+$('#pv').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var sg=b.parentElement.getAttribute('data-k');if(sg){st[sg]=b.getAttribute('data-v');st.sent=false;show('rsvp');}if(b.id==='send'){st.sent=true;show('rsvp');$('#pv').scrollTop=0;}});
+$('#pv').addEventListener('change',function(e){var t=e.target;if(t.id==='mode'){st.mode=t.value;show('rsvp');}if(t.id==='acc'){st.acc=t.value;show('rsvp');}if(t.id==='loc'){st.loc=t.value;show('rsvp');}});
+$('#pv').addEventListener('input',function(e){var t=e.target;if(t.id==='ad'||t.id==='ch'){var v=Math.max(0,parseInt(t.value,10)||0);st[t.id]=v;var tot=st.ad+st.ch;$('#tot').textContent=tot;var w=$('#rf .warn');if(tot>st.inv&&!w){t.closest('.grp').querySelector('.tot').insertAdjacentHTML('afterend','<div class="warn">This is more than the '+st.inv+' invited; the family will confirm.</div>');}else if(tot<=st.inv&&w)w.remove();}});
+show('inv');
+var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.05,rootMargin:'0px 0px -5% 0px'}):null;
+Array.prototype.forEach.call(document.querySelectorAll('.rv'),function(el){if(io)io.observe(el);else el.classList.add('on');});
+})();
+</script>
+</body>
+</html>
