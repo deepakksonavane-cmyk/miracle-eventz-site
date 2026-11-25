@@ -18,6 +18,15 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Karla:wght@400;500;700&family=Pacifico&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Karla:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <noscript><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Karla:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet"></noscript>
+<style id="font-fallbacks">
+@font-face{font-family:"Archivo Fallback";src:local("Arial"),local("ArialMT"),local("Liberation Sans");font-weight:100 700;size-adjust:102.51%;ascent-override:85.65%;descent-override:20.49%;line-gap-override:0%}
+@font-face{font-family:"Archivo Fallback";src:local("Arial Bold"),local("Arial-BoldMT"),local("Liberation Sans Bold");font-weight:800;size-adjust:103.18%;ascent-override:85.09%;descent-override:20.35%;line-gap-override:0%}
+@font-face{font-family:"Archivo Fallback";src:local("Arial Bold"),local("Arial-BoldMT"),local("Liberation Sans Bold");font-weight:900;size-adjust:110.34%;ascent-override:79.57%;descent-override:19.03%;line-gap-override:0%}
+@font-face{font-family:"Karla Fallback";src:local("Arial"),local("ArialMT"),local("Liberation Sans");font-weight:100 600;size-adjust:103.91%;ascent-override:88.25%;descent-override:24.25%;line-gap-override:0%}
+@font-face{font-family:"Karla Fallback";src:local("Arial Bold"),local("Arial-BoldMT"),local("Liberation Sans Bold");font-weight:700 900;size-adjust:100.22%;ascent-override:91.49%;descent-override:25.14%;line-gap-override:0%}
+@font-face{font-family:"Pacifico Fallback";src:local("Arial"),local("ArialMT"),local("Liberation Sans");size-adjust:100.91%;ascent-override:129.13%;descent-override:44.89%;line-gap-override:0%}
+@font-face{font-family:"IBM Plex Mono Fallback";src:local("Courier New"),local("CourierNewPSMT"),local("Liberation Mono");size-adjust:99.98%;ascent-override:102.52%;descent-override:27.50%;line-gap-override:0%}
+</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNKNB3BL2D"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZNKNB3BL2D');</script>
 <script type="application/ld+json">
@@ -106,13 +115,13 @@
 :root{--red:#E31C23;--red-deep:#B8121A;--cream:#FFF8F0;--ink:#1A1512;--mauve:#8C6B68;--blush:#F5DDD9;--line:rgba(26,21,18,.12);--soft:rgba(245,221,217,.45)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:'Karla',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px}
-h1,h2,h3{font-family:'Archivo',system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
+body{margin:0;font-family:'Karla','Karla Fallback',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:'Archivo','Archivo Fallback',system-ui,sans-serif;line-height:1.15;margin:0 0 .5em}
 a{color:var(--red)}
 .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
 header.site{border-bottom:1px solid var(--line);padding:14px 0;background:var(--cream)}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.brand{font-family:'Pacifico',cursive;font-size:26px;color:var(--red);text-decoration:none}
+.brand{font-family:'Pacifico','Pacifico Fallback',cursive;font-size:26px;color:var(--red);text-decoration:none}
 .back{font-size:15px;text-decoration:none;color:var(--ink)}
 .back:hover{color:var(--red)}
 .hero{padding:64px 0 48px;background:var(--soft)}
@@ -120,14 +129,14 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .hero h1{font-size:clamp(34px,6vw,58px);font-weight:800;max-width:15em}
 .hero p.lead{font-size:20px;color:var(--mauve);max-width:36em}
 .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-family:'Archivo',sans-serif}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-family:'Archivo','Archivo Fallback',sans-serif}
 .btn.primary{background:var(--red);color:#fff}
 .btn.ghost{border:2px solid var(--red);color:var(--red)}
 section{padding:56px 0}
 section h2{font-size:clamp(26px,4vw,38px);font-weight:800}
 .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:24px}
 .card{border:1px solid var(--line);border-radius:14px;padding:22px;background:#fff}
-.card .n{font-family:'Archivo';font-weight:800;color:var(--red);font-size:14px;letter-spacing:.08em}
+.card .n{font-family:'Archivo','Archivo Fallback';font-weight:800;color:var(--red);font-size:14px;letter-spacing:.08em}
 .card h3{font-size:19px;margin:6px 0}
 .card p{margin:0;color:var(--mauve);font-size:16px}
 ul.tick{list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 28px}
@@ -144,7 +153,7 @@ footer strong{color:var(--ink)}
 .work figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .work img{display:block;width:100%;height:190px;object-fit:cover}
 .work figcaption{padding:12px 14px;font-size:15px;color:var(--mauve)}
-.work figcaption strong{display:block;color:var(--ink);font-family:'Archivo',sans-serif}
+.work figcaption strong{display:block;color:var(--ink);font-family:'Archivo','Archivo Fallback',sans-serif}
 @media(max-width:760px){.hero{padding:44px 0 36px}body{font-size:16px}}
 </style>
 </head>
