@@ -1,0 +1,86 @@
+/* Miracle Eventz – Candy-inspired visual theme.
+   Visual layer only: colours, type, tabs, buttons and cards.
+   No text or layout content is changed by this file. */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Karla:wght@400;700&display=swap");
+
+:root:root:root,
+:root:root:root:not([data-theme="light"]),
+:root:root:root[data-theme="dark"]{
+  --red:#E31C23;
+  --red-deep:#B8121A;
+  --cream:#FFF9F3;
+  --ink:#1E1433;
+  --gold:#FFD23F;
+  --blush:#F3ECFF;
+  --mauve:#5E4F7A;
+  --bg:#FFF9F3;
+  --bg-raised:#FFFFFF;
+  --bg-sunken:#F3ECFF;
+  --text:#1E1433;
+  --text-muted:#5E4F7A;
+  --accent:#7B2FF7;
+  --accent-deep:#D81B6A;
+  --accent-ink:#FFFFFF;
+  --gold-accent:#FFD23F;
+  --border:rgba(30,20,51,0.12);
+  --border-strong:rgba(30,20,51,0.22);
+  --shadow:0 12px 30px rgba(30,20,51,0.12);
+  --ribbon-a:#7B2FF7;
+  --ribbon-b:#FF3D8B;
+  color-scheme:light;
+}
+
+/* Type: chunky rounded headings, clean body text */
+body{font-family:"Karla",system-ui,sans-serif !important;color:#1E1433;}
+h1,h2,h3,h4,.hero-title,.hero-stats .num,.num{font-family:"Fredoka",system-ui,sans-serif !important;font-weight:700 !important;letter-spacing:-0.01em;}
+.eyebrow,[class*="eyebrow"],.lbl,.hero-stats .lbl{font-family:"Karla",sans-serif !important;font-weight:700 !important;letter-spacing:.14em !important;}
+
+/* Navigation tabs: rounded pills, yellow active state */
+nav.links{background:#fff;border-radius:999px;padding:4px;box-shadow:0 6px 16px rgba(30,20,51,.08);}
+nav.links button{font-family:"Fredoka",sans-serif !important;font-weight:600 !important;border-radius:999px !important;color:#1E1433 !important;transition:background .2s,transform .15s;}
+nav.links button:hover{background:#F3ECFF !important;transform:translateY(-1px);}
+nav.links button.active{background:linear-gradient(180deg,#FFE680,#FFD23F) !important;color:#1E1433 !important;box-shadow:0 3px 0 #D99A00;}
+
+/* Buttons: glossy and dimensional */
+.btn-primary,.btn-gold,.btn-secondary,.btn-ghost{font-family:"Fredoka",sans-serif !important;font-weight:600 !important;border-radius:999px !important;transition:transform .15s ease,box-shadow .15s ease,filter .15s ease !important;}
+.btn-primary,.btn-secondary{color:#fff !important;background:linear-gradient(180deg,#FF6BA6 0%,#FF3D8B 45%,#D81B6A 100%) !important;border:0 !important;box-shadow:0 6px 0 #D81B6A,0 12px 22px rgba(216,27,106,.32),inset 0 1px 0 rgba(255,255,255,.45) !important;}
+.btn-gold{color:#1E1433 !important;background:linear-gradient(180deg,#FFE680 0%,#FFD23F 50%,#FFB800 100%) !important;border:0 !important;box-shadow:0 6px 0 #D99A00,0 12px 22px rgba(255,184,0,.32),inset 0 1px 0 rgba(255,255,255,.6) !important;}
+.btn-ghost{color:#4B1A9E !important;background:#fff !important;border:2px solid #7B2FF7 !important;box-shadow:none !important;}
+.btn-ghost:hover{background:#F3ECFF !important;border-color:#7B2FF7 !important;}
+.btn-primary:hover,.btn-gold:hover,.btn-secondary:hover{transform:translateY(-2px);filter:brightness(1.04);}
+.btn-primary:active,.btn-gold:active,.btn-secondary:active{transform:translateY(1px);}
+.btn-primary:focus-visible,.btn-gold:focus-visible,.btn-ghost:focus-visible,nav.links button:focus-visible,a:focus-visible{outline:3px solid #29D3E0 !important;outline-offset:3px;}
+
+/* Hero bands: purple to pink gradient */
+.hero,.case-hero,.svc-hero,.think-hero,.story-hero,.stories-hero{border-radius:0;}
+.hero{background:linear-gradient(160deg,#7B2FF7 0%,#D81B6A 62%,#FF8A1F 130%) !important;}
+.hero .eyebrow,.hero .lbl{color:#FFE8B0 !important;}
+.hero-stats .num{color:#FFD23F !important;}
+
+/* Cards: rounded, soft lift */
+.pillar-card,.evt-card,.why-card,.proof-card-mini,.story-card,.opt-card,.folio-card,.svc-card,.industry-card,.success-card,.step-card,.testi-card{
+  background:#fff !important;border:0 !important;border-radius:24px !important;box-shadow:0 10px 24px rgba(30,20,51,.10) !important;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease;
+}
+.pillar-card:hover,.evt-card:hover,.why-card:hover,.story-card:hover,.folio-card:hover,.svc-card:hover,.industry-card:hover,.testi-card:hover{transform:translateY(-4px);box-shadow:0 16px 30px rgba(30,20,51,.14) !important;}
+
+/* Chips and labels: candy colours */
+.chip{font-family:"Fredoka",sans-serif !important;font-weight:600 !important;border-radius:999px !important;background:#A6E22E !important;color:#1E1433 !important;}
+
+/* Section backgrounds stay light and calm */
+section{position:relative;}
+
+/* Text sitting on the coloured hero bands must be light */
+[class*="hero"] h1,[class*="hero"] h2,[class*="hero"] h3,[class*="-hero"] h1{color:#fff !important;}
+[class*="hero"] p,[class*="hero"] .lede,[class*="hero"] .meta-line{color:rgba(255,255,255,.93) !important;}
+.hero .eyebrow,[class*="hero"] .eyebrow{color:#FFE8B0 !important;}
+
+/* Every button variant used on the site */
+.btn,.btnl,.btn.main{font-family:"Fredoka",sans-serif !important;font-weight:600 !important;border-radius:999px !important;transition:transform .15s ease,box-shadow .15s ease,filter .15s ease;}
+.btn.primary,.btn.main{color:#fff !important;background:linear-gradient(180deg,#FF6BA6 0%,#FF3D8B 45%,#D81B6A 100%) !important;border:0 !important;box-shadow:0 6px 0 #D81B6A,0 12px 22px rgba(216,27,106,.32),inset 0 1px 0 rgba(255,255,255,.45) !important;}
+.btn.ghost,.btn-secondary{color:#4B1A9E !important;background:#fff !important;border:2px solid #7B2FF7 !important;box-shadow:none !important;}
+.btn.ghost:hover,.btn-secondary:hover{background:#F3ECFF !important;}
+
+/* Buttons on the coloured hero bands: gold for primary, white outline for secondary */
+[class*="hero"] .btn.primary,[class*="hero"] .btn.main,[class*="hero"] .btn-primary{color:#1E1433 !important;background:linear-gradient(180deg,#FFE680 0%,#FFD23F 50%,#FFB800 100%) !important;box-shadow:0 6px 0 #D99A00,0 12px 22px rgba(255,184,0,.32) !important;}
+[class*="hero"] .btn.ghost,[class*="hero"] .btn-secondary,[class*="hero"] .btn-ghost{color:#fff !important;background:transparent !important;border:2px solid #fff !important;box-shadow:none !important;}
+[class*="hero"] .btn.ghost:hover,[class*="hero"] .btn-ghost:hover{background:rgba(255,255,255,.12) !important;}
