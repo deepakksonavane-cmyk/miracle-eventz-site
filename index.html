@@ -1319,8 +1319,8 @@ input[type=range]{width:100%;accent-color:var(--accent);}
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="/js/gsap.min.js"></script>
+<script defer src="/js/ScrollTrigger.min.js"></script>
 <script>
 /* ============ DATA ============ */
 const SERVICES = [
@@ -3203,11 +3203,21 @@ document.addEventListener('click', function(e){
 /* Adds scroll-reveal motion (hero, case studies, client logos, contact)
    on top of the existing .reveal / parallax system above — same content,
    colors and fonts, just animated in as the page loads and scrolls. */
-let gsapReady = (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined');
-if(gsapReady){ gsap.registerPlugin(ScrollTrigger); }
+/* GSAP loads with `defer` (self-hosted in /js/) so it no longer blocks the
+   first paint. It is ready from DOMContentLoaded; the hero is already visible
+   by then, so the hero entrance fade only runs on later in-app route changes. */
+let gsapReady = false;
+let gsapInitialPass = true;
+function ensureGsap(){
+  if(!gsapReady && typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined'){
+    gsap.registerPlugin(ScrollTrigger); gsapReady = true;
+  }
+  return gsapReady;
+}
 
 function wireGsapScroll(){
-  if(!gsapReady) return;
+  if(!ensureGsap()) return;
+  const initialPass = gsapInitialPass; gsapInitialPass = false;
   if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   // Clear any triggers/tweens from the previous route's DOM before re-wiring.
@@ -3216,7 +3226,7 @@ function wireGsapScroll(){
 
   // HERO — fade + slide up on entry (always at top of viewport on load).
   const heroItems = document.querySelectorAll('.hero .hero-inner > *');
-  if(heroItems.length){
+  if(heroItems.length && !initialPass){
     gsap.fromTo(heroItems, {opacity:0, y:36}, {opacity:1, y:0, duration:1, ease:'power3.out', stagger:0.15, delay:0.1});
   }
 
@@ -3230,7 +3240,7 @@ function wireGsapScroll(){
 
   // Individual case-study page hero body.
   const caseHeroBody = document.querySelector('.case-hero-body');
-  if(caseHeroBody){
+  if(caseHeroBody && !initialPass){
     gsap.fromTo(caseHeroBody.children, {opacity:0, y:30}, {opacity:1, y:0, duration:0.9, ease:'power2.out', stagger:0.12, delay:0.1});
   }
 
@@ -3258,7 +3268,8 @@ function wireGsapScroll(){
 route = routeFromHash();
 render();
 wireReveals();
-wireGsapScroll();
+if(ensureGsap()){ wireGsapScroll(); }
+else { document.addEventListener('DOMContentLoaded', wireGsapScroll, {once:true}); }
 </script>
 </body>
 </html>
