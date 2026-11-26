@@ -140,4 +140,10 @@
     <loc>https://miracleevents.net/wedding-concepts/</loc>
     <lastmod>2026-11-25</lastmod>
   </url>
+  <url>
+    <loc>https://miracleevents.net/thinking.html</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
